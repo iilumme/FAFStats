@@ -1,5 +1,7 @@
 # FAFStats
 
-[iilumme](https://github.com/iilumme) 
+Group project
+
+Iina Lumme [iilumme](https://github.com/iilumme) 
 &
-[Blodir](https://github.com/Blodir)
+Pyry Mäkinen [Blodir](https://github.com/Blodir)
