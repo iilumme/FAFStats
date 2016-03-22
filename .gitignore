@@ -1,3 +1,4 @@
 .idea
 .coveralls.yml
 .bundle
+.node_modules
