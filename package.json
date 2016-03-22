@@ -3,5 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "author": "iilumme, Blodir",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "angular": "~1.5.2",
+    "angular-route": "latest",
+    "jquery": "latest"
+  }
 }
