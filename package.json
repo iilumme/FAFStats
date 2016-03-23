@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "curl": "^0.1.4",
+    "grunt-contrib-cssmin": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0"
   }
