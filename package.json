@@ -7,6 +7,11 @@
   "dependencies": {
     "angular": "~1.5.2",
     "angular-route": "latest",
-    "jquery": "latest"
+    "jquery": "latest",
+    "grunt": "latest"
+  },
+  "devDependencies": {
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }
