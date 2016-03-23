@@ -1,0 +1,7 @@
+{
+  "name": "fafstats",
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "latest"
+  }
+}

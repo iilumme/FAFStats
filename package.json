@@ -5,8 +5,6 @@
   "author": "iilumme, Blodir",
   "license": "ISC",
   "dependencies": {
-    "angular": "~1.5.2",
-    "angular-route": "latest",
     "jquery": "latest",
     "grunt": "latest"
   },

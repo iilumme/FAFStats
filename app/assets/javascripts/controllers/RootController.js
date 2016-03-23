@@ -1,3 +1,3 @@
-App.controller('RootController', function ($scope) {
+FAFStats.controller('RootController', function ($scope) {
 
 });

@@ -1,0 +1,9 @@
+var FAFStats = angular.module('FAFStats', ['ngRoute'])
+    .config(function ($routeProvider, $locationProvider) {
+//        $locationProvider.html5Mode(true);
+        $routeProvider
+            .when('/', {
+                controller: 'RootController',
+                templateUrl: '<%= asset_path("static/root.html") %> '
+            });
+    });
