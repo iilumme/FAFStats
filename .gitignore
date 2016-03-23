@@ -2,3 +2,7 @@
 .bundle
 node_modules
 .sass-cache
+log
+tmp
+db/migrate/development.sqlite3
+db/migrate/test.sqlite3
