@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var App = angular
+        .module('App', ['ngRoute'])
+        .config(function ($routeProvider) {
+            $routeProvider
+                    .when('/', {
+                        controller: 'RootController',
+                        templateUrl: '../static/root.html'
+                    });
+        });
