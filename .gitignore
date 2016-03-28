@@ -3,7 +3,6 @@
 .coveralls.yml
 node_modules
 .sass-cache
-log
 tmp
 db/development.sqlite3
 db/test.sqlite3
