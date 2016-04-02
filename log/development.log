@@ -3397,3 +3397,40 @@ Processing by LayoutsController#index as HTML
   Rendered layouts/application.html.erb within layouts/application (20.0ms)
 Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
   [1m[36mUser Load (2.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/" for ::1 at 2016-04-02 19:56:41 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (297.8ms)
+Completed 200 OK in 339ms (Views: 322.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-02 19:56:42 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-02 19:56:42 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:56:42 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:56:42 +0300
+
+
+Started GET "/assets/angular/angular.self-ec90f1bc6b0a1933fd10110a56f5146967f507e38fbbb985ba76b4c9af5bc83a.js?body=1" for ::1 at 2016-04-02 19:56:42 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-5cb3aa04a209cb1c3d9456035c29e5fc96406969ed474b9c4f1ee13de471f81c.js?body=1" for ::1 at 2016-04-02 19:56:42 +0300
+
+
+Started GET "/assets/app.self-107efeac8718b02fa5e71bc820b3a8aa6b0c9efb1eeeb8795f89917b4abd80f5.js?body=1" for ::1 at 2016-04-02 19:56:42 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:56:42 +0300
+
+
+Started GET "/assets/application.self-d9d7841bd388a1e30efc21bb1d2fe3442d1b78c72c72584a1a0200b2265422ff.js?body=1" for ::1 at 2016-04-02 19:56:42 +0300
+
+
+Started GET "/assets/static/root-a38db436554af3c06997593fad86f463c7c14c17e3a5e75172a5b997aaeb4b31.html" for ::1 at 2016-04-02 19:56:43 +0300

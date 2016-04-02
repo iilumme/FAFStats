@@ -58,5 +58,8 @@ group :development do
 end
 
 gem 'carrierwave'
-
 gem 'tzinfo-data'
+
+gem 'oauth2'
+gem 'omniauth'
+gem 'omniauth-oauth2'
