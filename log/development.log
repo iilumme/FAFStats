@@ -5315,3 +5315,43 @@ Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c68
 
 Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 20:02:31 +0300
 >>>>>>> f32d9649391c063eb1c416c76bd78ea849d10627
+
+
+Started GET "/" for ::1 at 2016-04-02 20:22:09 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (644.1ms)
+Completed 200 OK in 694ms (Views: 671.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.min.self-1d7ecec1d20d143a033301b70676f529ccd49c1c734a9a1c61ee4e91b3a5554f.css?body=1" for ::1 at 2016-04-02 20:22:10 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 20:22:10 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 20:22:10 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 20:22:10 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 20:22:10 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 20:22:10 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 20:22:10 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 20:22:10 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 20:22:10 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 20:22:10 +0300
+
+
+Started GET "/assets/static/root-a38db436554af3c06997593fad86f463c7c14c17e3a5e75172a5b997aaeb4b31.html" for ::1 at 2016-04-02 20:22:10 +0300
