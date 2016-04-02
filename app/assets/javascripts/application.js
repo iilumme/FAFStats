@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require angular
 //= require angular-route
+//= require Materialize
 //= require app
 //= require controllers/RootController
 //= require_tree.
