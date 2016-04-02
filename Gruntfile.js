@@ -4,7 +4,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'app/assets/stylesheets/style.css' : 'app/assets/stylesheets/style.scss'
+                    'app/assets/stylesheets/app.css' : 'app/assets/stylesheets/application.scss'
                 }
             }
         },
@@ -15,17 +15,17 @@ module.exports = function(grunt) {
           },
           target: {
             files: {
-              'app/assets/stylesheets/application.min.css': ['app/assets/stylesheets/application.css', 'app/assets/stylesheets/style.css']
+              'app/assets/stylesheets/app.min.css': 'app/assets/stylesheets/app.css'
             }
           }
         },
         watch: {
             sass: {
-                files: 'app/assets/stylesheets/style.scss',
+                files: 'app/assets/stylesheets/application.scss',
                 tasks: ['sass']
             },
             css: {
-                files: ['app/assets/stylesheets/application.css', 'app/assets/stylesheets/style.css'],
+                files: 'app/assets/stylesheets/app.css',
                 tasks: ['cssmin']
             }
         }

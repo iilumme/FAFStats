@@ -25,5 +25,6 @@ module FAFStats
     config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
     config.active_record.raise_in_transactional_callbacks = true
     config.autoload_paths += Dir["#{Rails.root}/lib"]
+    config.assets.precompile += ['app.min.css']
   end
 end

@@ -3,11 +3,22 @@
 <head>
   <title>FAFStats</title>
   <%= csrf_meta_tags %>
-  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.brown-orange.min.css" />
-  <%= stylesheet_link_tag 'application.min', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "app.min.css", media: "all" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </head>
 <body ng-app="FAFStats">
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
   <!-- Using Angular for routing -->
   <div ng-view></div>
 </body>

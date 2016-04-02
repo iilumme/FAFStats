@@ -3399,6 +3399,7 @@ Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
   [1m[36mUser Load (2.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
 
 
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2016-04-02 19:56:41 +0300
   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by LayoutsController#index as HTML
@@ -3434,3 +3435,1883 @@ Started GET "/assets/application.self-d9d7841bd388a1e30efc21bb1d2fe3442d1b78c72c
 
 
 Started GET "/assets/static/root-a38db436554af3c06997593fad86f463c7c14c17e3a5e75172a5b997aaeb4b31.html" for ::1 at 2016-04-02 19:56:43 +0300
+=======
+Started GET "/" for 127.0.0.1 at 2016-04-02 18:09:50 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (1175.9ms)
+Completed 200 OK in 1268ms (Views: 1233.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:52 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:52 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:52 +0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-04-02 18:09:52 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:52 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:52 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:52 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:52 +0300
+
+
+Started GET "/assets/application.self-d9d7841bd388a1e30efc21bb1d2fe3442d1b78c72c72584a1a0200b2265422ff.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:52 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for 127.0.0.1 at 2016-04-02 18:09:53 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-02 18:09:54 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (70.1ms)
+Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:54 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:54 +0300
+
+
+Started GET "/assets/application.min.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-04-02 18:09:54 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:54 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:54 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:55 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:55 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:55 +0300
+
+
+Started GET "/assets/application.self-d9d7841bd388a1e30efc21bb1d2fe3442d1b78c72c72584a1a0200b2265422ff.js?body=1" for 127.0.0.1 at 2016-04-02 18:09:55 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for 127.0.0.1 at 2016-04-02 18:09:55 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-02 18:54:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (1218.4ms)
+Completed 500 Internal Server Error in 1259ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'Materialize' with type 'text/css'):
+     6:   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     7:   <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.brown-orange.min.css" />
+     8:   <%= stylesheet_link_tag 'application.min', media: 'all', 'data-turbolinks-track' => true %>
+     9:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:   <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    11: </head>
+    12: <body ng-app="FAFStats">
+  app/assets/stylesheets/application.css:13
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___5103717_44408508'
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:03:39 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (4259.8ms)
+Completed 200 OK in 4379ms (Views: 4346.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:03:44 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 46ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:03:44 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (50.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (103.7ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:03:44 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:03:44 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:03:44 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:03:44 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:03:44 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:03:44 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:03:44 +0300
+
+
+Started GET "/assets/application.self-d9d7841bd388a1e30efc21bb1d2fe3442d1b78c72c72584a1a0200b2265422ff.js?body=1" for ::1 at 2016-04-02 19:03:44 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:03:44 +0300
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:04:03 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (50.6ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.6ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.6ms)
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:04:33 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (64.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (77.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:04:58 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (145.1ms)
+Completed 200 OK in 176ms (Views: 175.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:04:58 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (42.9ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.8ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (109.9ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:04:59 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:04:59 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:04:59 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:04:59 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:04:59 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:04:59 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:04:59 +0300
+
+
+Started GET "/assets/application.self-d9d7841bd388a1e30efc21bb1d2fe3442d1b78c72c72584a1a0200b2265422ff.js?body=1" for ::1 at 2016-04-02 19:04:59 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:04:59 +0300
+
+
+Started GET "/" for ::1 at 2016-04-02 19:05:18 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (146.1ms)
+Completed 200 OK in 178ms (Views: 177.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:05:19 +0300
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:05:19 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (40.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (95.6ms)
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:05:19 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:05:19 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:05:19 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:05:19 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:05:19 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:05:19 +0300
+
+
+Started GET "/assets/application.self-d9d7841bd388a1e30efc21bb1d2fe3442d1b78c72c72584a1a0200b2265422ff.js?body=1" for ::1 at 2016-04-02 19:05:19 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:05:19 +0300
+
+
+Started GET "/" for ::1 at 2016-04-02 19:07:00 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (43.1ms)
+Completed 200 OK in 53ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:07:00 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:07:00 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:07:00 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:07:00 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:07:00 +0300
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:07:00 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (44.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.9ms)
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:07:01 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:07:01 +0300
+
+
+Started GET "/assets/application.self-d9d7841bd388a1e30efc21bb1d2fe3442d1b78c72c72584a1a0200b2265422ff.js?body=1" for ::1 at 2016-04-02 19:07:01 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:07:01 +0300
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:07:05 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (56.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:07:34 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 53ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:07:34 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (41.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (99.0ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:07:35 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:07:35 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:07:35 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:07:35 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:07:35 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:07:35 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:07:35 +0300
+
+
+Started GET "/assets/application.self-d9d7841bd388a1e30efc21bb1d2fe3442d1b78c72c72584a1a0200b2265422ff.js?body=1" for ::1 at 2016-04-02 19:07:35 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:07:35 +0300
+
+
+Started GET "/" for ::1 at 2016-04-02 19:08:48 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 66ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:08:49 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:08:49 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:08:49 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:08:49 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:08:49 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:08:49 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:08:49 +0300
+
+
+Started GET "/assets/application.self-d9d7841bd388a1e30efc21bb1d2fe3442d1b78c72c72584a1a0200b2265422ff.js?body=1" for ::1 at 2016-04-02 19:08:49 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:08:49 +0300
+
+
+Started GET "/" for ::1 at 2016-04-02 19:13:07 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (382.3ms)
+Completed 200 OK in 396ms (Views: 396.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:13:07 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:13:07 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:13:07 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:13:07 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:13:07 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:13:07 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:13:07 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:13:07 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:13:07 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:13:08 +0300
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:13:26 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (46.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.7ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:22:03 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 67ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:22:03 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:22:03 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:22:03 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:22:03 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:22:03 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:22:03 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:22:03 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:22:03 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:22:03 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:22:03 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:22:04 +0300
+
+
+Started GET "/" for ::1 at 2016-04-02 19:27:15 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (91.1ms)
+Completed 200 OK in 110ms (Views: 109.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:27:16 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:27:16 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:27:16 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:27:16 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:27:16 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:27:16 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:27:16 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:27:16 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:27:16 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:27:16 +0300
+
+
+Started GET "/" for ::1 at 2016-04-02 19:27:59 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (1823.8ms)
+Completed 200 OK in 1870ms (Views: 1850.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:28:02 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-04-02 19:28:02 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:28:02 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:28:02 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:28:02 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:28:02 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:28:02 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for 127.0.0.1 at 2016-04-02 19:28:02 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:28:02 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:28:02 +0300
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:30:47 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (47.2ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (107.2ms)
+
+
+Started POST "/__web_console/repl_sessions/2939a55e5dbe1ad43b2dd08f4e6ea001/trace" for ::1 at 2016-04-02 19:31:20 +0300
+
+
+Started GET "/" for ::1 at 2016-04-02 19:32:27 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (162.1ms)
+Completed 200 OK in 209ms (Views: 208.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:32:28 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:32:28 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:32:28 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:32:28 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:32:28 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:32:28 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:32:28 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:32:28 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:32:28 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:32:28 +0300
+
+
+Started GET "/" for ::1 at 2016-04-02 19:33:33 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 81ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:33:37 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (54.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.7ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.4ms)
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:33:50 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (104.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (102.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (234.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:33:52 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (157.1ms)
+Completed 200 OK in 185ms (Views: 183.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:33:53 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:33:53 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:33:53 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:33:53 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:33:53 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:33:53 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:33:53 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:33:53 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:33:53 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:33:53 +0300
+
+
+Started GET "/" for ::1 at 2016-04-02 19:33:57 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (132.3ms)
+Completed 200 OK in 160ms (Views: 160.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:33:59 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (46.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:36:21 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (286.2ms)
+Completed 500 Internal Server Error in 304ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( app.min.css )` to `config/initializers/assets.rb` and restart your server):
+    4:   <title>FAFStats</title>
+    5:   <%= csrf_meta_tags %>
+    6:   <link rel="stylesheet" src="../../stylesheets/app.min.css" />
+    7:   <%= stylesheet_link_tag 'app.min'%>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9: </head>
+   10: <body ng-app="FAFStats">
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__667596826_70780812'
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.4ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.9ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:37:57 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (287.2ms)
+Completed 500 Internal Server Error in 304ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( app.min.css )` to `config/initializers/assets.rb` and restart your server):
+    4:   <title>FAFStats</title>
+    5:   <%= csrf_meta_tags %>
+    6:   <link rel="stylesheet" src="../../stylesheets/app.min.css" />
+    7:   <%= stylesheet_link_tag 'app.min'%>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9: </head>
+   10: <body ng-app="FAFStats">
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__667596826_82263168'
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:38:34 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (474.4ms)
+Completed 500 Internal Server Error in 513ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( app.min.css )` to `config/initializers/assets.rb` and restart your server):
+    4:   <title>FAFStats</title>
+    5:   <%= csrf_meta_tags %>
+    6:   <link rel="stylesheet" src="../../stylesheets/app.min.css" />
+    7:   <%= stylesheet_link_tag 'app.min'%>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9: </head>
+   10: <body ng-app="FAFStats">
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__188388756_44351376'
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.3ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (103.8ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:38:52 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (128.1ms)
+Completed 200 OK in 145ms (Views: 145.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:38:52 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:38:52 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:38:52 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:38:52 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:38:52 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:38:52 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:38:53 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:38:53 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:38:53 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:38:53 +0300
+
+
+Started GET "/" for ::1 at 2016-04-02 19:39:04 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (156.1ms)
+Completed 200 OK in 187ms (Views: 186.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:40:53 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (180.1ms)
+Completed 200 OK in 202ms (Views: 201.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/app.min.css" for ::1 at 2016-04-02 19:40:53 +0300
+Processing by LayoutsController#index as CSS
+  Parameters: {"path"=>"stylesheets/app.min"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/application with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/blodi_000/Documents/GitHub/FAFStats/app/views"
+):
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (42.3ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (93.2ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:40:53 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:40:53 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:40:53 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:40:53 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:40:53 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:40:53 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:40:53 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:40:54 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:40:54 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:40:54 +0300
+
+
+Started GET "/" for ::1 at 2016-04-02 19:41:13 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (176.1ms)
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( app.min.css )` to `config/initializers/assets.rb` and restart your server):
+    4:   <title>FAFStats</title>
+    5:   <%= csrf_meta_tags %>
+    6:   <link rel="stylesheet" src="../../stylesheets/app.min.css" />
+    7:   <%= stylesheet_link_tag "app.min.css", media: "all" %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9: </head>
+   10: <body ng-app="FAFStats">
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__188388756_67548300'
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (96.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:43:06 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (435.3ms)
+Completed 500 Internal Server Error in 453ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( app.min.css )` to `config/initializers/assets.rb` and restart your server):
+    4:   <title>FAFStats</title>
+    5:   <%= csrf_meta_tags %>
+    6:   <link rel="stylesheet" src="../../stylesheets/app.min.css" />
+    7:   <%= stylesheet_link_tag "app.min.css", media: "all" %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9: </head>
+   10: <body ng-app="FAFStats">
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__188388756_67548300'
+  app/controllers/layouts_controller.rb:3:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.2ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (97.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:43:32 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (584.4ms)
+Completed 200 OK in 678ms (Views: 644.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.min.self-1d7ecec1d20d143a033301b70676f529ccd49c1c734a9a1c61ee4e91b3a5554f.css?body=1" for ::1 at 2016-04-02 19:43:34 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:43:34 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:43:34 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:43:34 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:43:34 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:43:34 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:43:34 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:43:34 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:43:35 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:43:35 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:43:35 +0300
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff2" for ::1 at 2016-04-02 19:43:35 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (65.1ms)
+Completed 200 OK in 93ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff2" for ::1 at 2016-04-02 19:43:35 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 79ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff" for ::1 at 2016-04-02 19:43:35 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (93.4ms)
+Completed 200 OK in 122ms (Views: 122.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff" for ::1 at 2016-04-02 19:43:35 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 100ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.ttf" for ::1 at 2016-04-02 19:43:35 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 87ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.ttf" for ::1 at 2016-04-02 19:43:35 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (59.1ms)
+Completed 200 OK in 90ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static/root-a38db436554af3c06997593fad86f463c7c14c17e3a5e75172a5b997aaeb4b31.html" for ::1 at 2016-04-02 19:44:07 +0300
+
+
+Started GET "/" for ::1 at 2016-04-02 19:44:08 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:44:12 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 113ms (Views: 112.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.min.self-1d7ecec1d20d143a033301b70676f529ccd49c1c734a9a1c61ee4e91b3a5554f.css?body=1" for ::1 at 2016-04-02 19:44:12 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:44:12 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:44:12 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:44:12 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:44:12 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:44:12 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:44:12 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:44:12 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:44:12 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:44:12 +0300
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff2" for ::1 at 2016-04-02 19:44:12 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 86ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:44:12 +0300
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff" for ::1 at 2016-04-02 19:44:12 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 94ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff2" for ::1 at 2016-04-02 19:44:13 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 87ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.ttf" for ::1 at 2016-04-02 19:44:13 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 83ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff" for ::1 at 2016-04-02 19:44:13 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.ttf" for ::1 at 2016-04-02 19:44:13 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 87ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:45:15 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (119.1ms)
+Completed 200 OK in 144ms (Views: 143.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:45:16 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:45:16 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:45:16 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:45:16 +0300
+
+
+Started GET "/assets/app.min.self-1d7ecec1d20d143a033301b70676f529ccd49c1c734a9a1c61ee4e91b3a5554f.css?body=1" for ::1 at 2016-04-02 19:45:16 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:45:16 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:45:16 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:45:16 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:45:16 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:45:16 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:45:16 +0300
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff2" for ::1 at 2016-04-02 19:45:16 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (53.1ms)
+Completed 200 OK in 82ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff2" for ::1 at 2016-04-02 19:45:16 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 83ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff" for ::1 at 2016-04-02 19:45:16 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff" for ::1 at 2016-04-02 19:45:17 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 73ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.ttf" for ::1 at 2016-04-02 19:45:17 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.ttf" for ::1 at 2016-04-02 19:45:17 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (62.1ms)
+Completed 200 OK in 90ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:46:19 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 61ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff2" for ::1 at 2016-04-02 19:46:20 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (75.1ms)
+Completed 200 OK in 114ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff2" for ::1 at 2016-04-02 19:46:20 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (57.1ms)
+Completed 200 OK in 87ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff" for ::1 at 2016-04-02 19:46:20 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 81ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff" for ::1 at 2016-04-02 19:46:20 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.ttf" for ::1 at 2016-04-02 19:46:20 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.ttf" for ::1 at 2016-04-02 19:46:20 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 74ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:49:42 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (82.1ms)
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.min.self-1d7ecec1d20d143a033301b70676f529ccd49c1c734a9a1c61ee4e91b3a5554f.css?body=1" for ::1 at 2016-04-02 19:49:42 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:49:42 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:49:42 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:49:42 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:49:42 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:49:42 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:49:42 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:49:42 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:49:42 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:49:42 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:49:43 +0300
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff2" for ::1 at 2016-04-02 19:49:43 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 94ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff2" for ::1 at 2016-04-02 19:49:43 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 84ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff" for ::1 at 2016-04-02 19:49:43 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (70.1ms)
+Completed 200 OK in 95ms (Views: 94.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff" for ::1 at 2016-04-02 19:49:43 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 80ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.ttf" for ::1 at 2016-04-02 19:49:43 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 86ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.ttf" for ::1 at 2016-04-02 19:49:43 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 85ms (Views: 85.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:53:22 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (70.2ms)
+Completed 200 OK in 89ms (Views: 87.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.min.self-1d7ecec1d20d143a033301b70676f529ccd49c1c734a9a1c61ee4e91b3a5554f.css?body=1" for ::1 at 2016-04-02 19:53:22 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:53:22 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:53:22 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:53:22 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:53:22 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:53:22 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:53:22 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:53:22 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:53:22 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:53:22 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:53:22 +0300
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff2" for ::1 at 2016-04-02 19:53:22 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (63.1ms)
+Completed 200 OK in 92ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff2" for ::1 at 2016-04-02 19:53:22 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 98ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff" for ::1 at 2016-04-02 19:53:23 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (59.2ms)
+Completed 200 OK in 89ms (Views: 88.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff" for ::1 at 2016-04-02 19:53:23 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (53.1ms)
+Completed 200 OK in 83ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.ttf" for ::1 at 2016-04-02 19:53:23 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 84ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.ttf" for ::1 at 2016-04-02 19:53:23 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (72.1ms)
+Completed 200 OK in 103ms (Views: 102.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:53:51 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (48.1ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:53:51 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:53:51 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:53:51 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:53:51 +0300
+
+
+Started GET "/assets/app.min.self-1d7ecec1d20d143a033301b70676f529ccd49c1c734a9a1c61ee4e91b3a5554f.css?body=1" for ::1 at 2016-04-02 19:53:51 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:53:51 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:53:51 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:53:51 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:53:51 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:53:51 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:53:52 +0300
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff2" for ::1 at 2016-04-02 19:53:52 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (68.1ms)
+Completed 200 OK in 96ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff2" for ::1 at 2016-04-02 19:53:52 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (64.8ms)
+Completed 200 OK in 89ms (Views: 87.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff" for ::1 at 2016-04-02 19:53:52 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 90ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff" for ::1 at 2016-04-02 19:53:52 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 85ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.ttf" for ::1 at 2016-04-02 19:53:52 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (57.1ms)
+Completed 200 OK in 82ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.ttf" for ::1 at 2016-04-02 19:53:52 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:54:10 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (398.3ms)
+Completed 200 OK in 413ms (Views: 411.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:54:11 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:54:11 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:54:11 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:54:11 +0300
+
+
+Started GET "/assets/app.min.self-1d7ecec1d20d143a033301b70676f529ccd49c1c734a9a1c61ee4e91b3a5554f.css?body=1" for ::1 at 2016-04-02 19:54:11 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:54:11 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:54:11 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:54:11 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:54:11 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:54:11 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:54:12 +0300
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff2" for ::1 at 2016-04-02 19:54:12 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (88.1ms)
+Completed 200 OK in 125ms (Views: 124.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff2" for ::1 at 2016-04-02 19:54:12 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (80.1ms)
+Completed 200 OK in 112ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff" for ::1 at 2016-04-02 19:54:12 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 100ms (Views: 100.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff" for ::1 at 2016-04-02 19:54:12 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 98ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.ttf" for ::1 at 2016-04-02 19:54:12 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (75.1ms)
+Completed 200 OK in 106ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.ttf" for ::1 at 2016-04-02 19:54:12 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 104ms (Views: 100.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 19:54:51 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (62.6ms)
+Completed 200 OK in 76ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.min.self-1d7ecec1d20d143a033301b70676f529ccd49c1c734a9a1c61ee4e91b3a5554f.css?body=1" for ::1 at 2016-04-02 19:54:51 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 19:54:51 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 19:54:51 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 19:54:51 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 19:54:51 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 19:54:51 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 19:54:51 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 19:54:52 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 19:54:52 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 19:54:52 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 19:54:52 +0300
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff2" for ::1 at 2016-04-02 19:54:52 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (55.1ms)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff2" for ::1 at 2016-04-02 19:54:52 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 90ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.woff" for ::1 at 2016-04-02 19:54:52 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 83ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.woff" for ::1 at 2016-04-02 19:54:52 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 85ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Regular.ttf" for ::1 at 2016-04-02 19:54:52 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Regular"}
+  Rendered layouts/application.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 90ms (Views: 90.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/roboto/Roboto-Bold.ttf" for ::1 at 2016-04-02 19:54:52 +0300
+Processing by LayoutsController#index as 
+  Parameters: {"path"=>"fonts/roboto/Roboto-Bold"}
+  Rendered layouts/application.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 86ms (Views: 85.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-02 20:02:30 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (77.1ms)
+Completed 200 OK in 90ms (Views: 89.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.min.self-1d7ecec1d20d143a033301b70676f529ccd49c1c734a9a1c61ee4e91b3a5554f.css?body=1" for ::1 at 2016-04-02 20:02:31 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-02 20:02:31 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-02 20:02:31 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-02 20:02:31 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-02 20:02:31 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-02 20:02:31 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-02 20:02:31 +0300
+
+
+Started GET "/assets/app.self-00b0bf8daf17d279d335ddd9b4c201f9b6ac5c12a9450d74adf430dca7145047.js?body=1" for ::1 at 2016-04-02 20:02:31 +0300
+
+
+Started GET "/assets/controllers/RootController.self-714af082c6c5c3ae3ffdd53daafe2b2644fcabdc470d92df271089d052090379.js?body=1" for ::1 at 2016-04-02 20:02:31 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-02 20:02:31 +0300
+
+
+Started GET "/assets/dynamic/player_show-b62275715b14eda3d4bb2981620f39b0ca4e64f83dbc78f9860a1c78efe935b5.html" for ::1 at 2016-04-02 20:02:31 +0300
+>>>>>>> f32d9649391c063eb1c416c76bd78ea849d10627
