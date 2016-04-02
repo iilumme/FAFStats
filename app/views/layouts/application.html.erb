@@ -3,20 +3,21 @@
 <head>
   <title>FAFStats</title>
   <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <%= stylesheet_link_tag "app.min.css", media: "all" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </head>
 <body ng-app="FAFStats">
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+  <nav>
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo center">FAFStats</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="/#/playertemplate">playertemplate</a></li>
       </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="/#/playertemplate">playertemplate</a></li>
       </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <!-- Using Angular for routing -->
