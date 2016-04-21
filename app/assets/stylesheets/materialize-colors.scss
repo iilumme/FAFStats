@@ -7,4 +7,6 @@ $primary-color-dark: darken($primary-color, 15%);
 $secondary-color: #363F4B;
 $success-color: color("green", "base");
 $error-color: color("red", "base");
-$link-color: color("light-blue", "lighten-1");
+$link-color: color("light-blue", "lighten-3");
+
+$input-background: lighten($primary-color, 30%);
