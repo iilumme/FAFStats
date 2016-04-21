@@ -17,7 +17,7 @@ FAFStats.controller('LeaderboardsController', function ($scope, $http) {
   };
 
   /* $scope functions */
-  
+
   $scope.prevPage = function() {
     if (currentPage === 0) {
       return;
@@ -38,7 +38,8 @@ FAFStats.controller('LeaderboardsController', function ($scope, $http) {
   }
 
   /* Init */
-
-  renderPage();
+  $scope.$on('$viewContentLoaded', function() {
+    renderPage();
+  });
 
 });

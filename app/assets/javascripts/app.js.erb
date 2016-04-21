@@ -10,9 +10,9 @@ var FAFStats = angular.module('FAFStats', ['ngRoute'])
             controller: 'PlayerController',
             templateUrl: '<%= asset_path("dynamic/player_show.html") %> '
           })
-          .when('/players', {
+          .when('/player/:id', {
             controller: 'PlayerController',
-            templateUrl: '<%= asset_path("dynamic/players_show.html") %> '
+            templateUrl: '<%= asset_path("dynamic/player_show.html") %> '
           })
           .when('/leaderboards', {
             controller: 'LeaderboardsController',

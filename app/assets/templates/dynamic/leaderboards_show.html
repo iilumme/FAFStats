@@ -13,7 +13,7 @@
     <tbody>
       <tr ng-repeat="player in page.data">
         <td>{{player.attributes.ranking}}</td>
-        <td>{{player.attributes.login}}</td>
+        <td><a ng-href="/#/player/{{player.attributes.id}}">{{player.attributes.login}}</a></td>
         <td>{{player.attributes.rating}}</td>
         <td>{{player.attributes.num_games}}</td>
       </tr>

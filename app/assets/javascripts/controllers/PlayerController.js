@@ -1,19 +1,25 @@
-FAFStats.controller('PlayerController', function ($scope, $http) {
+FAFStats.controller('PlayerController', function ($scope, $http, $routeParams) {
 
-     var findPlayer = function(id){
-        return $http.get('http://api.faforever.com/ranked1v1/' + id);
-    }
+  /* Variables */
 
-    var findPlayers = function(){
-        return $http.get('http://api.faforever.com/ranked1v1');
-    }
+  var playerID = $routeParams.id;
 
-    findPlayer('40063').success(function(player){
-        $scope.player = player;
+  /* Local functions */
+
+  var findPlayer = function(id){
+    return $http.get('http://api.faforever.com/ranked1v1/' + id);
+  }
+
+  var renderPlayer = function(id) {
+    findPlayer(id).success(function(player){
+      $scope.player = player;
     });
+  }
 
-    findPlayers().success(function(players){
-        $scope.players = players.data;
-    });
+  /* Init */
+
+  $scope.$on('$viewContentLoaded', function() {
+    renderPlayer(playerID);
+  });
 
 });
