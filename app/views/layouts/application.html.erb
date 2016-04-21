@@ -9,7 +9,7 @@
 </head>
 <body ng-app="FAFStats">
   <nav>
-    <div class="nav-wrapper container">
+    <div class="nav-wrapper">
       <a href="#" class="brand-logo center">FAFStats</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse">
         <i class="material-icons">menu</i>
@@ -19,7 +19,15 @@
         <li><a href="/#/leaderboards">Leaderboards</a></li>
       </ul>
         <ul class="right hide-on-med-and-down">
-          <li><a href="/#/playertemplate">Playertemplate</a></li>
+          <li>
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" required placeholder="Player Search">
+                <label for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </li>
           <li><a class="btn waves-effect waves-purple" href="auth/faf">Login via FAF</a></li>
         </ul>
       <ul class="side-nav" id="mobile-demo">
