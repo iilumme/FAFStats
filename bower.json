@@ -1,9 +1,9 @@
-
 {
   "name": "fafstats",
   "dependencies": {
     "angular": "latest",
     "angular-route": "latest",
-    "materialize": "latest"
+    "materialize": "latest",
+    "Chart.js": "^2.0.2"
   }
 }

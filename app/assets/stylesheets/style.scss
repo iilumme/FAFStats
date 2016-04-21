@@ -1,3 +1,7 @@
+html {
+  background-color: lighten($primary-color, 50%);
+}
+
 body {
   color: #111;
 }
@@ -7,7 +11,7 @@ body {
 }
 
 .player-name > h3 {
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 300;
   line-height: 1.5;
 }

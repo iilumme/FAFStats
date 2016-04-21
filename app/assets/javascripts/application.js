@@ -16,6 +16,7 @@
 //= require angular
 //= require angular-route
 //= require Materialize
+//= require Chart.js/dist/Chart.min.js
 //= require app
 //= require controllers/RootController
 //= require controllers/PlayerController

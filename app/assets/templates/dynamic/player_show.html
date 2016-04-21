@@ -1,20 +1,24 @@
 <div class="container">
   <div class="row">
-    <div class="col s12 m6">
+    <div class="col s8 m8">
       <div class="card">
         <div class="card-content">
           <div class="row">
-            <div class="col s12 m3 card-image">
+            <div class="col s12 m3 l4 card-image">
               <img src="http://placehold.it/128x128/ccc">
             </div>
-            <div class="col s12 m9 player-name">
+            <div class="col s12 m9 l8 player-name">
               <h3>{{player.data.attributes.login}}</h3>
             </div>
           </div>
 
           <p>Description</p>
 
-          <h3>Recent Comments</h3>
+          <br>
+          <hr>
+          <br>
+
+          <h5>Recent Comments</h5>
           <ul>
             <li>asdf</li>
             <li>asdf2</li>
@@ -24,40 +28,60 @@
       </div>
     </div>
 
-    <div class="col s12 m6">
+    <div class="col s4 m4">
       <div class="card">
-        <span class="card-title">Ladder Rating</span>
-        <h2>{{player.data.attributes.rating}}</h2>
+        <div class="card-content">
+          <span class="card-title">Ladder Rating</span>
+          <h3>{{player.data.attributes.rating}} <i class="green-text small">+15</i><i class="green-text small material-icons">trending_up</i></h3>
+        </div>
       </div>
     </div>
 
-    <div class="col s12 m6">
+    <div class="col s12 m4">
       <div class="card">
-        <span class="card-title">Faction Statistics</span>
-        <p>Pie chart goes here</p>
+        <div class="card-content">
+          <span class="card-title">Faction Statistics</span>
+          <canvas id="factionChart" width="200" height="200"></canvas>
+        </div>
       </div>
     </div>
   </div>
 
-  <h2>Rating Evolution</h2>
-  <p>Line chart goes here</p>
+  <div class="row">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title"><h3>Rating Evolution</h3></span>
+          <canvas id="ratingEvolutionChart" width="600" height="400"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <h2>Match History</h2>
-  <table>
-    <tr>
-      <th>Player 1</th>
-      <th>Player 2</th>
-      <th>Map Name</th>
-    </tr>
-    <tr>
-      <td>Blodir (2100 + 15)</td>
-      <td>Zock (2300 - 15)</td>
-      <td>Roanoke Abyss</td>
-    </tr>
-    <tr ng-onclick="">
-      <td>ZLO (2100 + 8)</td>
-      <td>Blodir (2108 - 8)</td>
-      <td>Loki</td>
-    </tr>
-  </table>
+  <div class="row">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <h3>Match History</h3>
+          <table>
+            <tr>
+              <th>Player 1</th>
+              <th>Player 2</th>
+              <th>Map Name</th>
+            </tr>
+            <tr>
+              <td>Blodir (2100 + 15)</td>
+              <td>Zock (2300 - 15)</td>
+              <td>Roanoke Abyss</td>
+            </tr>
+            <tr ng-onclick="">
+              <td>ZLO (2100 + 8)</td>
+              <td>Blodir (2108 - 8)</td>
+              <td>Loki</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
