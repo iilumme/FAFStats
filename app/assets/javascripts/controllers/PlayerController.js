@@ -13,16 +13,21 @@ FAFStats.controller('PlayerController', function ($scope, $http, $routeParams) {
   var renderPlayer = function(id) {
     findPlayer(id).success(function(player){
       $scope.player = player;
+      renderGames();
+      renderFactionChart();
+      renderRatingEvolutionChart();
     });
   }
 
-  /* Init */
+  var findGames = function(){
+    return $http.get("http://api.faforever.com/games?filter[players]=" + $scope.player.data.attributes.login + "&filter[mod]=ladder1v1&page[size]=10");
+  }
 
-  $scope.$on('$viewContentLoaded', function() {
-    renderPlayer(playerID);
-    renderFactionChart();
-    renderRatingEvolutionChart();
-  });
+  var renderGames = function() {
+    findGames().success(function(games){
+      $scope.games = games;
+    });
+  }
 
   /* Faction distribution chart */
   var renderFactionChart = function() {
@@ -90,5 +95,11 @@ FAFStats.controller('PlayerController', function ($scope, $http, $routeParams) {
     	options: options
     });
   };
+
+  /* Init */
+
+  $scope.$on('$viewContentLoaded', function() {
+    renderPlayer(playerID);
+  });
 
 });
