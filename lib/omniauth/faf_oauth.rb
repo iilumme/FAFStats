@@ -14,19 +14,19 @@ module OmniAuth
 
       info do
         {
-            :name => raw_info['name'],
-            :email => raw_info['email']
+            # :name => raw_info['name'],
+            # :email => raw_info['email']
         }
       end
 
       extra do
         {
-            'raw_info' => raw_info
+            # 'raw_info' => raw_info
         }
       end
 
       def raw_info
-        @raw_info ||= access_token.get('/me').parsed
+         @raw_info ||= access_token.get('/me').parsed
       end
     end
   end

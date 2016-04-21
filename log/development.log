@@ -1,0 +1,1070 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-20 22:06:51 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (3459.2ms)
+Completed 200 OK in 3498ms (Views: 3487.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-20 22:06:55 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 23ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for 127.0.0.1 at 2016-04-20 22:06:55 +0300
+
+
+Started GET "/assets/app.self-b224989ae131b840d7b6b571dc432a8e5bde1c7c76238ee0f67275d2a3bb33f4.js?body=1" for 127.0.0.1 at 2016-04-20 22:06:55 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for 127.0.0.1 at 2016-04-20 22:06:55 +0300
+
+
+Started GET "/assets/dynamic/player_show-8a3879f94cacb1cc3aa798440f4539005c4dd594d76d6abdd2a9413d146c4bba.html" for 127.0.0.1 at 2016-04-20 22:06:58 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-20 22:19:52 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (445.3ms)
+Completed 200 OK in 507ms (Views: 498.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-20 22:21:34 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (190.1ms)
+Completed 200 OK in 229ms (Views: 222.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for 127.0.0.1 at 2016-04-20 22:21:35 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for 127.0.0.1 at 2016-04-20 22:21:35 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-04-20 22:21:35 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-04-20 22:21:35 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for 127.0.0.1 at 2016-04-20 22:21:35 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for 127.0.0.1 at 2016-04-20 22:21:35 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for 127.0.0.1 at 2016-04-20 22:21:35 +0300
+
+
+Started GET "/assets/app.self-b224989ae131b840d7b6b571dc432a8e5bde1c7c76238ee0f67275d2a3bb33f4.js?body=1" for 127.0.0.1 at 2016-04-20 22:21:35 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for 127.0.0.1 at 2016-04-20 22:21:35 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for 127.0.0.1 at 2016-04-20 22:21:35 +0300
+
+
+Started GET "/assets/static/root-a38db436554af3c06997593fad86f463c7c14c17e3a5e75172a5b997aaeb4b31.html" for 127.0.0.1 at 2016-04-20 22:21:35 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 22:23:08 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (421.0ms)
+Completed 200 OK in 459ms (Views: 448.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-20 22:23:09 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-20 22:23:09 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-20 22:23:09 +0300
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-20 22:23:09 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-20 22:23:09 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-20 22:23:09 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-20 22:23:09 +0300
+
+
+Started GET "/assets/app.self-b224989ae131b840d7b6b571dc432a8e5bde1c7c76238ee0f67275d2a3bb33f4.js?body=1" for ::1 at 2016-04-20 22:23:09 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-20 22:23:09 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-20 22:23:09 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 22:25:59 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 99ms (Views: 93.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-20 22:25:59 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-20 22:25:59 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-20 22:25:59 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-20 22:25:59 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-20 22:25:59 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-20 22:25:59 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-20 22:25:59 +0300
+
+
+Started GET "/assets/app.self-b224989ae131b840d7b6b571dc432a8e5bde1c7c76238ee0f67275d2a3bb33f4.js?body=1" for ::1 at 2016-04-20 22:25:59 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-20 22:25:59 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-20 22:25:59 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 22:26:01 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 22:26:02 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 22:28:45 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 22:28:46 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 22:47:05 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (236.6ms)
+Completed 200 OK in 294ms (Views: 281.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-20 22:47:05 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-20 22:47:05 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-20 22:47:05 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-20 22:47:05 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-20 22:47:05 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-20 22:47:05 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-20 22:47:05 +0300
+
+
+Started GET "/assets/app.self-b224989ae131b840d7b6b571dc432a8e5bde1c7c76238ee0f67275d2a3bb33f4.js?body=1" for ::1 at 2016-04-20 22:47:06 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-20 22:47:06 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-20 22:47:06 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 22:47:07 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 22:47:08 +0300
+
+
+Started GET "/auth/faf/callback?error=access_denied" for ::1 at 2016-04-20 22:50:25 +0300
+
+OmniAuth::Strategies::OAuth2::CallbackError (access_denied):
+  omniauth (1.3.1) lib/omniauth/failure_endpoint.rb:25:in `raise_out!'
+  omniauth (1.3.1) lib/omniauth/failure_endpoint.rb:20:in `call'
+  omniauth (1.3.1) lib/omniauth/failure_endpoint.rb:12:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:479:in `fail!'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:69:in `callback_phase'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/builder.rb:63:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iina/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/iina/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/iina/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/iina/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.4ms)
+  Rendered /Users/iina/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.7ms)
+  Rendered /Users/iina/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered /Users/iina/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.5ms)
+  Rendered /Users/iina/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/iina/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/iina/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/iina/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/iina/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (81.7ms)
+  Rendered /Users/iina/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/iina/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/iina/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (172.0ms)
+
+
+Started GET "/assets/static/root-a38db436554af3c06997593fad86f463c7c14c17e3a5e75172a5b997aaeb4b31.html" for ::1 at 2016-04-20 22:50:38 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 22:50:38 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (131.8ms)
+Completed 200 OK in 165ms (Views: 159.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 22:50:47 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 22:50:47 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 22:51:04 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (128.6ms)
+Completed 200 OK in 145ms (Views: 144.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 22:51:07 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 22:51:07 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 22:52:05 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (57.2ms)
+Completed 200 OK in 76ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-20 22:52:06 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-20 22:52:06 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-20 22:52:06 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-20 22:52:06 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-20 22:52:06 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-20 22:52:06 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-20 22:52:06 +0300
+
+
+Started GET "/assets/app.self-b224989ae131b840d7b6b571dc432a8e5bde1c7c76238ee0f67275d2a3bb33f4.js?body=1" for ::1 at 2016-04-20 22:52:06 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-20 22:52:06 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-20 22:52:06 +0300
+
+
+Started GET "/assets/static/root-a38db436554af3c06997593fad86f463c7c14c17e3a5e75172a5b997aaeb4b31.html" for ::1 at 2016-04-20 22:52:06 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 22:52:07 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 22:52:07 +0300
+
+
+Started GET "/assets/app.css.map" for ::1 at 2016-04-20 23:02:36 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:02:38 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:02:38 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 23:10:37 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 81ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-20 23:10:38 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-20 23:10:38 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-20 23:10:38 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-20 23:10:38 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-20 23:10:38 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-20 23:10:38 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-20 23:10:38 +0300
+
+
+Started GET "/assets/app.self-b224989ae131b840d7b6b571dc432a8e5bde1c7c76238ee0f67275d2a3bb33f4.js?body=1" for ::1 at 2016-04-20 23:10:38 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-20 23:10:38 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-20 23:10:38 +0300
+
+
+Started GET "/assets/static/root-a38db436554af3c06997593fad86f463c7c14c17e3a5e75172a5b997aaeb4b31.html" for ::1 at 2016-04-20 23:10:38 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 23:10:38 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:10:57 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:10:57 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 23:18:38 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (146.7ms)
+Completed 200 OK in 189ms (Views: 183.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dynamic/player_show-8a3879f94cacb1cc3aa798440f4539005c4dd594d76d6abdd2a9413d146c4bba.html" for ::1 at 2016-04-20 23:18:51 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 23:32:55 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (827.9ms)
+Completed 200 OK in 892ms (Views: 882.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-20 23:32:56 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-20 23:32:56 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-20 23:32:56 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-20 23:32:56 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-20 23:32:56 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-20 23:32:56 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-20 23:32:56 +0300
+
+
+Started GET "/assets/app.self-e66befcdbce5ec22a6565554a564a74e66046fd638b6d38b03b102b46a696916.js?body=1" for ::1 at 2016-04-20 23:32:56 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-20 23:32:56 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-20 23:32:56 +0300
+
+
+Started GET "/assets/dynamic/player_show-8a3879f94cacb1cc3aa798440f4539005c4dd594d76d6abdd2a9413d146c4bba.html" for ::1 at 2016-04-20 23:32:56 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 23:34:13 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (131.0ms)
+Completed 200 OK in 204ms (Views: 192.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-20 23:34:13 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-20 23:34:13 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-20 23:34:14 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-20 23:34:14 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-20 23:34:14 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-20 23:34:14 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-20 23:34:14 +0300
+
+
+Started GET "/assets/app.self-e66befcdbce5ec22a6565554a564a74e66046fd638b6d38b03b102b46a696916.js?body=1" for ::1 at 2016-04-20 23:34:14 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-20 23:34:14 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-20 23:34:14 +0300
+
+
+Started GET "/assets/dynamic/player_show-8a3879f94cacb1cc3aa798440f4539005c4dd594d76d6abdd2a9413d146c4bba.html" for ::1 at 2016-04-20 23:34:14 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 23:34:40 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (72.3ms)
+Completed 200 OK in 107ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-20 23:34:40 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-20 23:34:40 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-20 23:34:40 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-20 23:34:40 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-20 23:34:40 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-20 23:34:41 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-20 23:34:41 +0300
+
+
+Started GET "/assets/app.self-e66befcdbce5ec22a6565554a564a74e66046fd638b6d38b03b102b46a696916.js?body=1" for ::1 at 2016-04-20 23:34:41 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-20 23:34:41 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-20 23:34:41 +0300
+
+
+Started GET "/assets/dynamic/player_show-8a3879f94cacb1cc3aa798440f4539005c4dd594d76d6abdd2a9413d146c4bba.html" for ::1 at 2016-04-20 23:34:41 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:36:34 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:36:34 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:37:31 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:37:31 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 23:47:27 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (224.3ms)
+Completed 200 OK in 288ms (Views: 283.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-20 23:47:28 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-20 23:47:28 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-20 23:47:28 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-20 23:47:28 +0300
+
+
+Started GET "/assets/app.self-e66befcdbce5ec22a6565554a564a74e66046fd638b6d38b03b102b46a696916.js?body=1" for ::1 at 2016-04-20 23:47:28 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-20 23:47:28 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-20 23:47:28 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-20 23:47:28 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-20 23:47:28 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-20 23:47:28 +0300
+
+
+Started GET "/assets/dynamic/player_show-8a3879f94cacb1cc3aa798440f4539005c4dd594d76d6abdd2a9413d146c4bba.html" for ::1 at 2016-04-20 23:47:29 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:47:32 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:47:32 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 23:48:54 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (82.3ms)
+Completed 200 OK in 97ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-20 23:48:54 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-20 23:48:54 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-20 23:48:54 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-20 23:48:54 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-20 23:48:54 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-20 23:48:54 +0300
+
+
+Started GET "/assets/app.self-e66befcdbce5ec22a6565554a564a74e66046fd638b6d38b03b102b46a696916.js?body=1" for ::1 at 2016-04-20 23:48:54 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-20 23:48:54 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-20 23:48:54 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-20 23:48:54 +0300
+
+
+Started GET "/assets/dynamic/player_show-8a3879f94cacb1cc3aa798440f4539005c4dd594d76d6abdd2a9413d146c4bba.html" for ::1 at 2016-04-20 23:48:55 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:49:29 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:49:29 +0300
+
+
+Started GET "/" for ::1 at 2016-04-20 23:50:19 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (78.3ms)
+Completed 200 OK in 101ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-20 23:50:20 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-20 23:50:20 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-20 23:50:20 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-20 23:50:20 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-20 23:50:20 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-20 23:50:20 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-20 23:50:20 +0300
+
+
+Started GET "/assets/app.self-e66befcdbce5ec22a6565554a564a74e66046fd638b6d38b03b102b46a696916.js?body=1" for ::1 at 2016-04-20 23:50:20 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-20 23:50:20 +0300
+
+
+Started GET "/assets/application.self-5cc894038ee49d3e66538f88a1e29ceffb8c542c6874756340ad17b1d6322b94.js?body=1" for ::1 at 2016-04-20 23:50:20 +0300
+
+
+Started GET "/assets/dynamic/player_show-8a3879f94cacb1cc3aa798440f4539005c4dd594d76d6abdd2a9413d146c4bba.html" for ::1 at 2016-04-20 23:50:20 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:50:22 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:50:22 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:55:34 +0300
+
+
+Started GET "/auth/faf" for ::1 at 2016-04-20 23:55:34 +0300
+
+
+Started GET "/" for ::1 at 2016-04-21 13:50:07 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (1036.7ms)
+Completed 200 OK in 1130ms (Views: 1091.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-d11ffcc56a59c1ff9499ed6d6f04336319e2669ebb8d6777bee99152757ada5f.js?body=1" for ::1 at 2016-04-21 13:50:09 +0300
+
+
+Started GET "/assets/dynamic/player_show-eaf8f8bfc8fe49fd2156348417e20cb8a018e7d1c1f9148a9a5238d4eec71fd3.html" for ::1 at 2016-04-21 13:50:11 +0300
+
+
+Started GET "/assets/app.css.map" for ::1 at 2016-04-21 13:50:20 +0300
+
+
+Started GET "/" for ::1 at 2016-04-21 13:52:14 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (213.0ms)
+Completed 200 OK in 252ms (Views: 248.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css.map" for ::1 at 2016-04-21 13:52:15 +0300
+
+
+Started GET "/" for ::1 at 2016-04-21 13:53:44 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (614.9ms)
+Completed 200 OK in 632ms (Views: 631.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-21 13:53:44 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-21 13:53:44 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-21 13:53:44 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-21 13:53:44 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-21 13:53:44 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-21 13:53:44 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-21 13:53:44 +0300
+
+
+Started GET "/assets/app.self-d11ffcc56a59c1ff9499ed6d6f04336319e2669ebb8d6777bee99152757ada5f.js?body=1" for ::1 at 2016-04-21 13:53:44 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-21 13:53:45 +0300
+
+
+Started GET "/assets/controllers/PlayerController.self-8c78b76cfd1c40002fa1fc5df267a2c26c7b5140b61f5f6bc0477414833b44c8.js?body=1" for ::1 at 2016-04-21 13:53:45 +0300
+
+
+Started GET "/assets/application.self-0c464ddb55d6d20b11f35761e3d604b3b2d690b765c7cbbdc98155f9a311cc73.js?body=1" for ::1 at 2016-04-21 13:53:45 +0300
+
+
+Started GET "/assets/app.css.map" for ::1 at 2016-04-21 13:53:45 +0300
+
+
+Started GET "/assets/dynamic/player_show-eaf8f8bfc8fe49fd2156348417e20cb8a018e7d1c1f9148a9a5238d4eec71fd3.html" for ::1 at 2016-04-21 13:53:45 +0300
+
+
+Started GET "/" for ::1 at 2016-04-21 13:54:36 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (517.4ms)
+Completed 200 OK in 534ms (Views: 533.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-21 13:54:36 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-21 13:54:36 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-21 13:54:36 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-21 13:54:36 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-21 13:54:36 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-21 13:54:36 +0300
+
+
+Started GET "/assets/app.self-d11ffcc56a59c1ff9499ed6d6f04336319e2669ebb8d6777bee99152757ada5f.js?body=1" for ::1 at 2016-04-21 13:54:36 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-21 13:54:36 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-21 13:54:36 +0300
+
+
+Started GET "/assets/application.self-0c464ddb55d6d20b11f35761e3d604b3b2d690b765c7cbbdc98155f9a311cc73.js?body=1" for ::1 at 2016-04-21 13:54:36 +0300
+
+
+Started GET "/assets/controllers/PlayerController.self-2d7769c749b3247a361ca3529b2654bc5e12774cfc75b66bdd9a190be41236a7.js?body=1" for ::1 at 2016-04-21 13:54:36 +0300
+
+
+Started GET "/assets/app.css.map" for ::1 at 2016-04-21 13:54:36 +0300
+
+
+Started GET "/assets/dynamic/player_show-eaf8f8bfc8fe49fd2156348417e20cb8a018e7d1c1f9148a9a5238d4eec71fd3.html" for ::1 at 2016-04-21 13:54:37 +0300
+
+
+Started GET "/" for ::1 at 2016-04-21 13:55:07 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (362.9ms)
+Completed 200 OK in 378ms (Views: 377.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-21 13:55:07 +0300
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-21 13:55:07 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-21 13:55:07 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-21 13:55:07 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-21 13:55:07 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-21 13:55:07 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-21 13:55:07 +0300
+
+
+Started GET "/assets/app.self-2e98818bffb24e1092368f2cd1d5cee6447bb51eb1834a1770a0e6717c5bcbcd.js?body=1" for ::1 at 2016-04-21 13:55:07 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-21 13:55:07 +0300
+
+
+Started GET "/assets/controllers/PlayerController.self-2d7769c749b3247a361ca3529b2654bc5e12774cfc75b66bdd9a190be41236a7.js?body=1" for ::1 at 2016-04-21 13:55:07 +0300
+
+
+Started GET "/assets/application.self-0c464ddb55d6d20b11f35761e3d604b3b2d690b765c7cbbdc98155f9a311cc73.js?body=1" for ::1 at 2016-04-21 13:55:07 +0300
+
+
+Started GET "/assets/app.css.map" for ::1 at 2016-04-21 13:55:07 +0300
+
+
+Started GET "/assets/dynamic/player_show-6475e488eb36165625d7807657bdd98432d707c5e4a995358557f0d616635d3d.html" for ::1 at 2016-04-21 13:55:08 +0300
+
+
+Started GET "/" for ::1 at 2016-04-21 13:55:25 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (307.3ms)
+Completed 200 OK in 321ms (Views: 316.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-21 13:55:25 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-21 13:55:25 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-21 13:55:25 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-21 13:55:25 +0300
+
+
+Started GET "/assets/controllers/PlayerController.self-2d7769c749b3247a361ca3529b2654bc5e12774cfc75b66bdd9a190be41236a7.js?body=1" for ::1 at 2016-04-21 13:55:25 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-21 13:55:25 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-21 13:55:25 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-21 13:55:25 +0300
+
+
+Started GET "/assets/application.self-0c464ddb55d6d20b11f35761e3d604b3b2d690b765c7cbbdc98155f9a311cc73.js?body=1" for ::1 at 2016-04-21 13:55:25 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-21 13:55:25 +0300
+
+
+Started GET "/assets/app.self-0109a0a3a565a97a563e270543c32edbc65ad05f9e5e4085baf7000efd6a9eeb.js?body=1" for ::1 at 2016-04-21 13:55:25 +0300
+
+
+Started GET "/assets/app.css.map" for ::1 at 2016-04-21 13:55:25 +0300
+
+
+Started GET "/assets/dynamic/player_show-9a756f00b60fe785ae09004cfbed349b6915b76f0849ffc21019d173a19dca75.html" for ::1 at 2016-04-21 13:55:25 +0300
+
+
+Started GET "/" for ::1 at 2016-04-21 13:56:05 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (312.7ms)
+Completed 200 OK in 322ms (Views: 320.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-21 13:56:05 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-21 13:56:05 +0300
+
+
+Started GET "/assets/app.self-438d6c2c130b5f78bc02d1bdf24766b8539da3f700f7493daa98beae031066b2.js?body=1" for ::1 at 2016-04-21 13:56:05 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-21 13:56:05 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-21 13:56:05 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-21 13:56:05 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-21 13:56:06 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-21 13:56:06 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-21 13:56:06 +0300
+
+
+Started GET "/assets/controllers/PlayerController.self-2d7769c749b3247a361ca3529b2654bc5e12774cfc75b66bdd9a190be41236a7.js?body=1" for ::1 at 2016-04-21 13:56:06 +0300
+
+
+Started GET "/assets/application.self-0c464ddb55d6d20b11f35761e3d604b3b2d690b765c7cbbdc98155f9a311cc73.js?body=1" for ::1 at 2016-04-21 13:56:06 +0300
+
+
+Started GET "/assets/app.css.map" for ::1 at 2016-04-21 13:56:06 +0300
+
+
+Started GET "/assets/dynamic/player_show-7f1df2fc1c590df75d227edb2830b99ab9752d0d2fe73fa41d8f19acafce3f69.html" for ::1 at 2016-04-21 13:56:06 +0300
+
+
+Started GET "/" for ::1 at 2016-04-21 14:05:18 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (543.8ms)
+Completed 200 OK in 770ms (Views: 756.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-21 14:05:19 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-21 14:05:19 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-21 14:05:19 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-21 14:05:19 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-21 14:05:19 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-21 14:05:19 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-21 14:05:19 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-21 14:05:19 +0300
+
+
+Started GET "/assets/application.self-0c464ddb55d6d20b11f35761e3d604b3b2d690b765c7cbbdc98155f9a311cc73.js?body=1" for ::1 at 2016-04-21 14:05:19 +0300
+
+
+Started GET "/assets/app.self-ca1f9f958ec190421ac1264106ec0702965632201d42ebb7df1bc17c6a814f93.js?body=1" for ::1 at 2016-04-21 14:05:19 +0300
+
+
+Started GET "/assets/controllers/PlayerController.self-4b7567da7a965a4982a9dce371c8b717122e78287042d897d1dedd5abbd4278f.js?body=1" for ::1 at 2016-04-21 14:05:19 +0300
+
+
+Started GET "/assets/static/root-a38db436554af3c06997593fad86f463c7c14c17e3a5e75172a5b997aaeb4b31.html" for ::1 at 2016-04-21 14:05:19 +0300
+
+
+Started GET "/assets/dynamic/players_show-4ac1cb64bceaf0ab85725ee1af6f82379e40db80a4317450212365094811c349.html" for ::1 at 2016-04-21 14:05:20 +0300
+
+
+Started GET "/assets/app.css.map" for ::1 at 2016-04-21 14:05:26 +0300
+
+
+Started GET "/" for ::1 at 2016-04-21 14:06:25 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (695.3ms)
+Completed 200 OK in 714ms (Views: 712.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-21 14:06:25 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-21 14:06:25 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-21 14:06:25 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-21 14:06:26 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-21 14:06:26 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-21 14:06:26 +0300
+
+
+Started GET "/assets/controllers/PlayerController.self-4b7567da7a965a4982a9dce371c8b717122e78287042d897d1dedd5abbd4278f.js?body=1" for ::1 at 2016-04-21 14:06:26 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-21 14:06:26 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-21 14:06:26 +0300
+
+
+Started GET "/assets/application.self-0c464ddb55d6d20b11f35761e3d604b3b2d690b765c7cbbdc98155f9a311cc73.js?body=1" for ::1 at 2016-04-21 14:06:26 +0300
+
+
+Started GET "/assets/app.self-2e6c0c36361cfb69875f4ec6397234f6762e605aab8d9f9ad2a75807f96da341.js?body=1" for ::1 at 2016-04-21 14:06:26 +0300
+
+
+Started GET "/assets/app.css.map" for ::1 at 2016-04-21 14:06:26 +0300
+
+
+Started GET "/assets/dynamic/players_show-20e144b88fd184cc4f891644cf73f53c659b6b56e73126ab9b89bede544d4507.html" for ::1 at 2016-04-21 14:06:26 +0300
+
+
+Started GET "/" for ::1 at 2016-04-21 14:08:21 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (419.2ms)
+Completed 200 OK in 429ms (Views: 428.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-2807dd000f7b9e84353f2c4dd80b389b73b1c4815a1542a1b81c6b449ee85458.css?body=1" for ::1 at 2016-04-21 14:08:22 +0300
+
+
+Started GET "/assets/jquery/dist/jquery.self-515d48d7602a136a356e8c3e84716e2282b3e6da11e8bdd76a0baacbae3e915d.js?body=1" for ::1 at 2016-04-21 14:08:22 +0300
+
+
+Started GET "/assets/angular-route/angular-route.self-eaa6e35f5632642c25cb5c276dcfe8d5d23fdede4413f111747cf846729bb294.js?body=1" for ::1 at 2016-04-21 14:08:22 +0300
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-04-21 14:08:22 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-21 14:08:22 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-21 14:08:22 +0300
+
+
+Started GET "/assets/Materialize/bin/materialize.self-6ca1048d5ba667ff380756c1c4fc3d7d137fa521e52ee7162e59e62dec165ff7.js?body=1" for ::1 at 2016-04-21 14:08:22 +0300
+
+
+Started GET "/assets/controllers/RootController.self-1538b75830b7022a9d3612e3caa5ed2bdb09aca6bb3f291eb2e9a397b073f09d.js?body=1" for ::1 at 2016-04-21 14:08:22 +0300
+
+
+Started GET "/assets/application.self-0c464ddb55d6d20b11f35761e3d604b3b2d690b765c7cbbdc98155f9a311cc73.js?body=1" for ::1 at 2016-04-21 14:08:22 +0300
+
+
+Started GET "/assets/app.self-5ef1a3e1589c0173b02668b1649f115d20f214f9accb028d013ec37bb8df0f2c.js?body=1" for ::1 at 2016-04-21 14:08:22 +0300
+
+
+Started GET "/assets/controllers/PlayerController.self-72d65c7dc15017376c742a0e299cf62c60941bb05cbebec6396cdd50d81dbeb8.js?body=1" for ::1 at 2016-04-21 14:08:22 +0300
+
+
+Started GET "/assets/dynamic/players_show-35cf3c5a747275a622cbe8f0b08f513668a67923db8604a1b5f56d2dba34099b.html" for ::1 at 2016-04-21 14:08:22 +0300
+
+
+Started GET "/" for ::1 at 2016-04-21 14:10:08 +0300
+Processing by LayoutsController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (43.2ms)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.0ms)

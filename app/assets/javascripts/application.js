@@ -18,4 +18,5 @@
 //= require Materialize
 //= require app
 //= require controllers/RootController
+//= require controllers/PlayerController
 //= require_tree.
