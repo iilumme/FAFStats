@@ -1,0 +1,22 @@
+<div class="container">
+  <button ng-click="prevPage()">Previous</button>
+  <button ng-click="nextPage()">Next</button>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Player</th>
+        <th>Rating</th>
+        <th>Games</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="player in page.data">
+        <td>{{player.attributes.ranking}}</td>
+        <td>{{player.attributes.login}}</td>
+        <td>{{player.attributes.rating}}</td>
+        <td>{{player.attributes.num_games}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

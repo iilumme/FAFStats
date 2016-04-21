@@ -19,4 +19,5 @@
 //= require app
 //= require controllers/RootController
 //= require controllers/PlayerController
+//= require controllers/LeaderboardsController
 //= require_tree.
