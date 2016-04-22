@@ -21,4 +21,5 @@
 //= require controllers/RootController
 //= require controllers/PlayerController
 //= require controllers/LeaderboardsController
+//= require controllers/GameIndexController
 //= require_tree.
