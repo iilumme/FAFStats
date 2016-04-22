@@ -21,5 +21,9 @@ var FAFStats = angular.module('FAFStats', ['ngRoute'])
           .when('/games', {
             controller: 'GameIndexController',
             templateUrl: '<%= asset_path("dynamic/game_index.html") %> '
+          })
+          .when('/game/:id', {
+            controller: 'GameController',
+            templateUrl: '<%= asset_path("dynamic/game_show.html") %> '
           });
     });
