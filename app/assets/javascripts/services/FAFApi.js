@@ -24,4 +24,8 @@ FAFStats.service('FAFApi', function ($http) {
         return $http.get("http://api.faforever.com/ranked1v1?page[size]=" + pageSize + "&page[number]=" + pageNumber + "&filter[is_active]=true");
     }
 
+    this.getGame = function(id) {
+      return $http.get("http://api.faforever.com/games/" + id);
+    }
+
 });
