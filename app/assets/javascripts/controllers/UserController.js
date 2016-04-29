@@ -1,29 +1,21 @@
-FAFStats.controller('UserController', function ($scope, $http, $rootScope) {
+FAFStats.controller('UserController', function ($scope, $rootScope, FAFApi) {
 
-    /* Local functions */
-
-    var findPlayer = function(id){
-        return $http.get('http://api.faforever.com/ranked1v1/' + id);
-    }
 
     var renderPlayer = function(id) {
-        findPlayer(id).success(function(player){
+        FAFApi.findPlayer(id).success(function(player){
             $scope.player = player;
             renderGames();
             renderFactionChart();
             renderRatingEvolutionChart();
         });
-    }
-
-    var findGames = function(){
-        return $http.get("http://api.faforever.com/games?filter[players]=" + $scope.player.data.attributes.login + "&filter[mod]=ladder1v1&page[size]=10");
-    }
+    };
 
     var renderGames = function() {
-        findGames().success(function(games){
+        FAFApi.findPlayersGames($scope.player.data.attributes.login).success(function(games){
             $scope.games = games;
         });
-    }
+    };
+
 
     /* Faction distribution chart */
     var renderFactionChart = function() {
