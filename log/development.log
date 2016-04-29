@@ -14947,3 +14947,22 @@ Migrating to ChangePlayerIdToString (20160429075506)
   [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("player_id", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["player_id", "133636"], ["description", "The Best Ever <3 I love Blodimir <3"], ["created_at", "2016-04-29 07:57:40.066360"], ["updated_at", "2016-04-29 07:57:40.066360"]]
   [1m[35m (0.6ms)[0m  commit transaction
   [1m[36mUser Load (2.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRatings (20160429145327)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "player_id" varchar, "rating" integer, "month" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160429145327"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeNameOfRatingColumn (20160429162330)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TEMPORARY TABLE "aratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "player_id" varchar, "value" integer, "month" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ratings"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "ratings"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "player_id" varchar, "value" integer, "month" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "aratings"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "aratings"
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160429162330"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m

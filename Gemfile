@@ -63,3 +63,8 @@ gem 'tzinfo-data'
 gem 'oauth2'
 gem 'omniauth'
 gem 'omniauth-oauth2'
+
+gem 'redis'
+gem 'resque'
+gem 'resque-scheduler'
+gem 'httparty'

@@ -6,4 +6,6 @@ rescue LoadError => e
 end
 require_relative '../config/boot'
 require 'rake'
+require 'resque/tasks'
+require 'resque/scheduler/tasks'
 Rake.application.run

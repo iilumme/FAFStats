@@ -3,7 +3,7 @@ FAFStats.controller('GameController', function ($scope, $http, $routeParams, FAF
   $scope.gameid = $routeParams.id;
 
   var renderGame = function(id) {
-    FAFApi.getGame(id).success(function(gamedata){
+    FAFApi.findGame(id).success(function(gamedata){
       $scope.game = gamedata.data[0].attributes;
       $scope.start_time = new Date($scope.game.start_time).toString();
       console.log();

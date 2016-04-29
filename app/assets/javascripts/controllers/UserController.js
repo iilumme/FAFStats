@@ -1,5 +1,6 @@
 FAFStats.controller('UserController', function ($scope, $rootScope, FAFApi) {
 
+    $('.modal-trigger').leanModal();
 
     var renderPlayer = function(id) {
         FAFApi.findPlayer(id).success(function(player){
@@ -83,6 +84,11 @@ FAFStats.controller('UserController', function ($scope, $rootScope, FAFApi) {
             options: options
         });
     };
+
+    $scope.editModal = function () {
+
+    }
+
 
     /* Init */
 
