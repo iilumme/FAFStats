@@ -1,4 +1,4 @@
-FAFStats.controller('GameController', function ($scope, $http, $routeParams) {
+FAFStats.controller('GameController', function ($scope, $routeParams) {
 
   $scope.gameid = $routeParams.id;
 

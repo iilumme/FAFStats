@@ -1,8 +1,4 @@
-FAFStats.controller('UserController', function ($scope, $http) {
-
-    /* Variables */
-
-    var playerID = 1;
+FAFStats.controller('UserController', function ($scope, $http, $rootScope) {
 
     /* Local functions */
 
@@ -99,7 +95,8 @@ FAFStats.controller('UserController', function ($scope, $http) {
     /* Init */
 
     $scope.$on('$viewContentLoaded', function() {
-        renderPlayer(playerID);
+        $scope.user = $rootScope.user;
+        renderPlayer($scope.user.player_id);
     });
 
 });

@@ -23,5 +23,7 @@
 //= require controllers/LeaderboardsController
 //= require controllers/GameIndexController
 //= require controllers/GameController
+//= require controllers/UserController
 //= require services/FAFApi.js
+//= require services/StatsApi.js
 //= require_tree.
