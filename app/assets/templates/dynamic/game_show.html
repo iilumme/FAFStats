@@ -3,7 +3,38 @@
     <div class="col s12">
       <div class="card">
         <div class="card-content">
-          <a ng-href="http://content.faforever.com/faf/vault/replay_vault/replay.php?id={{gameid}}" class="waves-effect waves-light btn">Download Replay</a>
+          <section>
+            <span class="card-title">{{game.game_name}} ({{gameid}})</span>
+          </section>
+          <div class="divider"></div>
+          <section>
+            <div class="row">
+              <div class="col s6">
+                <h4>{{game.map_name}}</h4>
+                <h5>Start Time</h5>
+                <p>{{start_time}}</p>
+                <h5>Game Length</h5>
+                <p>{{game_length}} minutes</p>
+              </div>
+              <div class="col s6">
+                <table>
+                  <tr>
+                    <th>Player</th>
+                    <th>Rating</th>
+                    <th>Faction</th>
+                  </tr>
+                  <tr ng-repeat="player in game.players">
+                    <td><a ng-href="/#/player/{{player.player_id}}">{{player.login}}</a></td>
+                    <td>rating</td>
+                    <td>{{player.faction}}</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </section>
+          <div class="row">
+            <a ng-href="http://content.faforever.com/faf/vault/replay_vault/replay.php?id={{gameid}}" class="waves-effect waves-light btn">Download Replay</a>
+          </div>
         </div>
       </div>
     </div>
