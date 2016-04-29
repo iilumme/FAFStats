@@ -3,7 +3,16 @@ html {
 }
 
 body {
+  /* Sticky Footer */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
   color: #111;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .player-name {
