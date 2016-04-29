@@ -1,0 +1,1 @@
+json.extract! session[:player_id]

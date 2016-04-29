@@ -23,4 +23,5 @@
 //= require controllers/LeaderboardsController
 //= require controllers/GameIndexController
 //= require controllers/GameController
+//= require services/FAFApi.js
 //= require_tree.

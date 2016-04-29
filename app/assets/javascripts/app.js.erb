@@ -10,6 +10,10 @@ var FAFStats = angular.module('FAFStats', ['ngRoute'])
             controller: 'PlayerController',
             templateUrl: '<%= asset_path("dynamic/player_show.html") %> '
           })
+          .when('/usertemplate', {
+            controller: 'UserController',
+            templateUrl: '<%= asset_path("dynamic/user_show.html") %> '
+          })
           .when('/player/:id', {
             controller: 'PlayerController',
             templateUrl: '<%= asset_path("dynamic/player_show.html") %> '
