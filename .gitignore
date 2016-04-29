@@ -8,3 +8,6 @@ db/development.sqlite3
 db/test.sqlite3
 vendor
 log
+app/assets/stylesheets/app.css
+app/assets/stylesheets/app.css.map
+app/assets/stylesheets/app.min.css
