@@ -1,4 +1,9 @@
 var FAFStats = angular.module('FAFStats', ['ngRoute'])
+    .run(function($rootScope, StatsApi) {
+      StatsApi.getUser().success(function(user){
+        $rootScope.user = user;
+      });
+    })
     .config(function ($routeProvider, $locationProvider) {
 //        $locationProvider.html5Mode(true);
       $routeProvider
