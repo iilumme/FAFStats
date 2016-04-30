@@ -25,7 +25,7 @@
                   </tr>
                   <tr ng-repeat="player in game.players">
                     <td><a ng-href="/#/player/{{player.player_id}}">{{player.login}}</a></td>
-                    <td>rating</td>
+                    <td>{{players[$index].data.attributes.rating}}</td>
                     <td>{{player.faction}}</td>
                   </tr>
                 </table>
