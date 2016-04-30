@@ -11,3 +11,4 @@ log
 app/assets/stylesheets/app.css
 app/assets/stylesheets/app.css.map
 app/assets/stylesheets/app.min.css
+db/schema.rb
