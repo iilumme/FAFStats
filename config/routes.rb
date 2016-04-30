@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   resources :ratings
+  get 'ratings/player/:id' => 'ratings#player'
+
   resources :players
   resources :users
 
