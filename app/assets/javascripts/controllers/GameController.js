@@ -4,7 +4,7 @@ FAFStats.controller('GameController', function ($scope, $http, $routeParams, FAF
   $scope.players = new Array();
 
   var renderGame = function(id) {
-    FAFApi.getGame(id).success(function(gamedata){
+    FAFApi.findGame(id).success(function(gamedata){
       $scope.game = gamedata.data[0].attributes;
       $scope.start_time = new Date($scope.game.start_time).toString();
       $scope.game_length = Math.floor((new Date($scope.game.players[0].score_time)
