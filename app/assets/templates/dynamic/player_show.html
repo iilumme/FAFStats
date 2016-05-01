@@ -1,79 +1,67 @@
-<div class="container">
-  <div class="row">
-    <div class="col s8 m8">
-      <div class="card">
-        <div class="card-content">
-          <div class="row">
-            <div class="col s12 m3 l4 card-image">
-              <img src="http://placehold.it/128x128/ccc">
-            </div>
-            <div class="col s12 m9 l8 player-name">
-              <h3>{{player.data.attributes.login}}</h3>
-            </div>
-            <div ng-if="user" class="col s12 m1 l1 player-edit">
-              <a class="btn-floating waves-effect waves-light red modal-trigger" href="#editModal"><i class="material-icons">mode_edit</i></a>
+<div class="container container-bg z-depth-1">
+  <div class="container-bg-wrapper">
 
-              <div id="editModal" class="modal">
-                <div class="modal-content">
-                  <h4>Edit your info</h4>
-
+    <!-- Player Hero -->
+    <section>
+      <div class="row">
+        <div class="col l12">
+          <div class="player-hero">
+              <div class="col l6">
+                <img src="http://placehold.it/128x128/ccc">
+                <span class="player-name">{{player.data.attributes.login}}</span>
+                <div class="chip player-hero-chip">
+                  Active
                 </div>
-                <div class="modal-footer">
-                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                <div class="chip player-hero-chip">
+                  Pro
                 </div>
               </div>
-              
+              <div class="col l6">
+                <span class="player-rating right">{{player.data.attributes.rating}} <i class="green-text small">+15</i><i class="green-text small material-icons">trending_up</i></span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!--  -->
+    <section>
+      <div class="row">
+        <!-- Description -->
+        <div class="col l8">
+          <h5>Description</h5>
+          <p ng-if="user">{{user.description}}</p>
+          <p ng-if="!user">This player has not written a description</p>
+          <div ng-if="user" class="col s12 m1 l1 player-edit">
+            <a class="btn-floating waves-effect waves-light red modal-trigger" href="#editModal"><i class="material-icons">mode_edit</i></a>
+
+            <div id="editModal" class="modal">
+              <div class="modal-content">
+                <h4>Edit your info</h4>
+
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
             </div>
           </div>
-
-          <p>Description</p>
-          <p ng-if="user">{{user.description}}</p>
-          <br>
-          <div class="divider"></div>
-          <br>
-
-          <h5>Recent Comments</h5>
-          <ul>
-            <li>asdf</li>
-            <li>asdf2</li>
-            <li>asdf3</li>
-          </ul>
         </div>
-      </div>
-    </div>
-
-    <div class="col s4 m4">
-      <div class="card">
-        <div class="card-content">
-          <span class="card-title">Ladder Rating</span>
-          <h3>{{player.data.attributes.rating}} <i class="green-text small">+15</i><i class="green-text small material-icons">trending_up</i></h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m4">
-      <div class="card">
-        <div class="card-content">
-          <span class="card-title">Faction Statistics</span>
+        <!-- Faction Statistics -->
+        <div class="col l4">
+          <h5>Faction Statistics</h5>
           <canvas id="factionChart" width="200" height="200"></canvas>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="row">
-    <div class="col s12 m12 l6">
-      <div class="card">
-        <div class="card-content">
-          <span class="card-title"><h3>Rating Evolution</h3></span>
-          <canvas id="ratingEvolutionChart" width="600" height="400"></canvas>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m12 l6">
-      <div class="card">
-        <div class="card-content">
-          <h3>Match History</h3>
+    <!--  -->
+    <section>
+      <div class="row">
+        <!-- Match History-->
+        <div class="col l8">
+          <h5>Match History</h5>
           <table class="striped">
             <tr>
               <th>Game ID</th>
@@ -89,7 +77,12 @@
             </tr>
           </table>
         </div>
+        <!-- Rating Evolution -->
+        <div class="col l4">
+          <h5>Rating Evolution</h5>
+          <canvas id="ratingEvolutionChart" width="400" height="400"></canvas>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </div>

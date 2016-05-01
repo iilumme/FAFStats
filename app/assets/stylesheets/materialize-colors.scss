@@ -1,10 +1,10 @@
 /* Overwrite Materialize default colors */
 
-$primary-color: #4b4236;
+$primary-color: #333;
 $primary-color-light: lighten($primary-color, 15%);
 $primary-color-dark: darken($primary-color, 15%);
 
-$secondary-color: #363F4B;
+$secondary-color: #ff8247;
 $success-color: color("green", "base");
 $error-color: color("red", "base");
 $link-color: color("light-blue", "lighten-3");

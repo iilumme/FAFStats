@@ -4,9 +4,9 @@ var FAFStats = angular.module('FAFStats', ['ngRoute'])
         $rootScope.user = user;
       });
 
-      FAFApi.getAllPlayers().success(function(players) {
+      /*FAFApi.getAllPlayers().success(function(players) {
         $rootScope.players = players.data;
-      });
+      });*/
     })
     .config(function ($routeProvider, $locationProvider) {
 //        $locationProvider.html5Mode(true);

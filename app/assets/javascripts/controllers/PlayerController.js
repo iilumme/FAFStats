@@ -79,7 +79,7 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
           yAxes: [{
             ticks: {
               min: 500,
-              max: 3000
+              max: 2500
             }
           }]
         }
