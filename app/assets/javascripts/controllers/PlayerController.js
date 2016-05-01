@@ -1,4 +1,7 @@
-FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, StatsApi) {
+FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, StatsApi, $rootScope) {
+
+  $('.modal-trigger').leanModal();
+  $scope.editModal = function () {}
 
   /* Variables */
 
@@ -144,7 +147,15 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
   /* Init */
 
   $scope.$on('$viewContentLoaded', function() {
-    renderPlayer(playerID);
+    if ($rootScope.user !== null && playerID == $rootScope.user.player_id) {
+      $scope.user = $rootScope.user;
+      renderPlayer($scope.user.player_id);
+    } else if ($rootScope.user !== null && playerID !== $rootScope.user.player_id){
+      $scope.user = null;
+      renderPlayer(playerID);
+    } else {
+      $scope.user = null;
+      renderPlayer(playerID);
+    }
   });
-
 });
