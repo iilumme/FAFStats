@@ -22,11 +22,16 @@
           <li>
             <form>
               <div class="input-field">
-                <input id="search" type="search" required placeholder="Player Search">
+                <input id="search" type="search" required placeholder="Player Search" ng-model="name">
                 <label for="search"><i class="material-icons">search</i></label>
                 <i class="material-icons">close</i>
               </div>
             </form>
+            <ul class="players">
+              <li ng-repeat="player in players | filter:name">
+                <a href="/#/player/{{player.attributes.id}}">{{player.attributes.login}}</a>
+              </li>
+            </ul>
           </li>
           <li><a class="btn waves-effect waves-light" href="auth/faf">Login via FAF</a></li>
         </ul>

@@ -1,7 +1,11 @@
 var FAFStats = angular.module('FAFStats', ['ngRoute'])
-    .run(function($rootScope, StatsApi) {
+    .run(function($rootScope, StatsApi, FAFApi) {
       StatsApi.getUser().success(function(user){
         $rootScope.user = user;
+      });
+
+      FAFApi.getAllPlayers().success(function(players) {
+        $rootScope.players = players.data;
       });
     })
     .config(function ($routeProvider, $locationProvider) {
