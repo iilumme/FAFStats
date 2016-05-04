@@ -1,5 +1,5 @@
 html {
-  background-color: lighten($primary-color, 50%);
+  background-color: lighten($primary-color, 70%);
 }
 
 body {
@@ -15,12 +15,18 @@ main {
   flex: 1 0 auto;
 }
 
-.player-name {
-  margin-top: 18px;
+.site a:link {
+  color: $secondary-color;
 }
 
-.player-name > h3 {
-  font-size: 48px;
-  font-weight: 300;
-  line-height: 1.5;
+.site a:visited {
+  color: $secondary-color;
+}
+
+.container-bg {
+  background-color: #fff;
+}
+
+.container-bg-wrapper {
+  margin: 25px;
 }
