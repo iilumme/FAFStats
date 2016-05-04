@@ -7,8 +7,12 @@ FAFStats.controller('GameController', function ($scope, $http, $routeParams, FAF
     FAFApi.findGame(id).success(function(gamedata){
       $scope.game = gamedata.data[0].attributes;
       $scope.start_time = new Date($scope.game.start_time).toString();
-      $scope.game_length = Math.floor((new Date($scope.game.players[0].score_time)
-      - new Date($scope.game.start_time)) / (1000*60));
+      if ($scope.game.players[0].score_time === null) {
+        $scope.game_length = -1;
+      } else {
+        $scope.game_length = Math.floor((new Date($scope.game.players[0].score_time)
+        - new Date($scope.game.start_time)) / (1000*60));
+      }
 
       for (var i = 0; i < $scope.game.players.length; i++) {
         getPlayer($scope.game.players[i].player_id);

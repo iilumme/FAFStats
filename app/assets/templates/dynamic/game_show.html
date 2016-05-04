@@ -14,7 +14,8 @@
                 <h5>Start Time</h5>
                 <p>{{start_time}}</p>
                 <h5>Game Length</h5>
-                <p>{{game_length}} minutes</p>
+                <p ng-if="game_length === -1">The game is still in progress</p>
+                <p ng-if="game_length >= 0">{{game_length}} minutes</p>
               </div>
               <div class="col s6">
                 <table>
@@ -26,14 +27,17 @@
                   <tr ng-repeat="player in game.players">
                     <td><a ng-href="/#/player/{{player.player_id}}">{{player.login}}</a></td>
                     <td>{{players[$index].data.attributes.rating}}</td>
-                    <td>{{player.faction}}</td>
+                    <td ng-if="player.faction == 1">UEF</td>
+                    <td ng-if="player.faction == 2">Aeon</td>
+                    <td ng-if="player.faction == 3">Cybran</td>
+                    <td ng-if="player.faction == 4">Seraphim</td>
                   </tr>
                 </table>
               </div>
             </div>
           </section>
           <div class="row">
-            <a ng-href="http://content.faforever.com/faf/vault/replay_vault/replay.php?id={{gameid}}" class="waves-effect waves-light btn">Download Replay</a>
+            <a ng-href="http://content.faforever.com/faf/vault/replay_vault/replay.php?id={{gameid}}" class="waves-effect waves-light btn white-text">Download Replay</a>
           </div>
         </div>
       </div>
