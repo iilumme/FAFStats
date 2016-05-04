@@ -1,7 +1,6 @@
 FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, StatsApi, $rootScope) {
 
   $('.modal-trigger').leanModal();
-  $scope.editModal = function () {}
 
   /* Variables */
 
