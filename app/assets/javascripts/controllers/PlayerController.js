@@ -146,14 +146,14 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
   /* Init */
 
   $scope.$on('$viewContentLoaded', function() {
-    if ($rootScope.user !== null && playerID == $rootScope.user.player_id) {
-      $scope.user = $rootScope.user;
-      renderPlayer($scope.user.player_id);
-    } else if ($rootScope.user !== null && playerID !== $rootScope.user.player_id){
+
+    if ($rootScope.user == null) {
       $scope.user = null;
       renderPlayer(playerID);
     } else {
-      $scope.user = null;
+      if (playerID == $rootScope.user.player_id) {
+        $scope.user = $rootScope.user;
+      }
       renderPlayer(playerID);
     }
   });
