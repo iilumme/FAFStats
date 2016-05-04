@@ -9,10 +9,13 @@
               <div class="col l6">
                 <img src="http://placehold.it/128x128/ccc">
                 <span class="player-name">{{player.data.attributes.login}}</span>
-                <div class="chip player-hero-chip">
+                <div ng-if="player.data.attributes.is_active" class="chip player-hero-chip blue lighten-2 white-text">
                   Active
                 </div>
-                <div class="chip player-hero-chip">
+                <div ng-if="!player.data.attributes.is_active" class="chip player-hero-chip red white-text">
+                  Inactive
+                </div>
+                <div ng-if="player.data.attributes.rating >= 2000" class="chip player-hero-chip">
                   Pro
                 </div>
               </div>
