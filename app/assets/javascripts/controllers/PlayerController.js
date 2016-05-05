@@ -5,6 +5,7 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
   /* Variables */
 
   var playerID = $routeParams.id;
+  $scope.session_playerid = $rootScope.user.player_id;
 
   /* Local functions */
 
@@ -29,6 +30,14 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
       $scope.tags = tags;
     });
   };
+
+  var renderUser = function(id) {
+    StatsApi.getUserForPlayer(id).success(function(user){
+      $scope.user = user;
+    }).error(function(){
+      $scope.user = {player_id: "0", description: "This player has not written a description"};
+    });
+  }
 
   /* Faction distribution chart */
   var renderFactionChart = function() {
@@ -155,15 +164,7 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
   /* Init */
 
   $scope.$on('$viewContentLoaded', function() {
-
-    if ($rootScope.user == null) {
-      $scope.user = null;
-      renderPlayer(playerID);
-    } else {
-      if (playerID == $rootScope.user.player_id) {
-        $scope.user = $rootScope.user;
-      }
-      renderPlayer(playerID);
-    }
+    renderUser(playerID);
+    renderPlayer(playerID);
   });
 });

@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   root :to => 'layouts#index'
   get '*path' => 'layouts#index'
+  get 'sessions/current_user' => 'sessions#current_logged_in_user'
 
   #get '/auth/:provider/callback' => "sessions#create_oauth"
 

@@ -9,14 +9,6 @@
             <div class="col l6">
               <img src="http://placehold.it/128x128/ccc">
               <span class="player-name">{{player.data.attributes.login}}</span>
-
-              <!-- Tags -->
-              <div ng-if="player.data.attributes.is_active" class="chip player-hero-chip blue lighten-2 white-text">
-                Active
-              </div>
-              <div ng-if="!player.data.attributes.is_active" class="chip player-hero-chip red white-text">
-                Inactive
-              </div>
             </div>
 
             <!-- Rating -->
@@ -28,13 +20,21 @@
       </div>
     </section>
 
+    <!-- Tags -->
+
     <div class="row">
       <div class="col l12">
-        <div ng-repeat="tag in tags">
-          <div class="chip player-hero-chip">
+        <span ng-if="player.data.attributes.is_active" class="chip blue lighten-2 white-text">
+          Active
+        </span>
+        <span ng-if="!player.data.attributes.is_active" class="chip red white-text">
+          Inactive
+        </span>
+        <span ng-repeat="tag in tags">
+          <div class="chip {{tag.style}}">
             {{tag.name}}
           </div>
-        </div>
+        </span>
       </div>
     </div>
 
@@ -46,9 +46,8 @@
         <!-- Description -->
         <div class="col l8">
           <h5>Description</h5>
-          <p ng-if="user">{{user.description}}</p>
-          <p ng-if="!user">This player has not written a description</p>
-          <div ng-if="user" class="col s12 m1 l1 player-edit">
+          <p>{{user.description}}</p>
+          <div ng-if="user.player_id == session_playerid" class="col s12 m1 l1 player-edit">
             <a class="btn-floating waves-effect waves-light red modal-trigger" href="#editModal"><i class="material-icons">mode_edit</i></a>
 
             <div id="editModal" class="modal">
