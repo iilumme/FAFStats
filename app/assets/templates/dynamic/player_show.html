@@ -46,9 +46,8 @@
         <!-- Description -->
         <div class="col l8">
           <h5>Description</h5>
-          <p ng-if="user">{{user.description}}</p>
-          <p ng-if="!user">This player has not written a description</p>
-          <div ng-if="user" class="col s12 m1 l1 player-edit">
+          <p>{{user.description}}</p>
+          <div ng-if="user.player_id == session_playerid" class="col s12 m1 l1 player-edit">
             <a class="btn-floating waves-effect waves-light red modal-trigger" href="#editModal"><i class="material-icons">mode_edit</i></a>
 
             <div id="editModal" class="modal">
