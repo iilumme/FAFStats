@@ -9,14 +9,6 @@
             <div class="col l6">
               <img src="http://placehold.it/128x128/ccc">
               <span class="player-name">{{player.data.attributes.login}}</span>
-
-              <!-- Tags -->
-              <div ng-if="player.data.attributes.is_active" class="chip player-hero-chip blue lighten-2 white-text">
-                Active
-              </div>
-              <div ng-if="!player.data.attributes.is_active" class="chip player-hero-chip red white-text">
-                Inactive
-              </div>
             </div>
 
             <!-- Rating -->
@@ -28,13 +20,21 @@
       </div>
     </section>
 
+    <!-- Tags -->
+
     <div class="row">
       <div class="col l12">
-        <div ng-repeat="tag in tags">
-          <div class="chip player-hero-chip">
+        <span ng-if="player.data.attributes.is_active" class="chip blue lighten-2 white-text">
+          Active
+        </span>
+        <span ng-if="!player.data.attributes.is_active" class="chip red white-text">
+          Inactive
+        </span>
+        <span ng-repeat="tag in tags">
+          <div class="chip {{tag.style}}">
             {{tag.name}}
           </div>
-        </div>
+        </span>
       </div>
     </div>
 
