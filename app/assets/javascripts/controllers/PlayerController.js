@@ -12,6 +12,7 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
     FAFApi.findPlayer(id).success(function(player){
       $scope.player = player;
       renderGames();
+      renderTags();
       renderFactionChart();
       renderRatingEvolutionChart();
     });
@@ -20,6 +21,12 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
   var renderGames = function() {
     FAFApi.findPlayersGames($scope.player.data.attributes.login).success(function(games){
       $scope.games = games;
+    });
+  };
+
+  var renderTags = function() {
+    StatsApi.getPlayersTags($scope.player.data.attributes.id).success(function(tags){
+      $scope.tags = tags;
     });
   };
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160429162330) do
+ActiveRecord::Schema.define(version: 20160504154014) do
 
   create_table "players", id: false, force: :cascade do |t|
     t.integer  "player_id"
@@ -24,6 +24,20 @@ ActiveRecord::Schema.define(version: 20160429162330) do
     t.string   "player_id"
     t.integer  "value"
     t.integer  "month"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "taggeds", force: :cascade do |t|
+    t.integer  "player_id"
+    t.integer  "tag_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.string   "name"
+    t.string   "style"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

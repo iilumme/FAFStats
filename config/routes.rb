@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :taggeds
+  get 'taggeds/player/:id' => 'taggeds#player'
+
+  resources :tags
   resources :ratings
   get 'ratings/player/:id' => 'ratings#player'
 
