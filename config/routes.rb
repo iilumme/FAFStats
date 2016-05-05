@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   resources :players
   resources :users
+  get 'users/player/:id' => 'users#player'
 
   root :to => 'layouts#index'
   get '*path' => 'layouts#index'

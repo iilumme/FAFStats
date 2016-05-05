@@ -1,7 +1,9 @@
 FAFStats.service('StatsApi', function ($http) {
 
-  this.getUser = function() {
-    return $http.get('/users/1.json');
+  /* GET */
+
+  this.getUserForPlayer = function(player_id) {
+    return $http.get('/users/player/' + player_id + '.json');
   };
 
   this.getPlayersRatings = function(player_id) {

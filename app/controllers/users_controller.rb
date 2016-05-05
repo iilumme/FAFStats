@@ -1,6 +1,18 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :update]
 
+
+  # GET /users/player/*player_id*.json
+  # Returns the user for the player if there is a user
+  def player
+    @user = User.find_by_player_id(params[:id])
+
+    if @user.nil?
+      @user = User.new(:id => 0, :player_id => 0, :description => 'This player has not written a description.')
+    end
+    render :player
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show

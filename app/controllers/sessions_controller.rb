@@ -16,4 +16,9 @@ class SessionsController < ApplicationController
     redirect_to :root
   end
 
+  def current_logged_in_user
+    @user = current_user
+    render :current_user
+  end
+
 end
