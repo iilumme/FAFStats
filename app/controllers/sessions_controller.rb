@@ -18,7 +18,12 @@ class SessionsController < ApplicationController
 
   def current_logged_in_user
     @user = current_user
-    render :current_user
+
+    if @user.nil?
+      @user = User.new(:id => 0, :player_id => '0')
+    end
+
+    render :sessionuser
   end
 
 end

@@ -6,9 +6,9 @@ FAFStats.service('StatsApi', function ($http) {
     return $http.get('/users/player/' + player_id + '.json');
   }
 
+  // Returns the user in the session OR id:0, player_id:0
   this.getSession = function() {
-    return $http.get('/users/1.json');
-    //return $http.get('/sessions/current_user')
+    return $http.get('/sessions/current_user')
   }
 
   this.getPlayersRatings = function(player_id) {

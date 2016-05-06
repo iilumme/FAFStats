@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     @user = User.find_by_player_id(params[:id])
 
     if @user.nil?
-      @user = User.new(:id => 0, :player_id => 0, :description => 'This player has not written a description.')
+      @user = User.new(:id => 0, :player_id => '0', :description => 'This player has not written a description.')
     end
     render :player
   end
