@@ -4,9 +4,22 @@ var FAFStats = angular.module('FAFStats', ['ngRoute'])
         $rootScope.user = user;
       });
 
-      /*FAFApi.getAllPlayers().success(function(players) {
-        $rootScope.players = players.data;
-      });*/
+      $rootScope.renderAllPlayers = function() {
+        if ($('.player-search').val().length === 3) {
+          FAFApi.getAllPlayers().success(function(players) {
+            $rootScope.players = players.data;
+          });
+        }
+      };
+
+      $rootScope.visibleSuggestions = function() {
+        $('.search-suggest').css('display', 'block');
+      };
+
+      $rootScope.invisibleSuggestions = function() {
+        $('.search-suggest').css('display', 'none');
+      };
+
     })
     .config(function ($routeProvider, $locationProvider) {
 //        $locationProvider.html5Mode(true);

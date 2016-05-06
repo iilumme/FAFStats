@@ -1,0 +1,31 @@
+.search-suggest {
+  position: absolute;
+  width: 11%;
+  display: block;
+  background: white;
+  text-align: left;
+  border-radius: 5px;
+
+  ul {
+    list-style: none;
+    line-height: 24px;
+  }
+
+  li {
+    padding: 4px;
+
+    :hover {
+      background: $secondary-color;
+    }
+  }
+
+  a {
+    color: #111;
+    padding: 4px;
+    border-radius: 5px;
+
+    :hover {
+      color: #f5f5f5;
+    }
+  }
+}
