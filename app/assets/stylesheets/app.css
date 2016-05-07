@@ -6194,15 +6194,19 @@ main {
 .search-suggest {
   position: absolute;
   width: 11%;
-  display: block;
+  display: inline-block;
   background: white;
   text-align: left;
   border-radius: 5px; }
   .search-suggest ul {
     list-style: none;
-    line-height: 24px; }
+    line-height: 24px;
+    margin: 0;
+    padding: 0; }
   .search-suggest li {
-    padding: 4px; }
+    display: block;
+    padding: 4px;
+    margin: 0; }
     .search-suggest li :hover {
       background: #ff8247; }
   .search-suggest a {
