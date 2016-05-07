@@ -3,7 +3,22 @@ class SessionsController < ApplicationController
   def create_oauth
 
     #raise request.env["omniauth.auth"].to_yaml
-    #user = User.find_by player_id: env["omniauth.auth"].info.joku_id
+
+    user = User.find_by_player_id(env["omniauth.auth"].info.id)
+
+    if user.nil?
+      user = User.create
+      user.player_id = env["omniauth.auth"].info.id
+      user.usertype = 2
+      user.save
+      session[:user_id] = user.id
+
+    elsif user && user.usertype != 3
+      session[:user_id] = user.id
+
+    elsif user.usertype == 3
+      redirect_to :root
+    end
 
   end
 
