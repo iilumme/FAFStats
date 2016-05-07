@@ -7,7 +7,7 @@ FAFStats.service('StatsApi', function ($http) {
   }
 
   // Returns the user in the session OR id:0, player_id:0
-  this.getSession = function() {
+  this.getUserInSession = function() {
     return $http.get('/sessions/current_user.json')
   }
 

@@ -1,6 +1,6 @@
 var FAFStats = angular.module('FAFStats', ['ngRoute'])
     .run(function($rootScope, StatsApi, FAFApi) {
-      StatsApi.getSession().success(function(user){
+      StatsApi.getUserInSession().success(function(user){
         $rootScope.user = user;
       });
 
