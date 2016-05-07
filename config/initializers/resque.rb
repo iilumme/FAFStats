@@ -8,3 +8,5 @@ Resque.redis = Redis.new(:host => uri.host, :port => uri.port, :password => uri.
 Dir["#{Rails.root}/app/jobs/*.rb"].each { |file| require file }
 
 Resque.schedule = YAML.load_file("#{Rails.root}/config/resque_schedule.yml")
+
+Resque.after_fork = Proc.new { ActiveRecord::Base.establish_connection }
