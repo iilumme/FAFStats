@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  post 'register' => 'users#create'
   get 'sessions/current_user' => 'sessions#current_logged_in_user'
 
   resources :taggeds
@@ -17,6 +18,6 @@ Rails.application.routes.draw do
   get '*path' => 'layouts#index'
 
 
-  #get '/auth/:provider/callback' => "sessions#create_oauth"
+  get '/auth/:provider/callback' => "sessions#create_oauth"
 
 end

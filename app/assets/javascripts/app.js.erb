@@ -1,4 +1,4 @@
-var FAFStats = angular.module('FAFStats', ['ngRoute'])
+var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match'])
     .run(function($rootScope, StatsApi, FAFApi) {
       StatsApi.getUserInSession().success(function(user){
         $rootScope.user = user;
@@ -47,5 +47,9 @@ var FAFStats = angular.module('FAFStats', ['ngRoute'])
           .when('/game/:id', {
             controller: 'GameController',
             templateUrl: '<%= asset_path("dynamic/game_show.html") %> '
+          })
+          .when('/login', {
+            controller: 'LogInController',
+            templateUrl: '<%= asset_path("dynamic/login.html") %> '
           });
     });

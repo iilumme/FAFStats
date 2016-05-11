@@ -17,12 +17,14 @@
 //= require angular-route
 //= require Materialize
 //= require Chart.js/dist/Chart.min.js
+//= require angular-validation-match
 //= require app
 //= require controllers/RootController
 //= require controllers/PlayerController
 //= require controllers/LeaderboardsController
 //= require controllers/GameIndexController
 //= require controllers/GameController
+//= require controllers/LogInController
 //= require services/FAFApi.js
 //= require services/StatsApi.js
 //= require_tree.

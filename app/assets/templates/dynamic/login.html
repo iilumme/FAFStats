@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row">
+    <div class="col s6">
+      <div class="card">
+        <div class="card-content">
+          <section>
+            <span class="card-title">Register</span>
+          </section>
+          <div>
+            <form ng-submit="register()">
+              <p>
+                <label>Username</label>
+                <input type="text" name="username" ng-model="username" required ng-minlength="4">
+              <div ng-show="form.username.$invalid && form.username.$dirty">
+                Username is not valid!
+              </div>
+              </p>
+              <p>
+                <label>Password</label>
+                <input type="password" name="password" ng-model="password" required ng-minlength="8" ng-pattern="/^.*(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$/">
+              <div ng-show="form.password.$invalid && form.password.$dirty">
+                Password is not valid!
+              </div>
+              </p>
+              <p>
+                <label>Password confirmation</label>
+                <input type="password" name="passwordConfirm" ng-model="passwordConfirm" required ng-minlength="8" match="password">
+              <div ng-show="form.passwordConfirm.$error.match">
+                Passwords don't match!
+              </div>
+              </p>
+              <button type="submit" ng-disabled="form.$invalid">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s">
+      <div class="card">
+        <div class="card-content">
+          <section>
+            <span class="card-title">Log in</span>
+          </section>
+          <div>
+            <form name="form">
+              <p>
+                <label>Username</label>
+                <input type="text" name="username" ng-model="username">
+              </p>
+              <p>
+                <label>Password</label>
+                <input type="password" name="password" ng-model="password">
+              </p>
+              <button type="submit">Log in</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

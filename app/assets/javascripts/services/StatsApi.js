@@ -1,7 +1,5 @@
 FAFStats.service('StatsApi', function ($http) {
 
-  /* GET */
-
   this.getUserForPlayer = function(player_id) {
     return $http.get('/users/player/' + player_id + '.json');
   }
@@ -17,6 +15,10 @@ FAFStats.service('StatsApi', function ($http) {
 
   this.getPlayersTags = function(player_id) {
     return $http.get('/taggeds/player/' + player_id + '.json');
+  };
+
+  this.register = function(user) {
+    return $http.post('/register', user);
   };
 
 });
