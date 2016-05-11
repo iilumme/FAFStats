@@ -1,23 +1,18 @@
 .search-suggest {
   position: absolute;
-  width: 11%;
-  display: inline-block;
+  width: 19%;
   background: white;
-  text-align: left;
+  text-align: center;
   border-radius: 5px;
+  z-index: 10000;
 
   ul {
-    list-style: none;
     line-height: 24px;
-    margin: 0;
-    padding: 0;
   }
 
   li {
-    display: block;
     padding: 4px;
-    margin: 0;
-
+    width: 100%;
     :hover {
       background: $secondary-color;
     }
@@ -27,9 +22,15 @@
     color: #111;
     padding: 4px;
     border-radius: 5px;
+    width: 100%;
 
     :hover {
       color: #f5f5f5;
     }
   }
+}
+
+/* Fix broken search on Chrome */
+nav .nav-wrapper form, nav .nav-wrapper form .input-field{
+  height: 64px;
 }

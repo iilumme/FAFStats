@@ -1,23 +1,31 @@
 var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match'])
     .run(function($rootScope, StatsApi, FAFApi) {
+      /* RootScope Variables */
+      $rootScope.players = new Array();
+      $rootScope.user = null;
+
       StatsApi.getUserInSession().success(function(user){
         $rootScope.user = user;
       });
 
-      $rootScope.renderAllPlayers = function() {
-        if ($('.player-search').val().length === 3) {
-          FAFApi.getAllPlayers().success(function(players) {
+      $rootScope.triggerSearch = function() {
+        if ($('.player-search').val().length < 3 && $rootScope.players.length > 0) {
+          $rootScope.players = new Array();
+        } else if ($('.player-search').val().length >= 3 && $rootScope.players.length <= 0) {
+          FAFApi.searchForPlayersByName($('.player-search').val()).success(function(players) {
             $rootScope.players = players.data;
           });
         }
       };
 
-      $rootScope.visibleSuggestions = function() {
+      $rootScope.focusPlayerSearch = function() {
         $('.search-suggest').css('display', 'inline-block');
       };
 
-      $rootScope.invisibleSuggestions = function() {
+      $rootScope.blurPlayerSearch = function() {
         $('.search-suggest').css('display', 'none');
+        $("#search").val("");
+        $rootScope.players = new Array();
       };
 
     })
