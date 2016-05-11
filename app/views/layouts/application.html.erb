@@ -20,11 +20,11 @@
     </ul>
     <ul class="right hide-on-med-and-down">
       <li>
-        <form>
+        <form ng-submit="triggerPlayerSearch()">
           <div class="input-field">
             <input class="player-search" id="search" type="search" required placeholder="Player Search"
                    ng-model="name" ng-focus="focusPlayerSearch()" ng-blur="blurPlayerSearch()"
-                   ng-change="triggerSearch()" autocomplete="off">
+                   ng-change="triggerAutocomplete()" autocomplete="off">
             <label for="search"><i class="material-icons">search</i></label>
             <i class="material-icons">close</i>
           </div>
@@ -32,7 +32,7 @@
         <div class="search-suggest z-depth-2">
           <ul class="players">
             <li ng-repeat="player in players | filter:name | limitTo: 10">
-              <a href="/#/player/{{player.attributes.id}}">{{player.attributes.login}} ({{player.attributes.rating}})</a>
+              <a class="search-suggest-link" ng-mousedown="goToPlayerPage(player.attributes.id)" ng-href="/#/player/{{player.attributes.id}}">{{player.attributes.login}} ({{player.attributes.rating}})</a>
             </li>
           </ul>
         </div>
