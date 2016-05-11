@@ -10,6 +10,10 @@ FAFStats.service('FAFApi', function ($http) {
     return $http.get('http://api.faforever.com/ranked1v1');
   };
 
+  this.searchForPlayersByName = function(name) {
+    return $http.get('http://api.faforever.com/ranked1v1?filter[player]=' + name)
+  }
+
   /*GAMES*/
 
   this.findGame = function(id) {

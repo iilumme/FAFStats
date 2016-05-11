@@ -9,4 +9,4 @@ $success-color: color("green", "base");
 $error-color: color("red", "base");
 $link-color: color("light-blue", "lighten-3");
 
-$input-background: lighten($primary-color, 30%);
+$input-background: $secondary-color;

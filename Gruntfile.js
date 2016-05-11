@@ -24,10 +24,11 @@ module.exports = function(grunt) {
                 files: ['app/assets/stylesheets/*.scss'],
                 tasks: ['sass']
             },
+            /* Don't cssmin while in development
             css: {
                 files: 'app/assets/stylesheets/app.css',
                 tasks: ['cssmin']
-            }
+            }*/
         }
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
