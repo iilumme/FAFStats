@@ -18,6 +18,8 @@
 //= require Materialize
 //= require Chart.js/dist/Chart.min.js
 //= require angular-validation-match
+//= require ng-file-upload
+//= require angular-materialize
 //= require app
 //= require controllers/RootController
 //= require controllers/PlayerController

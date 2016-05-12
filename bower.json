@@ -5,6 +5,8 @@
     "angular-route": "latest",
     "materialize": "latest",
     "Chart.js": "^2.0.2",
-    "angular-validation-match": "latest"
+    "angular-validation-match": "latest",
+    "ng-file-upload": "^12.0.4",
+    "angular-materialize": "^0.1.4"
   }
 }

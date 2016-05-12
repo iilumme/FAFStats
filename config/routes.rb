@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   resources :players
   resources :users
   get 'users/player/:id' => 'users#player'
+  post 'users/update' => 'users#update'
 
   root :to => 'layouts#index'
   get '*path' => 'layouts#index'

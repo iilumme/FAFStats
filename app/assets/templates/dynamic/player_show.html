@@ -7,10 +7,10 @@
         <div class="col l12">
           <div class="player-hero">
             <div class="col l6">
-              <img src="http://placehold.it/128x128/ccc">
+              <img ng-if="user.image.image.url != null" ng-src="{{user.image.image.url}}" type="file"/>
+              <img ng-if="user.image.image.url == null" src="http://placehold.it/128x128?text=No+Picture">
               <span class="player-name">{{player.data.attributes.login}}</span>
             </div>
-
             <!-- Rating -->
             <div class="col l6">
               <span class="player-rating right">{{player.data.attributes.rating}} <i class="green-text small">+15</i><i class="green-text small material-icons">trending_up</i></span>
@@ -47,18 +47,21 @@
         <div class="col l8">
           <h5>Description</h5>
           <p>{{user.description}}</p>
-          <div ng-if="user.player_id == session_playerid" class="col s12 m1 l1 player-edit">
-            <a class="btn-floating waves-effect waves-light red modal-trigger" href="#editModal"><i class="material-icons">mode_edit</i></a>
-
-            <div id="editModal" class="modal">
+          <a ng-if="user.player_id == session_playerid" modal class="btn-floating waves-effect waves-light red modal-trigger" href="#editmodal"><i class="material-icons">mode_edit</i></a>
+          <div id="editmodal" class="modal modal-fixed-footer">
+            <form ng-submit="updateProfile()">
               <div class="modal-content">
-                <h4>Edit your info</h4>
-
+                <span style="font-size: 1.5em">Edit your info</span>
+                <br/>
+                <label>Description</label>
+                <input type="text" name="description" ng-model="description">
+                <label>Image</label>
+                <input type="file" ngf-select ng-model="image" />
               </div>
               <div class="modal-footer">
-                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                <button type="submit" class=" modal-action modal-close waves-effect waves-green btn-flat">Save</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
         <!-- Faction Statistics -->

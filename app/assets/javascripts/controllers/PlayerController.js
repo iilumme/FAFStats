@@ -1,4 +1,4 @@
-FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, StatsApi, $rootScope) {
+FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, StatsApi, $rootScope, Upload) {
 
   $('.modal-trigger').leanModal();
 
@@ -162,6 +162,22 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
 
     return [labels[months[6]], labels[months[5]], labels[months[4]],
       labels[months[3]], labels[months[2]], labels[months[1]], labels[months[0]]];
+  };
+
+
+
+
+
+  $scope.updateProfile = function() {
+    console.log('jh')
+    var image = $scope.image;
+    $scope.upload = Upload.upload({
+      url: 'users/update',
+      method: 'POST',
+      file: image,
+      fileFormDataName: 'user[image]',
+      fields: { 'id': $rootScope.user.id, 'user[description]': $scope.description, 'user[image]': image },
+    });
   };
 
   /* Init */
