@@ -1,20 +1,19 @@
 var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match'])
     .run(function($rootScope, StatsApi, FAFApi, $location) {
+
       /* RootScope Variables */
       $rootScope.players = new Array();
       $rootScope.user = null;
 
       StatsApi.getUserInSession().success(function(user){
         if (user !== ""){
-          console.log('löyty')
           $rootScope.user = user;
         } else {
-          console.log('ei')
           $rootScope.user = null;
         }
       });
 
-      $rootScope.triggerSearch = function() {
+      $rootScope.triggerAutocomplete = function() {
         if ($('.player-search').val().length < 3 && $rootScope.players.length > 0) {
           $rootScope.players = new Array();
         } else if ($('.player-search').val().length >= 3 && $rootScope.players.length <= 0) {
@@ -28,6 +27,12 @@ var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match'])
         $('.search-suggest').css('display', 'inline-block');
       };
 
+      $('.search-suggest-link').mousedown(function() {
+        mousedownHappened = true;
+      });
+
+      /* Close player search suggestions once unfocused*/
+
       $rootScope.blurPlayerSearch = function() {
         $('.search-suggest').css('display', 'none');
         $("#search").val("");
@@ -40,9 +45,16 @@ var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match'])
         });
       };
 
+      $rootScope.goToPlayerPage = function(id) {
+        $location.path("/player/" + id);
+      };
+
+      $rootScope.triggerPlayerSearch = function() {
+        $location.path("/player/" + $rootScope.players[0].attributes.id);
+      };
+
     })
-    .config(function ($routeProvider, $locationProvider) {
-//        $locationProvider.html5Mode(true);
+    .config(function ($routeProvider) {
       $routeProvider
           .when('/', {
             controller: 'RootController',
