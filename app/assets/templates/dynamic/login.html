@@ -9,24 +9,16 @@
           <div>
             <form ng-submit="register()">
               <p>
-                <label>Username</label>
-                <input type="text" name="username" ng-model="username" required ng-minlength="4">
-              <div ng-show="form.username.$invalid && form.username.$dirty">
-                Username is not valid!
+                <label>Player ID</label>
+                <input type="text" name="player_id" ng-model="player_id" required>
+              <div ng-show="form.player_id.$invalid && form.player_id.$dirty">
+                Player ID is required
               </div>
-              </p>
-              <p>
-                <label>Password</label>
-                <input type="password" name="password" ng-model="password" required ng-minlength="8" ng-pattern="/^.*(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$/">
-              <div ng-show="form.password.$invalid && form.password.$dirty">
-                Password is not valid!
+              <div ng-show="invalidID">
+                This is not a valid Player ID.
               </div>
-              </p>
-              <p>
-                <label>Password confirmation</label>
-                <input type="password" name="passwordConfirm" ng-model="passwordConfirm" required ng-minlength="8" match="password">
-              <div ng-show="form.passwordConfirm.$error.match">
-                Passwords don't match!
+              <div ng-show="error">
+                Error. Have you already registered?
               </div>
               </p>
               <button type="submit" ng-disabled="form.$invalid">Sign up</button>
@@ -42,14 +34,13 @@
             <span class="card-title">Log in</span>
           </section>
           <div>
-            <form name="form">
+            <form ng-submit="login()">
               <p>
-                <label>Username</label>
-                <input type="text" name="username" ng-model="username">
-              </p>
-              <p>
-                <label>Password</label>
-                <input type="password" name="password" ng-model="password">
+                <label>Player ID</label>
+                <input type="text" name="player_id" ng-model="login.player_id">
+              <div ng-show="invalidLogin">
+                Wrong player ID.
+              </div>
               </p>
               <button type="submit">Log in</button>
             </form>

@@ -1,11 +1,17 @@
 var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match'])
-    .run(function($rootScope, StatsApi, FAFApi) {
+    .run(function($rootScope, StatsApi, FAFApi, $location) {
       /* RootScope Variables */
       $rootScope.players = new Array();
       $rootScope.user = null;
 
       StatsApi.getUserInSession().success(function(user){
-        $rootScope.user = user;
+        if (user !== ""){
+          console.log('löyty')
+          $rootScope.user = user;
+        } else {
+          console.log('ei')
+          $rootScope.user = null;
+        }
       });
 
       $rootScope.triggerSearch = function() {
@@ -26,6 +32,12 @@ var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match'])
         $('.search-suggest').css('display', 'none');
         $("#search").val("");
         $rootScope.players = new Array();
+      };
+
+      $rootScope.logout = function() {
+        StatsApi.logout().success(function() {
+          $location.path('/');
+        });
       };
 
     })

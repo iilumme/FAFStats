@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   post 'register' => 'users#create'
+  post 'login' => 'sessions#create'
+  get 'logout' => 'sessions#destroy'
   get 'sessions/current_user' => 'sessions#current_logged_in_user'
 
   resources :taggeds

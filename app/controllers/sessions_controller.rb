@@ -22,23 +22,32 @@ class SessionsController < ApplicationController
 
   end
 
-  def create_test_session
-    session[:player_id] = "133636"
+  def create
+    @user = User.find_by player_id: params[:player_id]
+
+    if @user
+      session[:user_id] = @user.id
+      render :sessionuser
+    else
+      render :nothing => true, :status => :unprocessable_entity
+    end
+
   end
 
   def destroy
     session[:user_id] = nil
-    redirect_to :root
+    render :nothing => true, :status => :ok
   end
 
   def current_logged_in_user
     @user = current_user
 
     if @user.nil?
-      @user = User.new(:id => 0, :player_id => '0')
+      render json: ""
+    else
+      render :sessionuser
     end
 
-    render :sessionuser
   end
 
 end

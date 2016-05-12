@@ -5,7 +5,10 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
   /* Variables */
 
   var playerID = $routeParams.id;
-  $scope.session_playerid = $rootScope.user.player_id;
+  $scope.session_playerid = null;
+  if ($rootScope.user !== null) {
+    $scope.session_playerid = $rootScope.user.player_id;
+  }
 
   /* Local functions */
 

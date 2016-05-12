@@ -13,34 +13,21 @@ class UsersController < ApplicationController
     render :player
   end
 
-  def register
-
-  end
-
   # GET /users/1
   # GET /users/1.json
   def show
   end
 
-  # GET /users
-  # GET /users.json
-  def index
-    @users = User.all
-  end
-
-
-
   # POST /users
   # POST /users.json
   def create
     @user = User.new(user_params)
+    @user.usertype = 2
 
-    respond_to do |format|
-      if @user.save
-        render
-      else
-
-      end
+    if @user.save
+      render :nothing => true, :status => :ok
+    else
+      render :nothing => true, :status => :unprocessable_entity
     end
   end
 
