@@ -11,6 +11,7 @@ class CommentsController < ApplicationController
     if !session[:user_id].nil?
       @comment = Comment.new(comment_params)
       @comment.user_id = session[:user_id]
+      @comment.player_id = User.find_by(:id => session[:user_id]).player_id
 
       if @comment.save
         render :nothing => true, :status => :ok
@@ -30,6 +31,6 @@ class CommentsController < ApplicationController
     end
 
     def comment_params
-      params.require(:comment).permit(:user_id, :content, :game_id)
+      params.require(:comment).permit(:content, :game_id)
     end
 end
