@@ -55,7 +55,7 @@
           <br>
 
           <!-- New comment -->
-          <div class="section">
+          <div class="section" ng-if="user">
             <div class="row">
               <form ng-submit="sendComment()">
                 <div class="input-field col s12">
@@ -69,13 +69,10 @@
                 </div>
               </form>
             </div>
+            <br>
+            <div class="divider"></div>
+            <br>
           </div>
-
-          <br>
-
-          <div class="divider"></div>
-
-          <br>
 
           <section>
             <!-- Loop through all comments -->
