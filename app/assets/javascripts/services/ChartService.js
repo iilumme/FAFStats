@@ -5,7 +5,7 @@ FAFStats.service('ChartService', function(StatsApi) {
     var data = {
       labels: ["UEF", "Cybran", "Aeon", "Seraphim"],
       datasets: [{
-        data: [34, 82, 64, 12],
+        data: [1, 1, 1, 1],
         backgroundColor: ["#1568B8", "#CC0000", "#1E7D1E", "#e5c100"],
         hoverBackgroundColor: ["#2c77bf", "#d63232", "#348a34", "#ffdb19"]
       }]

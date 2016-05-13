@@ -33,8 +33,8 @@ FAFStats.service('FAFApi', function ($http) {
   };
 
 
-  this.findPlayersGames = function(login){
-    return $http.get("http://api.faforever.com/games?filter[players]=" + login + "&filter[mod]=ladder1v1&page[size]=10");
+  this.findPlayersGames = function(login, pageNumber){
+    return $http.get("http://api.faforever.com/games?filter[players]=" + login + "&filter[mod]=ladder1v1&page[size]=10&page[number]=" + pageNumber);
   };
 
   /* Leaderboards */
