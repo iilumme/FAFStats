@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
+  # StarRatings
+  get 'starratings/:id' => 'star_ratings#game'
+  post 'starratings' => 'star_ratings#create'
   resources :star_ratings
+
+
   # Comments
   get 'comments/:id' => 'comments#game'
   post 'comments' => 'comments#create'
