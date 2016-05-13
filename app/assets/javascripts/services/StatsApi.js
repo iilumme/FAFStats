@@ -17,6 +17,17 @@ FAFStats.service('StatsApi', function ($http) {
   };
 
 
+  /* For a game/replay */
+
+  this.getComments = function(gameid) {
+    return $http.get('/comments/' + gameid + '.json');
+  };
+
+  this.postComment = function(comment) {
+    return $http.post('/comments', comment);
+  };
+
+
   /* Session */
 
   this.register = function(user) {
@@ -33,7 +44,7 @@ FAFStats.service('StatsApi', function ($http) {
 
   // Returns the user in the session if there is one
   this.getUserInSession = function() {
-    return $http.get('/sessions/current_user.json')
+    return $http.get('/sessions/current_user.json');
   };
 
 });

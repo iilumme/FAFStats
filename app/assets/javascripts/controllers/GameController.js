@@ -1,13 +1,20 @@
-FAFStats.controller('GameController', function ($scope, $routeParams, FAFApi) {
+FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope, FAFApi, StatsApi) {
 
   /* Variables */
   $scope.gameid = $routeParams.id;
   $scope.players = [];
+  $scope.comments = [];
+
+  if ($rootScope.user !== null) {
+    $scope.newComment = {
+      content: "",
+      game_id: $scope.gameid
+    };
+  }
 
   // Finds the game from FAF API and adds it to $scope
   var renderGame = function() {
     FAFApi.findGame($scope.gameid).success(function(gamedata){
-
       $scope.game = gamedata.data[0].attributes;
       $scope.start_time = new Date($scope.game.start_time).toString();
       $scope.game_length = gameLength();
@@ -15,7 +22,6 @@ FAFStats.controller('GameController', function ($scope, $routeParams, FAFApi) {
       for (var i = 0; i < $scope.game.players.length; i++) {
         getPlayer($scope.game.players[i].player_id);
       }
-
     });
   };
 
@@ -35,8 +41,17 @@ FAFStats.controller('GameController', function ($scope, $routeParams, FAFApi) {
     });
   };
 
+  var getComments = function() {
+    StatsApi.getComments($scope.gameid).success(function(comments) {
+      $scope.comments = comments;
+    });
+  };
+
+  $scope.sendComment = function() {
+    StatsApi.postComment($scope.newComment);
+  };
+
   /* Init */
-
   renderGame();
-
+  getComments();
 });
