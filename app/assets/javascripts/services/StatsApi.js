@@ -44,6 +44,15 @@ FAFStats.service('StatsApi', function ($http) {
     return $http.post('/taggeds', tagged);
   };
 
+  /* For star ratings */
+
+  this.getStars = function(game_id) {
+    return $http.get('/star_ratings/'+ game_id +'.json');
+  };
+
+  this.postStars = function(star_rating) {
+    return $http.post('/star_ratings', star_rating);
+  };
 
   /* Session */
 

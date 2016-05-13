@@ -1,1 +1,1 @@
-json.extract! @star_rating, :average, :current_user_stars
+json.extract! @game, :average_stars, :current_user_stars

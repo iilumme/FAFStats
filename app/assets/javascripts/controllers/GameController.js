@@ -22,6 +22,8 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
       for (var i = 0; i < $scope.game.players.length; i++) {
         getPlayer($scope.game.players[i].player_id);
       }
+
+      getStars();
     });
   };
 
@@ -48,11 +50,22 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
   };
 
   $scope.sendComment = function() {
-    StatsApi.postComment($scope.newComment);
+    StatsApi.postComment($scope.newComment).success(function() {
+      //viesti
+    });
+  };
+
+  var getStars = function() {
+    StatsApi.getStars($scope.gameid).success(function(star_rating) {
+      console.log(star_rating)
+    });
   };
 
   $scope.giveStars = function(amount) {
-    console.log("Gave " + amount + " stars!");
+    var star_rating = {stars: amount, game_id: $scope.gameid}
+    StatsApi.postStars(star_rating).success(function() {
+      //viesti
+    });
   };
 
   /* Init */

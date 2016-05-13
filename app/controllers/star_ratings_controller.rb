@@ -1,15 +1,20 @@
 class StarRatingsController < ApplicationController
 
   def game
-    @star_rating.average = StarRating.where('game_id = ?', params[:id]).average(:stars)
+    ratings = StarRating.where('game_id = ?', params[:id])
     star_rating = StarRating.find_by(:game_id => params[:id], :user_id => session[:user_id])
 
-    if !session[:user_id].nil? or star_rating.nil?
-      @star_rating.current_user_stars = nil
-    else
-      @star_rating.current_user_stars = star_rating.stars
+    if ratings.nil?
+      @game = {average_stars: 0, current_user_stars: 0}
+      render :game
+    elsif !ratings.nil?
+      if session[:user_id].nil? or star_rating.nil?
+        @game = {average_stars: ratings.average(:stars).to_int, current_user_stars: 0}
+      else
+        @game = {average_stars: ratings.average(:stars).to_int, current_user_stars: star_rating.stars}
+      end
+      render :game
     end
-    render :game
   end
 
   # POST /star_ratings
@@ -41,13 +46,13 @@ class StarRatingsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_star_rating
-      @star_rating = StarRating.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_star_rating
+    @star_rating = StarRating.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def star_rating_params
-      params.require(:star_rating).permit(:game_id, :stars)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def star_rating_params
+    params.require(:star_rating).permit(:game_id, :stars)
+  end
 end
