@@ -1,0 +1,2 @@
+module StarRatingsHelper
+end

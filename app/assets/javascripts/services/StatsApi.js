@@ -28,6 +28,23 @@ FAFStats.service('StatsApi', function ($http) {
   };
 
 
+  /* For tags */
+
+  this.getAllTags = function() {
+    return $http.get('/tags.json');
+  };
+
+  this.postTag = function(tag) {
+    return $http.post('/tags', tag);
+  };
+
+  /* For taggeds */
+
+  this.postTagged = function(tagged) {
+    return $http.post('/taggeds', tagged);
+  };
+
+
   /* Session */
 
   this.register = function(user) {

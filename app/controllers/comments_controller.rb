@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_action :set_comment, only: [:show, :edit, :update, :destroy]
+  before_action :set_comment, only: [:update, :destroy]
 
   def game
     @comments = Comment.where('game_id = ?', params[:id]).order('created_at DESC');
@@ -22,6 +22,13 @@ class CommentsController < ApplicationController
     else
       render :nothing => true, :status => :bad_request
     end
+  end
+
+  def update
+
+  end
+
+  def destroy
 
   end
 

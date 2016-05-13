@@ -1,28 +1,37 @@
 Rails.application.routes.draw do
 
+  resources :star_ratings
+  # Comments
   get 'comments/:id' => 'comments#game'
   post 'comments' => 'comments#create'
-  post 'register' => 'users#create'
-  post 'login' => 'sessions#create'
-  get 'logout' => 'sessions#destroy'
-  get 'sessions/current_user' => 'sessions#current_logged_in_user'
 
-  resources :taggeds
+  # Tags
+  resources :tags                                         #!!!!
+
+  # Taggeds
   get 'taggeds/player/:id' => 'taggeds#player'
+  resources :taggeds                                      #!!!!
 
-  resources :tags
-  resources :ratings
+  # Users
+  get 'users/player/:id' => 'users#player'
+  post 'register' => 'users#create'
+  post 'users/update' => 'users#update'
+  resources :users
+
+  # Sessions
+  get 'sessions/current_user' => 'sessions#current_logged_in_user'
+  get 'logout' => 'sessions#destroy'
+  post 'login' => 'sessions#create'
+  get '/auth/:provider/callback' => "sessions#create_oauth"
+
+  # Ratings
   get 'ratings/player/:id' => 'ratings#player'
+  resources :ratings                                      #!!!!
+
 
   resources :players
-  resources :users
-  get 'users/player/:id' => 'users#player'
-  post 'users/update' => 'users#update'
 
   root :to => 'layouts#index'
   get '*path' => 'layouts#index'
-
-
-  get '/auth/:provider/callback' => "sessions#create_oauth"
 
 end

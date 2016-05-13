@@ -17,34 +17,17 @@ class TaggedsController < ApplicationController
     @taggeds = Tagged.all
   end
 
-  # GET /taggeds/1
-  # GET /taggeds/1.json
-  def show
-  end
-
-  # GET /taggeds/new
-  def new
-    @tagged = Tagged.new
-  end
-
-  # GET /taggeds/1/edit
-  def edit
-  end
-
   # POST /taggeds
   # POST /taggeds.json
   def create
     @tagged = Tagged.new(tagged_params)
 
-    respond_to do |format|
-      if @tagged.save
-        format.html { redirect_to @tagged, notice: 'Tagged was successfully created.' }
-        format.json { render :show, status: :created, location: @tagged }
-      else
-        format.html { render :new }
-        format.json { render json: @tagged.errors, status: :unprocessable_entity }
-      end
+    if @tagged.save
+      render :nothing => true, :status => :ok
+    else
+      render :nothing => true, :status => :unprocessable_entity
     end
+
   end
 
   # PATCH/PUT /taggeds/1

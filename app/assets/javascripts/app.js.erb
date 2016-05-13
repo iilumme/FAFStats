@@ -83,5 +83,9 @@ var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match', 'ngFil
           .when('/login', {
             controller: 'LogInController',
             templateUrl: '<%= asset_path("dynamic/login.html") %> '
+          })
+          .when('/moderator', {
+            controller: 'ModeratorController',
+            templateUrl: '<%= asset_path("dynamic/moderator_page.html") %> '
           });
     });

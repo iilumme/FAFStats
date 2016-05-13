@@ -27,6 +27,7 @@
 //= require controllers/GameIndexController
 //= require controllers/GameController
 //= require controllers/LogInController
+//= require controllers/ModeratorController
 //= require services/FAFApi.js
 //= require services/StatsApi.js
 //= require services/ChartService.js

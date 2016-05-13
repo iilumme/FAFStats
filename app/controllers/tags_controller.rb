@@ -1,5 +1,5 @@
 class TagsController < ApplicationController
-  before_action :set_tag, only: [:show, :edit, :update, :destroy]
+  before_action :set_tag, only: [:show, :update, :destroy]
 
   # GET /tags
   # GET /tags.json
@@ -12,29 +12,17 @@ class TagsController < ApplicationController
   def show
   end
 
-  # GET /tags/new
-  def new
-    @tag = Tag.new
-  end
-
-  # GET /tags/1/edit
-  def edit
-  end
-
   # POST /tags
   # POST /tags.json
   def create
     @tag = Tag.new(tag_params)
 
-    respond_to do |format|
-      if @tag.save
-        format.html { redirect_to @tag, notice: 'Tag was successfully created.' }
-        format.json { render :show, status: :created, location: @tag }
-      else
-        format.html { render :new }
-        format.json { render json: @tag.errors, status: :unprocessable_entity }
-      end
+    if @tag.save
+      render :nothing => true, :status => :ok
+    else
+      render :nothing => true, :status => :unprocessable_entity
     end
+
   end
 
   # PATCH/PUT /tags/1
