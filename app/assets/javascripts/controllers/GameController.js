@@ -51,7 +51,58 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
     StatsApi.postComment($scope.newComment);
   };
 
+  $scope.giveStars = function(amount) {
+    console.log("Gave " + amount + " stars!");
+  };
+
   /* Init */
   renderGame();
   getComments();
+
+  /* Triggers */
+  $("#star1").hover(function() {
+    $(this).addClass("yellow-text");
+  }, function() {
+    $(this).removeClass("yellow-text");
+  });
+  $("#star2").hover(function() {
+    $("#star1").addClass("yellow-text");
+    $(this).addClass("yellow-text");
+  }, function() {
+    $("#star1").removeClass("yellow-text");
+    $(this).removeClass("yellow-text");
+  });
+  $("#star3").hover(function() {
+    $("#star1").addClass("yellow-text");
+    $("#star2").addClass("yellow-text");
+    $(this).addClass("yellow-text");
+  }, function() {
+    $("#star1").removeClass("yellow-text");
+    $("#star2").removeClass("yellow-text");
+    $(this).removeClass("yellow-text");
+  });
+  $("#star4").hover(function() {
+    $("#star1").addClass("yellow-text");
+    $("#star2").addClass("yellow-text");
+    $("#star3").addClass("yellow-text");
+    $(this).addClass("yellow-text");
+  }, function() {
+    $("#star1").removeClass("yellow-text");
+    $("#star2").removeClass("yellow-text");
+    $("#star3").removeClass("yellow-text");
+    $(this).removeClass("yellow-text");
+  });
+  $("#star5").hover(function() {
+    $("#star1").addClass("yellow-text");
+    $("#star2").addClass("yellow-text");
+    $("#star3").addClass("yellow-text");
+    $("#star4").addClass("yellow-text");
+    $(this).addClass("yellow-text");
+  }, function() {
+    $("#star1").removeClass("yellow-text");
+    $("#star2").removeClass("yellow-text");
+    $("#star3").removeClass("yellow-text");
+    $("#star4").removeClass("yellow-text");
+    $(this).removeClass("yellow-text");
+  });
 });
