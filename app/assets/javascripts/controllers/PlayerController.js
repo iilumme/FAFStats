@@ -1,4 +1,4 @@
-FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, StatsApi, $rootScope, Upload) {
+FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, StatsApi, $rootScope, Upload, $location) {
 
   $('.modal-trigger').leanModal();
 
@@ -169,7 +169,6 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
 
 
   $scope.updateProfile = function() {
-    console.log('jh')
     var image = $scope.image;
     $scope.upload = Upload.upload({
       url: 'users/update',
