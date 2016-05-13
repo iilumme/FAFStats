@@ -6161,10 +6161,10 @@ body {
 main {
   flex: 1 0 auto; }
 
-.site a:link {
+.link-color-secondary a:link {
   color: #ff8247; }
 
-.site a:visited {
+.link-color-secondary a:visited {
   color: #ff8247; }
 
 .container-bg {

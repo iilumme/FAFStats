@@ -9,6 +9,7 @@
   <!--<base href="/">-->
 </head>
 <body ng-app="FAFStats">
+<header>
 <nav>
   <div class="nav-wrapper">
     <a href="#/" class="brand-logo center">FAFStats</a>
@@ -50,27 +51,26 @@
     </ul>
   </div>
 </nav>
-<div class="site">
-  <!-- Using Angular for routing -->
-  <main ng-view></main>
+</header>
+<!-- Using Angular for routing -->
+<main class="link-color-secondary" ng-view></main>
 
-  <footer class="page-footer">
+<footer class="page-footer link-color-secondary">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h5 class="white-text">What is FAFStats</h5>
+        <p class="grey-text text-lighten-4">
+          FAFStats is a third party statistics tool for <a ng-href="http://www.faforever.com/">Forged Alliance Forever</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
     <div class="container">
-      <div class="row">
-        <div class="col s12">
-          <h5 class="white-text">What is FAFStats</h5>
-          <p class="grey-text text-lighten-4">
-            FAFStats is a third party statistics tool for <a ng-href="http://www.faforever.com/">Forged Alliance Forever</a>.
-          </p>
-        </div>
-      </div>
+      Github repository: <a ng-href="https://github.com/iilumme/FAFStats">FAFStats</a>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-        Github repository: <a ng-href="https://github.com/iilumme/FAFStats">FAFStats</a>
-      </div>
-    </div>
-  </footer>
-</div>
+  </div>
+</footer>
 </body>
 </html>

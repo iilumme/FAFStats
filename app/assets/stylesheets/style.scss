@@ -15,11 +15,11 @@ main {
   flex: 1 0 auto;
 }
 
-.site a:link {
+.link-color-secondary a:link {
   color: $secondary-color;
 }
 
-.site a:visited {
+.link-color-secondary a:visited {
   color: $secondary-color;
 }
 
@@ -30,4 +30,3 @@ main {
 .container-bg-wrapper {
   margin: 25px;
 }
-
