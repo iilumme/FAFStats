@@ -6217,4 +6217,10 @@ main {
 nav .nav-wrapper form, nav .nav-wrapper form .input-field {
   height: 64px; }
 
+.stars a:link {
+  color: #9E9E9E; }
+
+.stars a:visited {
+  color: #9E9E9E; }
+
 /*# sourceMappingURL=app.css.map */
