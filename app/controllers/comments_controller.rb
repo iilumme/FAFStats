@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
   before_action :set_comment, only: [:update, :destroy]
 
   def game
-    @comments = Comment.where('game_id = ?', params[:id]).order('created_at DESC');
+    @comments = Comment.where('game_id = ?', params[:id]).order('created_at DESC')
     @comments = [@comments] if @comments.is_a?(Comment)
     render :game
   end
