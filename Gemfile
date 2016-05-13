@@ -71,4 +71,3 @@ gem 'resque-scheduler'
 gem 'httparty'
 
 gem 'angular_rails_csrf'
-gem 'responders', '~> 2.0'

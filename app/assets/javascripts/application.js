@@ -29,4 +29,5 @@
 //= require controllers/LogInController
 //= require services/FAFApi.js
 //= require services/StatsApi.js
+//= require services/ChartService.js
 //= require_tree.

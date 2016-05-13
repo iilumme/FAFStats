@@ -1,24 +1,24 @@
 FAFStats.controller('GameIndexController', function ($scope, FAFApi) {
 
-  /* $scope functions */
-
+  // Finds games
   $scope.replaySearch = function() {
     if(isEmpty($scope.playerOne) && isEmpty($scope.playerTwo)) {
-        renderGames("none");
+      renderGames("none");
     } else if(!isEmpty($scope.playerOne) && !isEmpty($scope.playerTwo)) {
-        renderGames("2p");
+      renderGames("2p");
     } else if(!isEmpty($scope.playerOne) && isEmpty($scope.playerTwo)) {
-        renderGames("1p");
+      renderGames("1p");
     } else if(isEmpty($scope.playerOne) && !isEmpty($scope.playerTwo)) {
-        renderGames("1p_2");
+      renderGames("1p_2");
     }
   };
 
-    var renderGames = function(mode) {
-        FAFApi.findGames($scope.playerOne, $scope.playerTwo, mode).success(function(games){
-            $scope.games = games;
-        });
-    }
+  // Finds games with specified parameters and add them to $scope
+  var renderGames = function(mode) {
+    FAFApi.findGames($scope.playerOne, $scope.playerTwo, mode).success(function(games){
+      $scope.games = games;
+    });
+  };
 
   /* Init */
 
@@ -29,5 +29,5 @@ FAFStats.controller('GameIndexController', function ($scope, FAFApi) {
 /* Util */
 
 function isEmpty(str) {
-    return (!str || 0 === str.length);
+  return (!str || 0 === str.length);
 }

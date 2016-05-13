@@ -1,6 +1,6 @@
 FAFStats.service('FAFApi', function ($http) {
 
-  /*PLAYERS*/
+  /* Players */
 
   this.findPlayer = function(id){
     return $http.get('http://api.faforever.com/ranked1v1/' + id);
@@ -12,9 +12,9 @@ FAFStats.service('FAFApi', function ($http) {
 
   this.searchForPlayersByName = function(name) {
     return $http.get('http://api.faforever.com/ranked1v1?filter[player]=' + name)
-  }
+  };
 
-  /*GAMES*/
+  /* Games */
 
   this.findGame = function(id) {
     return $http.get("http://api.faforever.com/games/" + id);
@@ -35,16 +35,12 @@ FAFStats.service('FAFApi', function ($http) {
 
   this.findPlayersGames = function(login){
     return $http.get("http://api.faforever.com/games?filter[players]=" + login + "&filter[mod]=ladder1v1&page[size]=10");
-  }
+  };
 
-  /*LEADERBOARDS*/
+  /* Leaderboards */
 
   this.getPage = function(pageNumber, pageSize) {
     return $http.get("http://api.faforever.com/ranked1v1?page[size]=" + pageSize + "&page[number]=" + pageNumber + "&filter[is_active]=true");
-  }
-
-
-
-
+  };
 
 });
