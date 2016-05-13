@@ -29,4 +29,12 @@ FAFStats.service('StatsApi', function ($http) {
     return $http.get('/logout');
   };
 
+  this.getComments = function(gameid) {
+    return $http.get('/comments/' + gameid + '.json');
+  };
+
+  this.postComment = function(comment) {
+    return $http.post('/comments', comment);
+  };
+
 });

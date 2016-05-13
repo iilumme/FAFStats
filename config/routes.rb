@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'comments/:id' => 'comments#game'
+  post 'comments' => 'comments#create'
   post 'register' => 'users#create'
   post 'login' => 'sessions#create'
   get 'logout' => 'sessions#destroy'
