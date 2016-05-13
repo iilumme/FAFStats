@@ -6171,7 +6171,8 @@ main {
   background-color: #fff; }
 
 .container-bg-wrapper {
-  margin: 25px; }
+  margin: 25px;
+  padding: 25px; }
 
 .player-hero {
   margin-top: 40px; }

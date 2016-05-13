@@ -60,9 +60,9 @@ var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match', 'ngFil
             controller: 'RootController',
             templateUrl: '<%= asset_path("static/root.html") %> '
           })
-          .when('/playertemplate', {
-            controller: 'PlayerController',
-            templateUrl: '<%= asset_path("dynamic/player_show.html") %> '
+          .when('/comments', {
+            controller: 'CommentsController',
+            templateUrl: '<%= asset_path("dynamic/comments_index.html") %> '
           })
           .when('/player/:id', {
             controller: 'PlayerController',

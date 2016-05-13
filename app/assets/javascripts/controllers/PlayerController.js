@@ -1,5 +1,7 @@
 FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, StatsApi, $rootScope, Upload, ChartService) {
 
+  var currentMatchHistoryPage = 1;
+
   $('.modal-trigger').leanModal();
 
   /* Variables */
@@ -13,7 +15,7 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
   var renderPlayer = function() {
     FAFApi.findPlayer(playerID).success(function(player){
       $scope.player = player;
-      renderGames();
+      renderGames(1);
       renderTags();
       ChartService.renderFactionChart();
       ChartService.renderRatingEvolutionChart(playerID);
@@ -21,8 +23,8 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
   };
 
   // Finds player's games
-  var renderGames = function() {
-    FAFApi.findPlayersGames($scope.player.data.attributes.login).success(function(games){
+  var renderGames = function(pageNumber) {
+    FAFApi.findPlayersGames($scope.player.data.attributes.login, pageNumber).success(function(games){
       $scope.games = games;
     });
   };
@@ -56,6 +58,20 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
       fields: { 'id': $rootScope.user.id, 'user[description]': $scope.description, 'user[image]': image }
     });
   };
+
+  $scope.matchHistoryNext = function() {
+    currentMatchHistoryPage++;
+    renderGames(currentMatchHistoryPage);
+  }
+
+  $scope.matchHistoryPrevious = function() {
+    if(currentMatchHistoryPage === 1) {
+      alert("Already on the first page");
+    } else {
+      currentMatchHistoryPage--;
+      renderGames(currentMatchHistoryPage);
+    }
+  }
 
   /* Init */
   $scope.$on('$viewContentLoaded', function() {

@@ -13,7 +13,7 @@
             </div>
             <!-- Rating -->
             <div class="col l6">
-              <span class="player-rating right">{{player.data.attributes.rating}} <i class="green-text small">+15</i><i class="green-text small material-icons">trending_up</i></span>
+              <span class="player-rating right">{{player.data.attributes.rating}}</span>
             </div>
           </div>
         </div>
@@ -92,6 +92,10 @@
               <td>{{game.attributes.map_name}}</td>
             </tr>
           </table>
+          <span>
+            <a ng-click="matchHistoryPrevious()" class="waves-effect waves-light btn left">Previous</a>
+            <a ng-click="matchHistoryNext()" class="waves-effect waves-light btn right">Next</a>
+          </span>
         </div>
         <!-- Rating Evolution -->
         <div class="col l4">
