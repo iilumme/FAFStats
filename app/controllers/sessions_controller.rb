@@ -34,20 +34,22 @@ class SessionsController < ApplicationController
 
   end
 
+  # GET /logout
   def destroy
     session[:user_id] = nil
     render :nothing => true, :status => :ok
   end
 
+  # GET /sessions/current_user.json
+  # Returns information of user in session
+  #  or renders nothing if there is no current user
   def current_logged_in_user
     @user = current_user
-
     if @user.nil?
-      render json: ""
+      render :nothing => true
     else
       render :sessionuser
     end
-
   end
 
 end

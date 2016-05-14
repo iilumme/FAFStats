@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'comments' => 'comments#index'
   get 'comments/:id' => 'comments#game'
   post 'comments' => 'comments#create'
+  post 'comments/update' => 'comments#update'
 
   # Tags
   resources :tags                                         #!!!!
