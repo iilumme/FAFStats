@@ -4,7 +4,7 @@ class StarRatingsController < ApplicationController
     ratings = StarRating.where('game_id = ?', params[:id])
     star_rating = StarRating.find_by(:game_id => params[:id], :user_id => session[:user_id])
 
-    if ratings.nil?
+    if ratings.average(:stars).nil?
       @game = {average_stars: 0, current_user_stars: 0}
       render :game
     elsif !ratings.nil?

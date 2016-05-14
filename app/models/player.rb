@@ -1,3 +1,3 @@
 class Player < ActiveRecord::Base
-  has_many :ratings
+  # FOR FUTURE USE
 end
