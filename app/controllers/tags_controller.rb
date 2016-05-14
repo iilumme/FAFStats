@@ -1,19 +1,26 @@
 class TagsController < ApplicationController
   before_action :set_tag, only: [:show, :update, :destroy]
 
-  # GET /tags
-  # GET /tags.json
-  def index
-    @tags = Tag.all
-  end
 
   # GET /tags/1
   # GET /tags/1.json
   def show
   end
 
+
+
+
+  # GET /tags.json
+  # Returns all tags
+  def index
+    @tags = Tag.all
+  end
+
+
   # POST /tags
-  # POST /tags.json
+  # Returns HTTP status:
+  #  200 (created new tag)
+  #  or 422 (couldn't process entity)
   def create
     @tag = Tag.new(tag_params)
 
@@ -22,31 +29,31 @@ class TagsController < ApplicationController
     else
       render :nothing => true, :status => :unprocessable_entity
     end
-
   end
 
   # PATCH/PUT /tags/1
   # PATCH/PUT /tags/1.json
+  # Returns HTTP status:
+  #  200 (updated the tag)
+  #  or 422 (couldn't process entity)
   def update
-    respond_to do |format|
-      if @tag.update(tag_params)
-        format.html { redirect_to @tag, notice: 'Tag was successfully updated.' }
-        format.json { render :show, status: :ok, location: @tag }
-      else
-        format.html { render :edit }
-        format.json { render json: @tag.errors, status: :unprocessable_entity }
-      end
+    @tag.name = tag_params[:name]
+    @tag.style = tag_params[:style]
+
+    if @tag.save
+      render :nothing => true, :status => :ok
+    else
+      render :nothing => true, :status => :unprocessable_entity
     end
   end
 
   # DELETE /tags/1
   # DELETE /tags/1.json
+  # Returns HTTP status:
+  #  204 (successfully deleted the tag)
   def destroy
     @tag.destroy
-    respond_to do |format|
-      format.html { redirect_to tags_url, notice: 'Tag was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    render :nothing => true, :status => :no_content
   end
 
   private

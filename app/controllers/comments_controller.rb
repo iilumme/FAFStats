@@ -1,6 +1,12 @@
 class CommentsController < ApplicationController
   before_action :set_comment, only: [:update, :destroy]
 
+  # GET /comments
+  # Returns
+  def index
+    @comments = Comment.all.order('created_at DESC').limit(50)
+  end
+
   def game
     @comments = Comment.where('game_id = ?', params[:id]).order('created_at DESC')
     @comments = [@comments] if @comments.is_a?(Comment)

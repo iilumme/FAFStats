@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :update]
-
+  before_action :set_user, only: [:update]
 
   # GET /users/player/*player_id*.json
   # Returns the user for the player if there is a user
@@ -8,21 +7,17 @@ class UsersController < ApplicationController
     @user = User.find_by_player_id(params[:id])
 
     if @user.nil?
-      #@user = User.new(:id => 0, :player_id => '0', :description => 'This player has not written a description.')
       render :nothing => true
     else
       render :player
     end
-
   end
 
-  # GET /users/1
-  # GET /users/1.json
-  def show
-  end
 
   # POST /users
-  # POST /users.json
+  # Returns HTTP status:
+  #  200 (created new user)
+  #  or 422 (couldn't process entity)
   def create
     @user = User.new(user_params)
     @user.usertype = 2
@@ -34,8 +29,10 @@ class UsersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /users/1
-  # PATCH/PUT /users/1.json
+  # POST /users/update
+  # Returns HTTP status:
+  #  200 (updated the user)
+  #  or 422 (couldn't process entity)
   def update
     @user.description = user_params[:description]
     @user.image = user_params[:image]

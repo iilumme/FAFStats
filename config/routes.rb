@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   post 'star_ratings' => 'star_ratings#create'
 
   # Comments
+  get 'comments' => 'comments#index'
   get 'comments/:id' => 'comments#game'
   post 'comments' => 'comments#create'
 
