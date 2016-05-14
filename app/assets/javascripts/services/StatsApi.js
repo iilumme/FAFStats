@@ -16,12 +16,20 @@ FAFStats.service('StatsApi', function ($http) {
     return $http.get('/users/player/' + player_id + '.json');
   };
 
+  this.getUserByUserID = function(user_id) {
+    return $http.get('/users/' + user_id + '.json');
+  };
+
 
   /* For a game/replay */
 
   this.getComments = function(gameid) {
     return $http.get('/comments/' + gameid + '.json');
   };
+
+  this.getAllComments = function() {
+    return $http.get('/comments');
+  }
 
   this.postComment = function(comment) {
     return $http.post('/comments', comment);

@@ -1,59 +1,68 @@
 <div class="container">
   <div class="row">
     <div class="col s12 m12 l12">
-      <div class="card">
-        <div class="card-content">
-          <div class="section">
-            <h3>Game Search</h3>
-
-            <form>
-              <div class="row">
-                <div class="input-field col s6">
-                  <input id="player_one" type="text" class="validate" ng-model="playerOne">
-                  <label for="player_one">Player One</label>
-                </div>
-                <div class="input-field col s6">
-                  <input id="player_two" type="text" class="validate" ng-model="playerTwo">
-                  <label for="player_two">Player Two</label>
-                </div>
-              </div>
-              <div class="row">
-                <!--<div class="input-field col s6">-->
-                  <!--<input disabled id="min_rating" type="text" class="validate">-->
-                  <!--<label for="disabled">Disabled</label>-->
-                <!--</div>-->
-                <div class="col s6">
-                  <input type="submit" value="Submit" class="waves-effect waves-light btn" ng-click="replaySearch()">
-                </div>
-              </div>
-            </form>
+      <ul class="tabs" tabs>
+        <li class="tab col s6"><a href="#top-rated">Top Rated</a></li>
+        <li class="tab col s6"><a href="#game-search">Game Search</a></li>
+      </ul>
+      <div id="top-rated" class="col s12">
+        <div class="card">
+          <div class="card-content">
           </div>
-          <div class="divider"></div>
-          <div class="section">
-            <table>
-              <tr>
-                <th>Game ID</th>
-                <th>Player 1</th>
-                <th>Player 2</th>
-                <th>Map Name</th>
-                <th>Comments</th>
-                <th>Replay Rating</th>
-              </tr>
-              <tr ng-repeat="game in games.data">
-                <td><a ng-href="/#/game/{{game.attributes.id}}">{{game.attributes.id}}</a></td>
-                <td><a ng-href="/#/player/{{game.attributes.players[0].player_id}}">{{game.attributes.players[0].login}}</a></td>
-                <td><a ng-href="/#/player/{{game.attributes.players[1].player_id}}">{{game.attributes.players[1].login}}</a></td>
-                <td>{{game.attributes.map_name}}</td>
-                <td>0</td>
-                <td><span>
-                  <i class="small material-icons yellow-text">star</i>
-                  <i class="small material-icons yellow-text">star</i>
-                  <i class="small material-icons yellow-text">star</i>
-                  <i class="small material-icons grey-text">star</i>
-                  <i class="small material-icons grey-text">star</i>
-                </span></td>
-              </tr>
-            </table>
+        </div>
+      </div>
+      <div id="game-search" class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <div class="section">
+              <h3>Game Search</h3>
+
+              <form>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="player_one" type="text" class="validate" ng-model="playerOne">
+                    <label for="player_one">Player One</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="player_two" type="text" class="validate" ng-model="playerTwo">
+                    <label for="player_two">Player Two</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <!--<div class="input-field col s6">-->
+                    <!--<input disabled id="min_rating" type="text" class="validate">-->
+                    <!--<label for="disabled">Disabled</label>-->
+                  <!--</div>-->
+                  <div class="col s6">
+                    <input type="submit" value="Submit" class="waves-effect waves-light btn" ng-click="replaySearch()">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+              <table>
+                <tr>
+                  <th>Game ID</th>
+                  <th>Player 1</th>
+                  <th>Player 2</th>
+                  <th>Map Name</th>
+                  <th>Comments</th>
+                  <th>Replay Rating</th>
+                </tr>
+                <tr ng-repeat="game in games.data">
+                  <td><a ng-href="/#/game/{{game.attributes.id}}">{{game.attributes.id}}</a></td>
+                  <td><a ng-href="/#/player/{{game.attributes.players[0].player_id}}">{{game.attributes.players[0].login}}</a></td>
+                  <td><a ng-href="/#/player/{{game.attributes.players[1].player_id}}">{{game.attributes.players[1].login}}</a></td>
+                  <td>{{game.attributes.map_name}}</td>
+                  <td>0</td>
+                  <td><span>
+                    <i ng-repeat="n in game.yellowStars" class="small material-icons yellow-text">star</i>
+                    <i ng-repeat="n in game.greyStars" class="small material-icons grey-text">star</i>
+                  </span></td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </div>

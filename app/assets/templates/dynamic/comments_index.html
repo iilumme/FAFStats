@@ -11,10 +11,10 @@
                 <th>Commenter</th>
                 <th>Comment</th>
               </tr>
-              <tr>
-                <td><a href="#/game/4710442">TestPlay Vs Blodir (4710442)</a></td>
-                <td><a href="#/player/133636">Blodir</a></td>
-                <td>asdfasgoeronabkfndlskn eoirjgdfvkdslnkl oirsgoijsjlbklkfsbn sijbsiooesrjmper segjfkbölskdölbk asdfghjk asdfghjkl asdfghjkl asdfghjkl asdfghjkl asdfghjkl asdfghjkl asdfghjk asdfghjkl</td>
+              <tr ng-repeat="comment in comments">
+                <td><a href="#/game/{{comment.game_id}}">{{comment.game.data[0].attributes.game_name}} ({{comment.game_id}})</a></td>
+                <td><a href="#/player/{{comment.user.player_id}}">{{comment.player.data.attributes.login}}</a></td>
+                <td>{{comment.content}}</td>
               </tr>
             </table>
           </div>
