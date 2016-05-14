@@ -1,42 +1,47 @@
 Rails.application.routes.draw do
 
+  resources :games
   # StarRatings
-  get 'star_ratings/:id' => 'star_ratings#game'
-  post 'star_ratings' => 'star_ratings#create'
+  get 'star_ratings/:id', to: 'star_ratings#game'
+  post 'star_ratings' , to: 'star_ratings#create'
 
   # Comments
-  get 'comments' => 'comments#index'
-  get 'comments/:id' => 'comments#game'
-  post 'comments' => 'comments#create'
-  post 'comments/update' => 'comments#update'
+  get 'comments' , to: 'comments#index'
+  get 'comments/:id' , to: 'comments#game'
+  post 'comments' , to: 'comments#create'
+  post 'comments/update' , to: 'comments#update'
 
   # Tags
   resources :tags                                         #!!!!
 
   # Taggeds
-  get 'taggeds/player/:id' => 'taggeds#player'
+  get 'taggeds/player/:id' , to: 'taggeds#player'
   resources :taggeds                                      #!!!!
 
   # Users
-  get 'users/player/:id' => 'users#player'
-  post 'register' => 'users#create'
-  post 'users/update' => 'users#update'
+  get 'users/player/:id', to: 'users#player'
+  post 'register' , to: 'users#create'
+  post 'users/update' , to: 'users#update'
   resources :users
 
   # Sessions
-  get 'sessions/current_user' => 'sessions#current_logged_in_user'
-  get 'logout' => 'sessions#destroy'
-  post 'login' => 'sessions#create'
-  get '/auth/:provider/callback' => "sessions#create_oauth"
+  get 'sessions/current_user' , to: 'sessions#current_logged_in_user'
+  get 'logout' , to: 'sessions#destroy'
+  post 'login' , to: 'sessions#create'
+
+
+  #########################
+  get 'auth/:provider/callback', to: 'sessions#create_oauth'
+  #########################
 
   # Ratings
-  get 'ratings/player/:id' => 'ratings#player'
+  get 'ratings/player/:id' , to: 'ratings#player'
   resources :ratings                                      #!!!!
 
 
   resources :players
 
-  root :to => 'layouts#index'
-  get '*path' => 'layouts#index'
+  root 'layouts#index'
+  get '*path' , to: 'layouts#index'
 
 end
