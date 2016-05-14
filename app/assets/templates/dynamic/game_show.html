@@ -46,7 +46,7 @@
           <div class="row">
             <a ng-href="http://content.faforever.com/faf/vault/replay_vault/replay.php?id={{gameid}}" class="waves-effect waves-light btn white-text">Download Replay</a>
           </div>
-          <div class="row" ng-if="user">
+          <div class="row" ng-hide="!user">
             <h5>Rate this replay</h5>
             <span class="stars">
               <a href="" id="star1" ng-click="giveStars(1)"><i class="small material-icons">star</i></a
