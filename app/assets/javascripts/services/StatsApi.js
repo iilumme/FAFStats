@@ -28,6 +28,12 @@ FAFStats.service('StatsApi', function ($http) {
   };
 
 
+  /* comments */
+  this.getAllComments = function() {
+    return $http.get('/comments.json');
+  };
+
+
   /* For tags */
 
   this.getAllTags = function() {
