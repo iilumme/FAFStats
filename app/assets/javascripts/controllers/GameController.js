@@ -4,6 +4,7 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
   $scope.gameid = $routeParams.id;
   $scope.players = [];
   $scope.comments = [];
+  $scope.stars = {};
 
   if ($rootScope.user !== null) {
     $scope.newComment = {
@@ -18,6 +19,7 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
       $scope.game = gamedata.data[0].attributes;
       $scope.start_time = new Date($scope.game.start_time).toString();
       $scope.game_length = gameLength();
+      $scope.players = [];
 
       for (var i = 0; i < $scope.game.players.length; i++) {
         getPlayer($scope.game.players[i].player_id);
@@ -51,20 +53,31 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
 
   $scope.sendComment = function() {
     StatsApi.postComment($scope.newComment).success(function() {
-      //viesti
+      Materialize.toast('Your comment has been submitted!', 4000);
+      getComments();
+      $("#commentform").val("");
     });
   };
 
   var getStars = function() {
     StatsApi.getStars($scope.gameid).success(function(star_rating) {
-      console.log(star_rating)
+      $scope.star_rating = star_rating;
+      $scope.yellowStars = [];
+      for (var i = 0; i < star_rating.average_stars; i++) {
+        $scope.yellowStars.push(i);
+      }
+      $scope.greyStars = [];
+      for (var i = 0; i < 5 - star_rating.average_stars; i++) {
+        $scope.greyStars.push(i);
+      }
     });
   };
 
   $scope.giveStars = function(amount) {
     var star_rating = {stars: amount, game_id: $scope.gameid}
     StatsApi.postStars(star_rating).success(function() {
-      //viesti
+      Materialize.toast('Your star rating has been submitted!', 4000);
+      renderGame();
     });
   };
 
