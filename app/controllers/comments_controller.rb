@@ -1,8 +1,10 @@
 class CommentsController < ApplicationController
   before_action :set_comment, only: [:update, :destroy]
 
+  # GET /comments
+  # Returns
   def index
-    @comments = Comment.all.limit(50)
+    @comments = Comment.all.order('created_at DESC').limit(50)
   end
 
   def game
