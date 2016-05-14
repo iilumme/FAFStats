@@ -16,6 +16,10 @@ FAFStats.service('StatsApi', function ($http) {
     return $http.get('/users/player/' + player_id + '.json');
   };
 
+  this.getUserByUserID = function(user_id) {
+    return $http.get('/users/' + user_id + '.json');
+  };
+
 
   /* For a game/replay */
 
@@ -30,6 +34,10 @@ FAFStats.service('StatsApi', function ($http) {
   this.getComments = function(game_id) {
     return $http.get('/comments/' + game_id + '.json');
   };
+
+  this.getAllComments = function() {
+    return $http.get('/comments');
+  }
 
   this.postComment = function(comment) {
     return $http.post('/comments', comment);

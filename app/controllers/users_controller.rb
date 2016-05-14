@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:update]
+  before_action :set_user, only: [:user, :update]
 
   # GET /users/player/*player_id*.json
   # Returns the user for the player if there is a user
@@ -11,6 +11,9 @@ class UsersController < ApplicationController
     else
       render :player
     end
+  end
+
+  def user
   end
 
 

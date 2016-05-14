@@ -23,6 +23,7 @@ Rails.application.routes.draw do
 
   # Users
   get 'users/player/:id', to: 'users#player'
+  get 'users/:id', to: 'users#user'
   post 'register' , to: 'users#create'
   post 'users/update' , to: 'users#update'
   resources :users
