@@ -92,10 +92,11 @@
             <!-- Loop through all comments -->
             <div class="row" ng-repeat="comment in comments">
               <div class="col s1 card-image">
-                <img src="http://placehold.it/128x128/ccc">
+                <img ng-if="commenters[$index].user.image.image.url != null" ng-src="{{commenters[$index].user.image.image.url}}" type="file"/>
+                <img ng-if="commenters[$index].user.image.image.url == null" src="http://placehold.it/128x128?text=No+Picture">
               </div>
               <div class="col s11">
-                <h5>Commenter</h5>
+                <h5>{{commenters[$index].data.attributes.login}}</h5>
                 <p>{{comment.content}}</p>
               </div>
             </div>

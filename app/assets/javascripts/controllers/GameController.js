@@ -4,6 +4,7 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
   $scope.gameid = $routeParams.id;
   $scope.players = [];
   $scope.comments = [];
+  $scope.commenters = [];
   $scope.stars = {};
 
   if ($rootScope.user !== null) {
@@ -48,6 +49,9 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
   var getComments = function() {
     StatsApi.getComments($scope.gameid).success(function(comments) {
       $scope.comments = comments;
+      for (var i = 0; i < $scope.comments.length; i++) {
+        $scope.addCommenter(comments[i].player_id);
+      }
     });
   };
 
@@ -78,6 +82,19 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
     StatsApi.postStars(star_rating).success(function() {
       Materialize.toast('Your star rating has been submitted!', 4000);
       renderGame();
+    });
+  };
+
+  $scope.addCommenter = function(id) {
+    FAFApi.findPlayer(id).success(function(player) {
+      var index = $scope.commenters.push(player) - 1;
+      $scope.addUser(id, index);
+    });
+  }
+
+  $scope.addUser = function(id, commenterIndex) {
+    StatsApi.getUserForPlayer(id).success(function(user){
+      $scope.commenters[commenterIndex].user = user;
     });
   };
 
