@@ -19,8 +19,16 @@ FAFStats.service('StatsApi', function ($http) {
 
   /* For a game/replay */
 
-  this.getComments = function(gameid) {
-    return $http.get('/comments/' + gameid + '.json');
+  this.getGame = function(game_id) {
+    return $http.get('/games/' + game_id + '.json');
+  };
+
+  this.getStarsOfCurrentUser = function(game_id) {
+    return $http.get('/star_ratings/current_user/' + game_id + '.json');
+  };
+
+  this.getComments = function(game_id) {
+    return $http.get('/comments/' + game_id + '.json');
   };
 
   this.postComment = function(comment) {
@@ -29,6 +37,7 @@ FAFStats.service('StatsApi', function ($http) {
 
 
   /* comments */
+
   this.getAllComments = function() {
     return $http.get('/comments.json');
   };
@@ -51,10 +60,6 @@ FAFStats.service('StatsApi', function ($http) {
   };
 
   /* For star ratings */
-
-  this.getStars = function(game_id) {
-    return $http.get('/star_ratings/'+ game_id +'.json');
-  };
 
   this.postStars = function(star_rating) {
     return $http.post('/star_ratings', star_rating);

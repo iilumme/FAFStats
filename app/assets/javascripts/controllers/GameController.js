@@ -64,15 +64,22 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
   };
 
   var getStars = function() {
-    StatsApi.getStars($scope.gameid).success(function(star_rating) {
-      $scope.star_rating = star_rating;
-      $scope.yellowStars = [];
-      for (var i = 0; i < star_rating.average_stars; i++) {
-        $scope.yellowStars.push(i);
-      }
-      $scope.greyStars = [];
-      for (var i = 0; i < 5 - star_rating.average_stars; i++) {
-        $scope.greyStars.push(i);
+    StatsApi.getGame($scope.gameid).success(function(game){
+      if (game !== '') {
+        $scope.star_rating = game;
+        $scope.yellowStars = [];
+        for (var i = 0; i < game.average_of_star_ratings; i++) {
+          $scope.yellowStars.push(i);
+        }
+        $scope.greyStars = [];
+        for (var i = 0; i < 5 - game.average_of_star_ratings; i++) {
+          $scope.greyStars.push(i);
+        }
+      } else {
+        $scope.greyStars = [];
+        for (var i = 0; i < 5; i++) {
+          $scope.greyStars.push(i);
+        }
       }
     });
   };
