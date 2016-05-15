@@ -1,6 +1,6 @@
 class TagsController < ApplicationController
   before_action :set_tag, only: [:update, :destroy]
-  before_action :ensure_signed_in, :ensure_that_has_rights,  only: [:create, :update, :destroy]
+  before_action :ensure_signed_in, :ensure_admin_or_moderator,  only: [:create, :update, :destroy]
 
   # GET /tags.json
   # Returns all tags

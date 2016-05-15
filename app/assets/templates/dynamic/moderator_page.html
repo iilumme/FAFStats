@@ -38,6 +38,37 @@
           <div class="card">
             <div class="card-content">
               <section>
+                <span class="card-title">Update tag</span>
+              </section>
+              <div>
+                <form name="form" ng-submit="updateTag()">
+                  <p>
+                    <label>Tag</label>
+                    <select class="" ng-model="update.tag" material-select watch>
+                      <option ng-repeat="update_tag in update_tags" value="{{update_tag.id}}">{{update_tag.name}}</option>
+                    </select>
+                  </p>
+                  <p>
+                    <label>Name</label>
+                    <input type="text" name="name" ng-model="update.tag.name" required>
+                  <div ng-show="form.update.tag.name.$invalid && form.update.tag.name.$dirty">
+                    Name is required
+                  </div>
+                  </p>
+                  <p>
+                    <label>Style</label>
+                    <input type="text" name="style" ng-model="update.tag.style">
+                  </p>
+                  <button type="submit" ng-disabled="form.$invalid">Update</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-content">
+              <section>
                 <span class="card-title">Tag someone</span>
               </section>
               <div>

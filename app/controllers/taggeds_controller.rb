@@ -1,26 +1,25 @@
 class TaggedsController < ApplicationController
-  before_action :set_tagged, only: [:show, :edit, :update, :destroy]
+  before_action :set_tagged, only: [:destroy]
+  before_action :ensure_signed_in, :ensure_admin_or_moderator, only: [:create, :destroy]
 
-
+  # GET taggeds/player/*player_id*.json
+  # Returns the tags of the player
   def player
-    @taggeds = Tagged.where('player_id = ?', params[:id])
-    @tags = []
-    @taggeds.each do |tagged|
-      @tags.push Tag.find(tagged.tag_id)
-    end
+    @tags = Tagged.get_tags_for_player(params[:id])
     render :player
   end
 
-  # GET /taggeds
   # GET /taggeds.json
   def index
     @taggeds = Tagged.all
   end
 
   # POST /taggeds
-  # POST /taggeds.json
+  # Returns HTTP status:
+  #  200 (created new tagged)
+  #  or 422 (couldn't process entity)
+  #  or 400 (if tagged already exists)
   def create
-
     if !Tagged.find_by(:player_id => tagged_params[:player_id], :tag_id => tagged_params[:tag_id]).nil?
       render :nothing => true, :status => :bad_request
     else
@@ -34,28 +33,10 @@ class TaggedsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /taggeds/1
-  # PATCH/PUT /taggeds/1.json
-  def update
-    respond_to do |format|
-      if @tagged.update(tagged_params)
-        format.html { redirect_to @tagged, notice: 'Tagged was successfully updated.' }
-        format.json { render :show, status: :ok, location: @tagged }
-      else
-        format.html { render :edit }
-        format.json { render json: @tagged.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
   # DELETE /taggeds/1
-  # DELETE /taggeds/1.json
   def destroy
     @tagged.destroy
-    respond_to do |format|
-      format.html { redirect_to taggeds_url, notice: 'Tagged was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    render :nothing => true, :status => :no_content
   end
 
   private

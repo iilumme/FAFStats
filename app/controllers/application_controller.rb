@@ -52,6 +52,12 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def ensure_admin_or_moderator
+    if ensure_usertype == 'normal' or ensure_usertype == 'banned'
+      render :nothing => true, :status => :forbidden
+    end
+  end
+
   def is_banned
     true if current_user.usertype == 3
   end

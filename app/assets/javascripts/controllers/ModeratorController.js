@@ -4,6 +4,7 @@ FAFStats.controller('ModeratorController', function($rootScope, $scope, StatsApi
   var getAllTags = function() {
     StatsApi.getAllTags().success(function(tags) {
       $scope.tags = tags;
+      $scope.update_tags = tags;
     });
   };
 
@@ -39,5 +40,5 @@ FAFStats.controller('ModeratorController', function($rootScope, $scope, StatsApi
 
   /* Init */
   getAllTags();
-
+  console.log($scope.tag_to_update)
 });
