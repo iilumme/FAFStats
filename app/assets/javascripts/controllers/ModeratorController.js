@@ -26,7 +26,8 @@ FAFStats.controller('ModeratorController', function($rootScope, $scope, StatsApi
       StatsApi.postTagged(tagged)
         .then(function successCallback(response){
           Materialize.toast('Tagging was successful!', 4000);
-        }, function errorCallback(response){
+        },
+          function errorCallback(response){
             if (response.status === 400) {
               Materialize.toast('Player already has this tag!', 4000);
             } else {

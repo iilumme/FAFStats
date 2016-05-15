@@ -57,5 +57,4 @@ class SessionsController < ApplicationController
       render :sessionuser
     end
   end
-
 end

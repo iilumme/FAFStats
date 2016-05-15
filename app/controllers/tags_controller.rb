@@ -1,21 +1,12 @@
 class TagsController < ApplicationController
-  before_action :set_tag, only: [:show, :update, :destroy]
-
-
-  # GET /tags/1
-  # GET /tags/1.json
-  def show
-  end
-
-
-
+  before_action :set_tag, only: [:update, :destroy]
+  before_action :ensure_signed_in, :ensure_that_has_rights,  only: [:create, :update, :destroy]
 
   # GET /tags.json
   # Returns all tags
   def index
     @tags = Tag.all
   end
-
 
   # POST /tags
   # Returns HTTP status:

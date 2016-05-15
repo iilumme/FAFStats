@@ -91,6 +91,8 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
     StatsApi.postStars(star_rating).success(function() {
       Materialize.toast('Your star rating has been submitted!', 4000);
       renderGame();
+    }).error(function(){
+      Materialize.toast('An error happened, please try again!', 4000);
     });
   };
 
