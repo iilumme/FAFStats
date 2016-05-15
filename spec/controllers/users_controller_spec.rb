@@ -15,7 +15,7 @@ RSpec.describe UsersController do
     it "renders nothing" do
       get :player, id: '0', format: :json
 
-      response.body.should be_blank
+      expect(response.body).to eql('')
       expect(response.code).to eql('200')
     end
   end
@@ -44,13 +44,4 @@ RSpec.describe UsersController do
     end
   end
 
-  describe "POST #update" do
-    let(:user){FactoryGirl.create(:user) }
-
-    it 'returns 200, valid user' do
-      post :update, :user => user, format: :json
-      expect(response.code).to eql('200')
-    end
-
-  end
 end
