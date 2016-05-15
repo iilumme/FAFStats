@@ -16,6 +16,7 @@ The goal of this project is to create a platform where [FAForever](http://fafore
 Login via FAF oAuth does not currently work, as a workaround you can log in as ANY user for testing purposes.
 
 To test admin functionality use played id: 133636
+
 To test registering (temporary login) and normal user functionality, use played id: 40063
 
 Some concurrent requests to [FAF API](https://github.com/FAForever/api) fail occassionally. We would greatly appreciate it if someone would look into these issues.
