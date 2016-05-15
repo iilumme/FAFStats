@@ -1,5 +1,6 @@
 class Game < ActiveRecord::Base
   has_many :star_ratings, :foreign_key => :game_id, :primary_key => :game_id, dependent: :destroy
+  has_many :comments, :foreign_key => :game_id, :primary_key => :game_id, dependent: :destroy
 
   # Updates the game rating:
   # Every star given for the game is worth of certain amount of 'points'

@@ -9,4 +9,19 @@ class ApplicationController < ActionController::Base
     return nil if session[:user_id].nil?
     @user = User.find(session[:user_id])
   end
+
+  def ensure_usertype
+    if current_user.usertype == 0
+      'administrator'
+    elsif current_user.usertype == 1
+      'moderator'
+    elsif current_user.usertype == 2
+      'normal'
+    end
+  end
+
+  def is_banned
+    true if current_user.usertype == 3
+  end
+
 end

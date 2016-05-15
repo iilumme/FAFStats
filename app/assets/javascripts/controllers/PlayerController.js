@@ -57,6 +57,8 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
       fileFormDataName: 'user[image]',
       fields: { 'id': $rootScope.user.id, 'user[description]': $scope.description, 'user[image]': image }
     });
+    renderUser();
+    renderPlayer();
   };
 
   $scope.matchHistoryNext = function() {
