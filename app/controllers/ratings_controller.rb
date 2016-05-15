@@ -7,10 +7,4 @@ class RatingsController < ApplicationController
     @ratings = [@ratings] if @ratings.is_a?(Rating)
     render :player
   end
-
-  private
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def rating_params
-      params.require(:rating).permit(:player_id, :value, :month)
-    end
 end

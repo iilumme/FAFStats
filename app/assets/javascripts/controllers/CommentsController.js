@@ -11,7 +11,7 @@ FAFStats.controller('CommentsController', function ($scope, StatsApi, FAFApi) {
         })(i);
       }
     });
-  }
+  };
 
   var addUserAndPlayer = function(id, index) {
     StatsApi.getUserByUserID(id).success(function(user){
@@ -24,13 +24,13 @@ FAFStats.controller('CommentsController', function ($scope, StatsApi, FAFApi) {
     FAFApi.findPlayer(id).success(function(player) {
       $scope.comments[index].player = player;
     });
-  }
+  };
 
   var addGame = function(id, index) {
     FAFApi.findGame(id).success(function(game) {
       $scope.comments[index].game = game;
     });
-  }
+  };
 
   getComments();
 

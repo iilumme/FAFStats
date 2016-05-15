@@ -1,6 +1,8 @@
 class StarRatingsController < ApplicationController
+  before_action :ensure_signed_in, only: [:stars_of_current_user, :create]
 
-
+  # GET /star_ratings/current_user/*game_id*.json
+  # Returns the stars given by current user
   def stars_of_current_user
     @current_user_stars = {stars: current_user.stars_of_a_game(params[:id])}
     render :stars_of_current_user
@@ -53,11 +55,6 @@ class StarRatingsController < ApplicationController
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_star_rating
-    @star_rating = StarRating.find(params[:id])
-  end
-
   # Never trust parameters from the scary internet, only allow the white list through.
   def star_rating_params
     params.require(:star_rating).permit(:game_id, :stars)
