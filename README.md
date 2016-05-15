@@ -44,7 +44,7 @@ The project relies on 3 main parts:
   * The client side application
 * (Discontinued) Redis & Resque & Resque Scheduler
   * Runs scheduled tasks such as updating rating evolution and faction distribution charts
-  * Jobs will be run manually
+  * Jobs will be run manually at the moment
   * **Discontinued, because of increased server costs**
 
 ## FAFStats Data Types
