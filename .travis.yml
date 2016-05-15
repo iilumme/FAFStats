@@ -13,4 +13,7 @@ deploy:
   app: fafstats
   on:
     repo: iilumme/FAFStats
+addons:
+    code_climate:
+        repo_token: e2aab6cf29fde67da815225f304ad0d3b7b19f75619facd5d5f6aca74abdf478
 skip_cleanup: true
