@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :games
+  # Games
+  get 'games/:id', to: 'games#game'
+
   # StarRatings
   get 'star_ratings/:id', to: 'star_ratings#game'
+  get 'star_ratings/current_user/:id', to: 'star_ratings#stars_of_current_user'
   post 'star_ratings' , to: 'star_ratings#create'
 
   # Comments
