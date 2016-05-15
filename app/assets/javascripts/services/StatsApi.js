@@ -68,6 +68,12 @@ FAFStats.service('StatsApi', function ($http) {
     return $http.post('/star_ratings', star_rating);
   };
 
+  /* Games path */
+
+  this.getAllGames = function() {
+    return $http.get('/games.json');
+  }
+
   /* Session */
 
   this.register = function(user) {

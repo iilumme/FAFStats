@@ -39,9 +39,23 @@ FAFStats.controller('GameIndexController', function ($scope, FAFApi, StatsApi) {
     }
   };
 
+  var renderTopRatedGames = function() {
+    StatsApi.getAllGames().success(function(games){
+      $scope.topRatedGames = games;
+      for (var i = 0; i < games.length; i++) {
+        (function(i) {
+          FAFApi.findGame($scope.topRatedGames[i].game_id).success(function(game){
+            $scope.topRatedGames[i].game = game.data[0];
+          });
+        })(i);
+      }
+    });
+  }
+
   /* Init */
 
   renderGames("none");
+  renderTopRatedGames();
 
 });
 
