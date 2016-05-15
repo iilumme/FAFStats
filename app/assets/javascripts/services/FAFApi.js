@@ -20,21 +20,26 @@ FAFStats.service('FAFApi', function ($http) {
     return $http.get("http://api.faforever.com/games/" + id);
   };
 
-  this.findGames = function (playerOne, playerTwo, mode) {
-    if (mode === "1p") {
-      return $http.get("http://api.faforever.com/games?filter[players]=" + playerOne + "&filter[mod]=ladder1v1&page[size]=50");
-    } else if (mode === "1p_2") {
-      return $http.get("http://api.faforever.com/games?filter[players]=" + playerTwo + "&filter[mod]=ladder1v1&page[size]=50");
-    } else if (mode === "2p") {
-      return $http.get("http://api.faforever.com/games?filter[players]=" + playerOne + "," + playerTwo + "&filter[mod]=ladder1v1&page[size]=50");
-    } else {
-      return $http.get("http://api.faforever.com/games?filter[mod]=ladder1v1&page[size]=50");
+  this.findGames = function (playerOne, playerTwo, map) {
+    var q = "http://api.faforever.com/games?filter[mod]=ladder1v1&filter[rating_type]=ladder1v1&page[size]=50";
+    if (playerOne) {
+      q = q.concat("&filter[players]="+playerOne);
     }
+    if (playerTwo) {
+      q = q.concat("&filter[players]="+playerTwo);
+    }
+    if (playerOne && playerTwo) {
+      q = q.concat("&filter[players]="+playerOne+","+playerTwo);
+    }
+    if (map) {
+      q = q.concat("&filter[map_name]="+map)
+    }
+    return $http.get(q);
   };
 
 
   this.findPlayersGames = function(login, pageNumber){
-    return $http.get("http://api.faforever.com/games?filter[players]=" + login + "&filter[mod]=ladder1v1&page[size]=10&page[number]=" + pageNumber);
+    return $http.get("http://api.faforever.com/games?filter[players]=" + login + "&filter[mod]=ladder1v1&page[size]=20&page[number]=" + pageNumber);
   };
 
   /* Leaderboards */

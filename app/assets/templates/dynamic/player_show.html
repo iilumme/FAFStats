@@ -47,7 +47,7 @@
         <div class="col l8">
           <h5>Description</h5>
           <p>{{user.description}}</p>
-          <a ng-if="user.player_id == session_playerid" modal class="btn-floating waves-effect waves-light red modal-trigger" href="#editmodal"><i class="material-icons">mode_edit</i></a>
+          <a ng-if="user.player_id == session_user.player_id || session_user.usertype < 2" modal class="btn-floating waves-effect waves-light red modal-trigger" href="#editmodal"><i class="material-icons">mode_edit</i></a>
           <div id="editmodal" class="modal modal-fixed-footer">
             <form ng-submit="updateProfile()">
               <div class="modal-content">
@@ -86,7 +86,7 @@
               <th>Map Name</th>
             </tr>
             <tr ng-repeat="game in games.data">
-              <td><a ng-href="/#/game/{{game.attributes.id}}">{{game.attributes.id}}</a></td>
+              <td><a ng-href="/#/game/{{game.attributes.id}}">{{game.attributes.id}}</a> <a ng-if="game.attributes.players[0].score_time != null" ng-href="http://content.faforever.com/faf/vault/replay_vault/replay.php?id={{game.attributes.id}}"><i class="tiny material-icons">play_circle_outline</i></a></td>
               <td><a ng-href="/#/player/{{game.attributes.players[0].player_id}}">{{game.attributes.players[0].login}}</a></td>
               <td><a ng-href="/#/player/{{game.attributes.players[1].player_id}}">{{game.attributes.players[1].login}}</a></td>
               <td>{{game.attributes.map_name}}</td>

@@ -2,20 +2,12 @@ FAFStats.controller('GameIndexController', function ($scope, FAFApi, StatsApi) {
 
   // Finds games
   $scope.replaySearch = function() {
-    if(isEmpty($scope.playerOne) && isEmpty($scope.playerTwo)) {
-      renderGames("none");
-    } else if(!isEmpty($scope.playerOne) && !isEmpty($scope.playerTwo)) {
-      renderGames("2p");
-    } else if(!isEmpty($scope.playerOne) && isEmpty($scope.playerTwo)) {
-      renderGames("1p");
-    } else if(isEmpty($scope.playerOne) && !isEmpty($scope.playerTwo)) {
-      renderGames("1p_2");
-    }
+    renderGames();
   };
 
   // Finds games with specified parameters and add them to $scope
-  var renderGames = function(mode) {
-    FAFApi.findGames($scope.playerOne, $scope.playerTwo, mode).success(function(games){
+  var renderGames = function() {
+    FAFApi.findGames($scope.playerOne, $scope.playerTwo, $scope.map).success(function(games){
       $scope.games = games;
       getCommentAmountForAllGames($scope.games);
       getStars();
@@ -87,7 +79,7 @@ FAFStats.controller('GameIndexController', function ($scope, FAFApi, StatsApi) {
     making it a bit of a mess */
 
   $scope.$on('$viewContentLoaded', function() {
-    renderGames("none");
+    renderGames();
   });
 
 });

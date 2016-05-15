@@ -66,6 +66,15 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
     });
   };
 
+  $scope.deleteComment = function(id) {
+    StatsApi.deleteComment(id).success(function() {
+      Materialize.toast('Your comment has been deleted!', 4000);
+      getComments();
+    }).error(function() {
+      Materialize.toast('An error happened, please try again!', 4000);
+    });
+  }
+
   var getStars = function() {
     StatsApi.getGame($scope.gameid).success(function(game){
       if (game !== '') {

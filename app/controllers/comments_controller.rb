@@ -45,8 +45,12 @@ class CommentsController < ApplicationController
   # Returns HTTP status:
   #  204 (successfully deleted the comment)
   def destroy
-    @comment.destroy
-    render :nothing => true, :status => :no_content
+    if @comment.user_id == current_user.id || current_user.usertype < 2
+      @comment.destroy
+      render :nothing => true, :status => :no_content
+    else
+      render_bad_request
+    end
   end
 
   private

@@ -49,10 +49,10 @@
                   </div>
                 </div>
                 <div class="row">
-                  <!--<div class="input-field col s6">-->
-                    <!--<input disabled id="min_rating" type="text" class="validate">-->
-                    <!--<label for="disabled">Disabled</label>-->
-                  <!--</div>-->
+                  <div class="input-field col s6">
+                    <input id="map" type="text" class="validate" ng-model="map">
+                    <label for="map">Map</label>
+                  </div>
                   <div class="col s6">
                     <input type="submit" value="Submit" class="waves-effect waves-light btn" ng-click="replaySearch()">
                   </div>
@@ -71,7 +71,7 @@
                   <th>Replay Rating</th>
                 </tr>
                 <tr ng-repeat="game in games.data">
-                  <td><a ng-href="/#/game/{{game.attributes.id}}">{{game.attributes.id}}</a></td>
+                  <td><a ng-href="/#/game/{{game.attributes.id}}">{{game.attributes.id}}</a> <a ng-if="game.attributes.players[0].score_time != null" ng-href="http://content.faforever.com/faf/vault/replay_vault/replay.php?id={{game.attributes.id}}"><i class="tiny material-icons">play_circle_outline</i></a></td>
                   <td><a ng-href="/#/player/{{game.attributes.players[0].player_id}}">{{game.attributes.players[0].login}}</a></td>
                   <td><a ng-href="/#/player/{{game.attributes.players[1].player_id}}">{{game.attributes.players[1].login}}</a></td>
                   <td>{{game.attributes.map_name}}</td>

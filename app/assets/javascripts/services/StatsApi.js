@@ -43,6 +43,10 @@ FAFStats.service('StatsApi', function ($http) {
     return $http.post('/comments', comment);
   };
 
+  this.deleteComment = function(id) {
+    return $http.delete('/comments/' + id);
+  };
+
 
   /* comments */
 

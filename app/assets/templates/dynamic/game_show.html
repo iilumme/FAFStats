@@ -97,7 +97,11 @@
               </div>
               <div class="col s11">
                 <h5>{{commenters[$index].data.attributes.login}}</h5>
-                <p>{{comment.content}}</p>
+                <p>{{comment.content}}
+                  <span class="right">
+                    <a ng-click="deleteComment(comment.id)" ng-if="user.usertype < 2" class="waves-effect waves-light btn red">delete</a>
+                  </span>
+                </p>
               </div>
             </div>
           </section>
