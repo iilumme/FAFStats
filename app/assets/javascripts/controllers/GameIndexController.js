@@ -18,6 +18,7 @@ FAFStats.controller('GameIndexController', function ($scope, FAFApi, StatsApi) {
     FAFApi.findGames($scope.playerOne, $scope.playerTwo, mode).success(function(games){
       $scope.games = games;
       getStars();
+      renderTopRatedGames();
     });
   };
 
@@ -65,8 +66,9 @@ FAFStats.controller('GameIndexController', function ($scope, FAFApi, StatsApi) {
 
   /* Init */
 
-  renderGames("none");
-  renderTopRatedGames();
+  $scope.$on('$viewContentLoaded', function() {
+    renderGames("none");
+  });
 
 });
 
