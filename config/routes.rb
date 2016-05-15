@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   # Games
   get 'games/:id', to: 'games#game'
+  get 'games', to: 'games#index'
 
   # StarRatings
   get 'star_ratings/:id', to: 'star_ratings#game'

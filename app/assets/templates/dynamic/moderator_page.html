@@ -8,68 +8,59 @@
         <li class="tab col s3"><a href="#test4">Test 4</a></li>
       </ul>
       <div id="tags" class="col s12">
-        <div class="card">
-          <div class="card-content">
+        <h1>Moderator page</h1>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-content">
+              <section>
+                <span class="card-title">New tag</span>
+              </section>
+              <div>
+                <form name="form" ng-submit="newTag()">
+                  <p>
+                    <label>Name</label>
+                    <input type="text" name="name" ng-model="tag_name" required>
+                  <div ng-show="form.tag_name.$invalid && form.tag_name.$dirty">
+                    Name is required
+                  </div>
+                  </p>
+                  <p>
+                    <label>Style</label>
+                    <input type="text" name="style" ng-model="tag_style">
+                  </p>
+                  <button type="submit" ng-disabled="form.$invalid">Create</button>
+                </form>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-content">
+              <section>
+                <span class="card-title">Tag someone</span>
+              </section>
+              <div>
+                <form name="form" ng-submit="newTagged()">
+                  <p>
+                    <label>Tag</label>
+                    <select class="" ng-model="tagged_tags" material-select multiple watch>
+                      <option ng-repeat="tag in tags" value="{{tag.id}}">{{tag.name}}</option>
+                    </select>
+                  </p>
+                  <p>
+                    <label>Player ID</label>
+                    <input type="text" name="playerID" ng-model="tagged_player_id">
+                  </p>
+                  <button type="submit">Tag</button>
+                </form>
+              </div>
+            </div>
+          </div>gi
         </div>
       </div>
       <div id="test2" class="col s12">
-        <div class="card">
-          <div class="card-content">
-            <div class="section">
-
-    </div>
-  </div>
-  <div class="row">
-    <h1>Moderator page</h1>
-    <div class="col s3">
-      <div class="card">
-        <div class="card-content">
-          <section>
-            <span class="card-title">New tag</span>
-          </section>
-          <div>
-            <form name="form" ng-submit="newTag()">
-              <p>
-                <label>Name</label>
-                <input type="text" name="name" ng-model="tag_name" required>
-              <div ng-show="form.tag_name.$invalid && form.tag_name.$dirty">
-                Name is required
-              </div>
-              </p>
-              <p>
-                <label>Style</label>
-                <input type="text" name="style" ng-model="tag_style">
-              </p>
-              <button type="submit" ng-disabled="form.$invalid">Create</button>
-            </form>
-          </div>
-        </div>
       </div>
-    </div>
-    <div class="col s3">
-      <div class="card">
-        <div class="card-content">
-          <section>
-            <span class="card-title">Tag someone</span>
-          </section>
-          <div>
-            <form name="form" ng-submit="newTagged()">
-              <p>
-                <label>Tag</label>
-                <select class="" ng-model="tagged_tags" material-select multiple watch>
-                  <option ng-repeat="tag in tags" value="{{tag.id}}">{{tag.name}}</option>
-                </select>
-              </p>
-              <p>
-                <label>Player ID</label>
-                <input type="text" name="playerID" ng-model="tagged_player_id">
-              </p>
-              <button type="submit">Tag</button>
-            </form>
-          </div>
-        </div>
-      </div>gi
     </div>
   </div>
 </div>
