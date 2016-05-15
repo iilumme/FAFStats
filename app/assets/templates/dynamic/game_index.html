@@ -16,7 +16,7 @@
                   <th>Player 2</th>
                   <th>Map Name</th>
                   <th>Comments</th>
-                  <th>Replay Rating</th>
+                  <th>Score</th>
                 </tr>
                 <tr ng-repeat="topRatedGame in topRatedGames | orderBy : '-game_rating'">
                   <td><a ng-href="/#/game/{{topRatedGame.game.attributes.id}}">{{topRatedGame.game.attributes.id}}</a></td>

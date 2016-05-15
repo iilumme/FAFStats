@@ -66,6 +66,9 @@ FAFStats.controller('GameIndexController', function ($scope, FAFApi, StatsApi) {
 
   /* Init */
 
+  /* Currently FAF Api operations should be done sequentially,
+    making it a bit of a mess */
+
   $scope.$on('$viewContentLoaded', function() {
     renderGames("none");
   });

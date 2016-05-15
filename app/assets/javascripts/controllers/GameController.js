@@ -111,50 +111,33 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
   renderGame();
   getComments();
 
-  /* Triggers */
-  $("#star1").hover(function() {
-    $(this).addClass("yellow-text");
-  }, function() {
-    $(this).removeClass("yellow-text");
-  });
-  $("#star2").hover(function() {
-    $("#star1").addClass("yellow-text");
-    $(this).addClass("yellow-text");
-  }, function() {
-    $("#star1").removeClass("yellow-text");
-    $(this).removeClass("yellow-text");
-  });
-  $("#star3").hover(function() {
-    $("#star1").addClass("yellow-text");
-    $("#star2").addClass("yellow-text");
-    $(this).addClass("yellow-text");
-  }, function() {
-    $("#star1").removeClass("yellow-text");
-    $("#star2").removeClass("yellow-text");
-    $(this).removeClass("yellow-text");
-  });
-  $("#star4").hover(function() {
-    $("#star1").addClass("yellow-text");
-    $("#star2").addClass("yellow-text");
-    $("#star3").addClass("yellow-text");
-    $(this).addClass("yellow-text");
-  }, function() {
-    $("#star1").removeClass("yellow-text");
-    $("#star2").removeClass("yellow-text");
-    $("#star3").removeClass("yellow-text");
-    $(this).removeClass("yellow-text");
-  });
-  $("#star5").hover(function() {
-    $("#star1").addClass("yellow-text");
-    $("#star2").addClass("yellow-text");
-    $("#star3").addClass("yellow-text");
-    $("#star4").addClass("yellow-text");
-    $(this).addClass("yellow-text");
-  }, function() {
-    $("#star1").removeClass("yellow-text");
-    $("#star2").removeClass("yellow-text");
-    $("#star3").removeClass("yellow-text");
-    $("#star4").removeClass("yellow-text");
-    $(this).removeClass("yellow-text");
-  });
+  /* Rate this replay */
+
+  var clearStars = function() {
+    for (var i = 0; i < 5; i++) {
+      $("#star"+(i+1)).removeClass("yellow-text");
+    }
+  }
+
+  var addDefaultStars = function() {
+    var user_given_stars = 3;
+    for (var i = 0; i < user_given_stars; i++) {
+      $("#star"+(i+1)).addClass("yellow-text");
+    }
+  }
+
+  addDefaultStars();
+  for (var i = 0; i < 5; i++) {
+    (function(i) {
+      $("#star"+(i+1)).hover(function() {
+        clearStars();
+        for (var j = 0; j < i+1; j++) {
+          $("#star"+(j+1)).addClass("yellow-text");
+        }
+      }, function() {
+        clearStars();
+        addDefaultStars();
+      });
+    })(i);
+  }
 });
