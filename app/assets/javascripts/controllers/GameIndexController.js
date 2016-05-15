@@ -17,10 +17,26 @@ FAFStats.controller('GameIndexController', function ($scope, FAFApi, StatsApi) {
   var renderGames = function(mode) {
     FAFApi.findGames($scope.playerOne, $scope.playerTwo, mode).success(function(games){
       $scope.games = games;
+      getCommentAmountForAllGames($scope.games);
       getStars();
       renderTopRatedGames();
     });
   };
+
+  var getCommentAmountForAllGames = function(games) {
+    /* Get the amount of comments for each game and add it to corresponding game */
+    for (var i = 0; i < games.data.length; i++) {
+      (function(i) {
+        getCommentAmountForASingleGame(games.data[i]);
+      })(i);
+    }
+  }
+
+  var getCommentAmountForASingleGame = function(game) {
+    StatsApi.getComments(game.attributes.id).success(function(comments){
+      game.comments_amount = comments.length;
+    });
+  }
 
   var getStars = function() {
     for (var i = 0; i < $scope.games.data.length; i++) {
@@ -58,6 +74,7 @@ FAFStats.controller('GameIndexController', function ($scope, FAFApi, StatsApi) {
         (function(i) {
           FAFApi.findGame($scope.topRatedGames[i].game_id).success(function(game){
             $scope.topRatedGames[i].game = game.data[0];
+            getCommentAmountForASingleGame($scope.topRatedGames[i].game);
           });
         })(i);
       }
@@ -65,6 +82,9 @@ FAFStats.controller('GameIndexController', function ($scope, FAFApi, StatsApi) {
   }
 
   /* Init */
+
+  /* Currently FAF Api operations should be done sequentially,
+    making it a bit of a mess */
 
   $scope.$on('$viewContentLoaded', function() {
     renderGames("none");

@@ -2,8 +2,8 @@
   <div class="row">
     <div class="col s12 m12 l12">
       <ul class="tabs" tabs>
-        <li class="tab col s6"><a href="#top-rated">Top Rated</a></li>
         <li class="tab col s6"><a href="#game-search">Game Search</a></li>
+        <li class="tab col s6"><a href="#top-rated">Top Rated</a></li>
       </ul>
       <div id="top-rated" class="col s12">
         <div class="card">
@@ -16,14 +16,14 @@
                   <th>Player 2</th>
                   <th>Map Name</th>
                   <th>Comments</th>
-                  <th>Replay Rating</th>
+                  <th>Score</th>
                 </tr>
                 <tr ng-repeat="topRatedGame in topRatedGames | orderBy : '-game_rating'">
                   <td><a ng-href="/#/game/{{topRatedGame.game.attributes.id}}">{{topRatedGame.game.attributes.id}}</a></td>
                   <td><a ng-href="/#/player/{{topRatedGame.game.attributes.players[0].player_id}}">{{topRatedGame.game.attributes.players[0].login}}</a></td>
                   <td><a ng-href="/#/player/{{topRatedGame.game.attributes.players[1].player_id}}">{{topRatedGame.game.attributes.players[1].login}}</a></td>
                   <td>{{topRatedGame.game.attributes.map_name}}</td>
-                  <td>0</td>
+                  <td>{{topRatedGame.game.comments_amount}}</td>
                   <td>{{topRatedGame.game_rating}}</td>
                 </tr>
               </table>
@@ -75,7 +75,7 @@
                   <td><a ng-href="/#/player/{{game.attributes.players[0].player_id}}">{{game.attributes.players[0].login}}</a></td>
                   <td><a ng-href="/#/player/{{game.attributes.players[1].player_id}}">{{game.attributes.players[1].login}}</a></td>
                   <td>{{game.attributes.map_name}}</td>
-                  <td>0</td>
+                  <td>{{game.comments_amount}}</td>
                   <td><span>
                     <i ng-repeat="n in game.yellowStars" class="small material-icons yellow-text">star</i>
                     <i ng-repeat="n in game.greyStars" class="small material-icons grey-text">star</i>

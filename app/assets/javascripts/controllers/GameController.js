@@ -6,6 +6,7 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
   $scope.comments = [];
   $scope.commenters = [];
   $scope.stars = {};
+  $scope.current_user_stars = 0;
 
   if ($rootScope.user !== null) {
     $scope.newComment = {
@@ -83,8 +84,30 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
           $scope.greyStars.push(i);
         }
       }
+      StatsApi.getStarsOfCurrentUser($scope.gameid).success(function(stars){
+        $scope.current_user_stars = stars.stars;
+        clearStars();
+        addDefaultStars();
+      });
     });
   };
+
+  /* Utility functions for "rate this replay" ui */
+
+  var clearStars = function() {
+    for (var i = 0; i < 5; i++) {
+      $("#star"+(i+1)).removeClass("yellow-text");
+    }
+  }
+
+  var addDefaultStars = function() {
+    var user_given_stars = $scope.current_user_stars;
+    for (var i = 0; i < user_given_stars; i++) {
+      $("#star"+(i+1)).addClass("yellow-text");
+    }
+  }
+
+  /* */
 
   $scope.giveStars = function(amount) {
     var star_rating = {stars: amount, game_id: $scope.gameid}
@@ -113,50 +136,20 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
   renderGame();
   getComments();
 
-  /* Triggers */
-  $("#star1").hover(function() {
-    $(this).addClass("yellow-text");
-  }, function() {
-    $(this).removeClass("yellow-text");
-  });
-  $("#star2").hover(function() {
-    $("#star1").addClass("yellow-text");
-    $(this).addClass("yellow-text");
-  }, function() {
-    $("#star1").removeClass("yellow-text");
-    $(this).removeClass("yellow-text");
-  });
-  $("#star3").hover(function() {
-    $("#star1").addClass("yellow-text");
-    $("#star2").addClass("yellow-text");
-    $(this).addClass("yellow-text");
-  }, function() {
-    $("#star1").removeClass("yellow-text");
-    $("#star2").removeClass("yellow-text");
-    $(this).removeClass("yellow-text");
-  });
-  $("#star4").hover(function() {
-    $("#star1").addClass("yellow-text");
-    $("#star2").addClass("yellow-text");
-    $("#star3").addClass("yellow-text");
-    $(this).addClass("yellow-text");
-  }, function() {
-    $("#star1").removeClass("yellow-text");
-    $("#star2").removeClass("yellow-text");
-    $("#star3").removeClass("yellow-text");
-    $(this).removeClass("yellow-text");
-  });
-  $("#star5").hover(function() {
-    $("#star1").addClass("yellow-text");
-    $("#star2").addClass("yellow-text");
-    $("#star3").addClass("yellow-text");
-    $("#star4").addClass("yellow-text");
-    $(this).addClass("yellow-text");
-  }, function() {
-    $("#star1").removeClass("yellow-text");
-    $("#star2").removeClass("yellow-text");
-    $("#star3").removeClass("yellow-text");
-    $("#star4").removeClass("yellow-text");
-    $(this).removeClass("yellow-text");
-  });
+  /* Rate this replay */
+
+  for (var i = 0; i < 5; i++) {
+    (function(i) {
+      $("#star"+(i+1)).hover(function() {
+        clearStars();
+        for (var j = 0; j < i+1; j++) {
+          $("#star"+(j+1)).addClass("yellow-text");
+        }
+      }, function() {
+        clearStars();
+        addDefaultStars();
+      });
+    })(i);
+  }
+
 });
