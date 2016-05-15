@@ -11,7 +11,9 @@ FAFStats.controller('LogInController', function($scope, StatsApi, FAFApi, $locat
 
       StatsApi.register(user).success(function() {
         $location.path('login');
+        Materialize.toast('Registering was successful', 4000);
       }).error(function() {
+        Materialize.toast('An error happened, please try again!', 4000);
         $scope.error = true;
       });
 
