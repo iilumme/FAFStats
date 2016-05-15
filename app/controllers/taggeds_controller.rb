@@ -20,14 +20,18 @@ class TaggedsController < ApplicationController
   # POST /taggeds
   # POST /taggeds.json
   def create
-    @tagged = Tagged.new(tagged_params)
 
-    if @tagged.save
-      render :nothing => true, :status => :ok
+    if !Tagged.find_by(:player_id => tagged_params[:player_id], :tag_id => tagged_params[:tag_id]).nil?
+      render :nothing => true, :status => :bad_request
     else
-      render :nothing => true, :status => :unprocessable_entity
-    end
+      @tagged = Tagged.new(tagged_params)
 
+      if @tagged.save
+        render :nothing => true, :status => :ok
+      else
+        render :nothing => true, :status => :unprocessable_entity
+      end
+    end
   end
 
   # PATCH/PUT /taggeds/1

@@ -24,6 +24,8 @@ FAFStats.controller('LogInController', function($scope, StatsApi, FAFApi, $locat
     var user = {"player_id": $scope.login.player_id}
     StatsApi.login(user).success(function(user) {
       $location.path('player/'+ user.player_id);
+      window.location.reload();
+      Materialize.toast('Welcome', 4000);
     }).error(function() {
       $scope.invalidLogin = true;
     });

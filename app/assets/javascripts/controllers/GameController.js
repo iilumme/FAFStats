@@ -60,6 +60,8 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
       Materialize.toast('Your comment has been submitted!', 4000);
       getComments();
       $("#commentform").val("");
+    }).error(function() {
+      Materialize.toast('An error happened, please try again!', 4000);
     });
   };
 

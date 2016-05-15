@@ -1,8 +1,8 @@
 var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match', 'ngFileUpload','ui.materialize'])
-    .run(function($rootScope, StatsApi, FAFApi, $location) {
+    .run(function($rootScope, StatsApi, FAFApi, $location, $route) {
 
       /* RootScope Variables */
-      $rootScope.players = new Array();
+      $rootScope.players = [];
       $rootScope.user = null;
 
       StatsApi.getUserInSession().success(function(user){
@@ -36,12 +36,14 @@ var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match', 'ngFil
       $rootScope.blurPlayerSearch = function() {
         $('.search-suggest').css('display', 'none');
         $("#search").val("");
-        $rootScope.players = new Array();
+        $rootScope.players = [];
       };
 
       $rootScope.logout = function() {
         StatsApi.logout().success(function() {
           $location.path('/');
+          window.location.reload();
+          Materialize.toast('Logged out', 4000);
         });
       };
 

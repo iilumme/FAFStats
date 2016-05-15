@@ -2,8 +2,7 @@ class User < ActiveRecord::Base
   mount_uploader :image, ImageUploader
   validates :player_id, uniqueness: true
 
-  #belongs_to :player
-  has_many :comments
+  has_many :comments, dependent: :destroy
   has_many :star_ratings, dependent: :destroy
 
   def stars_of_a_game(game_id)
