@@ -10,6 +10,19 @@ FAFStats is originally [a group project](https://github.com/mluukkai/WebPalvelin
 
 The goal of this project is to create a platform where [FAForever](http://faforever.com) players can find and discuss game replays. To achieve this we are heavily relying on the (incomplete) [FAF API](https://github.com/FAForever/api) as well as our own database.
 
+## Installing the project
+```
+bundle install
+bower install
+npm install
+rake db:migrate
+rake db:seed
+```
+
+Run ``` rails s ``` to start the server
+
+Run ``` grunt ``` (you will need grunt-cli) if you want to compile sass
+
 ## Structure of the project
 The project relies on 3 main parts:
 * The official [FAF API](https://github.com/FAForever/api) (which is not under our control)
@@ -20,6 +33,7 @@ The project relies on 3 main parts:
   * The client side application
 * (Discontinued) Resque Scheduler
   * Runs scheduled tasks such as updating rating evolution and faction distribution charts
+  * Discontinued, because of increased server costs
 
 ## FAFStats Data Types
 * player
