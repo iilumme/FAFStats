@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title"><h1 class="center-align">1v1 Ladder Leaderboards</h1></span>
+      <br>
+      <div class="row">
+        <div class="col s6">
+          <a class="waves-effect waves-light btn" ng-click="prevPage()">Previous</a>
+        </div>
+        <div class="col s6 right-align">
+          <a class="waves-effect waves-light btn" ng-click="nextPage()">Next</a>
+        </div>
+      </div>
+
+      <table class="striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Player</th>
+            <th>Rating</th>
+            <th>Games</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="player in page.data">
+            <td>{{player.attributes.ranking}}</td>
+            <td><a ng-href="/#/player/{{player.attributes.id}}">{{player.attributes.login}}</a></td>
+            <td>{{player.attributes.rating}}</td>
+            <td>{{player.attributes.num_games}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+
+      <div class="row">
+        <div class="col s6">
+          <a class="waves-effect waves-light btn" ng-click="prevPage()">Previous</a>
+        </div>
+        <div class="col s6 right-align">
+          <a class="waves-effect waves-light btn" ng-click="nextPage()">Next</a>
+        </div>
+      </div>
+
+      <br>
+    </div>
+  </div>
+</div>

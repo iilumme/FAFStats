@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="col s6">
+      <div class="card">
+        <div class="card-content">
+          <section>
+            <span class="card-title">Register</span>
+          </section>
+          <div>
+            <form name="form" ng-submit="register()">
+              <p>
+                <label>Player ID</label>
+                <input type="text" name="player_id" ng-model="player_id" required>
+              <div ng-show="form.player_id.$invalid && form.player_id.$dirty">
+                Player ID is required
+              </div>
+              <div ng-show="invalidID">
+                This is not a valid Player ID.
+              </div>
+              <div ng-show="error">
+                Error. Have you already registered?
+              </div>
+              </p>
+              <button type="submit" ng-disabled="form.$invalid">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s">
+      <div class="card">
+        <div class="card-content">
+          <section>
+            <span class="card-title">Log in</span>
+          </section>
+          <div>
+            <form ng-submit="login()">
+              <p>
+                <label>Player ID</label>
+                <input type="text" name="player_id" ng-model="login.player_id">
+              <div ng-show="invalidLogin">
+                Wrong player ID.
+              </div>
+              </p>
+              <button type="submit">Log in</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
