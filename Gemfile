@@ -31,7 +31,6 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'simplecov', require: false
 gem 'coveralls', require: false
 
 group :development, :test do
@@ -48,6 +47,7 @@ end
 
 group :test do
   gem 'factory_girl_rails'
+  gem 'simplecov', require: false
 end
 
 group :development do

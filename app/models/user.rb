@@ -1,6 +1,5 @@
 class User < ActiveRecord::Base
   mount_uploader :image, ImageUploader
-  validates :player_id, uniqueness: true
 
   has_many :comments, dependent: :destroy
   has_many :star_ratings, dependent: :destroy

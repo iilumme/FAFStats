@@ -13,6 +13,7 @@ class UsersController < ApplicationController
     end
   end
 
+  # GET /users/:id
   def user
   end
 
@@ -22,13 +23,17 @@ class UsersController < ApplicationController
   #  200 (created new user)
   #  or 422 (couldn't process entity)
   def create
-    @user = User.new(user_params)
-    @user.usertype = 2
-
-    if @user.save
-      render :nothing => true, :status => :ok
+    if user_params[:player_id].is_a?(Integer)
+      render :nothing => true, :status => :bad_request
     else
-      render :nothing => true, :status => :unprocessable_entity
+      @user = User.new(user_params)
+      @user.usertype = 2
+
+      if @user.save
+        render :nothing => true, :status => :ok
+      else
+        render :nothing => true, :status => :unprocessable_entity
+      end
     end
   end
 

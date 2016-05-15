@@ -1,16 +1,32 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  it "has the player_id set correctly" do
-    user = User.new player_id:"12345"
+  let(:user){FactoryGirl.create(:user) }
 
-    expect(user.player_id).to eq("12345")
+  it "has the player_id set correctly" do
+    expect(user.player_id).to eq("117602")
   end
 
   it "has the description set correctly" do
-    user = User.new description:"I'm nice hyyppä. :)"
+    expect(user.description).to eq("Bird lover")
+  end
 
-    expect(user.description).to eq("I'm nice hyyppä. :)")
+  describe 'star ratings of a game' do
+    user = FactoryGirl.create(:user)
+    game = FactoryGirl.create(:game)
+    star_rating = FactoryGirl.create(:star_rating, user: user, game: game)
+
+    it "has method for determining one" do
+      expect(user).to respond_to(:stars_of_a_game)
+    end
+
+    it "without star ratings does not have one" do
+      expect(user.stars_of_a_game('101010')).to eq(nil)
+    end
+
+    it "returns the right amount of stars" do
+      expect(user.stars_of_a_game(game.game_id)).to eq(5)
+    end
   end
 
 end
