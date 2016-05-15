@@ -40,9 +40,10 @@ The project relies on 3 main parts:
   * Handles all FAFStats unique functionality (comments, star ratings, tags and such)
 * Angular Front-End
   * The client side application
-* (Discontinued) Resque Scheduler
+* (Discontinued) Redis & Resque & Resque Scheduler
   * Runs scheduled tasks such as updating rating evolution and faction distribution charts
-  * Discontinued, because of increased server costs
+  * Jobs will be run manually
+  * **Discontinued, because of increased server costs**
 
 ## FAFStats Data Types
 * player
