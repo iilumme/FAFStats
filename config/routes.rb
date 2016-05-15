@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'comments/:id' , to: 'comments#game'
   post 'comments' , to: 'comments#create'
   post 'comments/update' , to: 'comments#update'
+  delete 'comments/:id', to: 'comments#destroy'
 
   # Tags
   resources :tags                                         #!!!!

@@ -47,7 +47,7 @@
         <div class="col l8">
           <h5>Description</h5>
           <p>{{user.description}}</p>
-          <a ng-if="user.player_id == session_playerid" modal class="btn-floating waves-effect waves-light red modal-trigger" href="#editmodal"><i class="material-icons">mode_edit</i></a>
+          <a ng-if="user.player_id == session_user.player_id || session_user.usertype < 2" modal class="btn-floating waves-effect waves-light red modal-trigger" href="#editmodal"><i class="material-icons">mode_edit</i></a>
           <div id="editmodal" class="modal modal-fixed-footer">
             <form ng-submit="updateProfile()">
               <div class="modal-content">

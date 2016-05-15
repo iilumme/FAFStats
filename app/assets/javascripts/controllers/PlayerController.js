@@ -8,7 +8,7 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
   var playerID = $routeParams.id;
   $scope.session_playerid = null;
   if ($rootScope.user !== null) {
-    $scope.session_playerid = $rootScope.user.player_id;
+    $scope.session_user = $rootScope.user;
   }
 
   // Finds the player with their stats and adds all the information to $scope
