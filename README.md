@@ -10,6 +10,8 @@ FAFStats is originally [a group project](https://github.com/mluukkai/WebPalvelin
 
 The goal of this project is to create a platform where [FAForever](http://faforever.com) players can find and discuss game replays. To achieve this we are heavily relying on the (incomplete) [FAF API](https://github.com/FAForever/api) as well as our own database.
 
+[Class diagram](https://github.com/iilumme/FAFStats/blob/master/ClassDiagram.png)
+
 ## Issues
 Login via FAF oAuth does not currently work, as a workaround you can log in as ANY user for testing purposes.
 
