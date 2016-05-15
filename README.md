@@ -33,6 +33,7 @@ The project relies on 3 main parts:
   * The client side application
 * (Discontinued) Resque Scheduler
   * Runs scheduled tasks such as updating rating evolution and faction distribution charts
+  * Discontinued, because of increased server costs
 
 ## FAFStats Data Types
 * player
