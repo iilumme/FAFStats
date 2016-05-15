@@ -5,6 +5,8 @@ var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match', 'ngFil
       $rootScope.players = [];
       $rootScope.user = null;
 
+      /* User */
+
       StatsApi.getUserInSession().success(function(user){
         if (user !== ""){
           $rootScope.user = user;
@@ -12,6 +14,8 @@ var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match', 'ngFil
           $rootScope.user = null;
         }
       });
+
+      /* Player Search */
 
       $rootScope.triggerAutocomplete = function() {
         if ($('.player-search').val().length < 3 && $rootScope.players.length > 0) {
@@ -57,6 +61,26 @@ var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match', 'ngFil
 
     })
     .config(function ($routeProvider) {
+
+      /* Authentication */
+      var requireAuthentication = function () {
+        return {
+          load: function ($q, $location, $rootScope) {
+            var deferred = $q.defer();
+            deferred.resolve();
+            /* If player is a moderator/admin */
+            if ($rootScope.user && $rootScope.user.usertype < 2) { // fire $routeChangeSuccess
+              return deferred.promise;
+            } else { // fire $routeChangeError
+              $location.path('/');
+
+              // I don't think this is still necessary:
+              return $q.reject("'/'");
+            }
+          }
+        };
+      };
+
       $routeProvider
           .when('/', {
             controller: 'RootController',
@@ -88,6 +112,7 @@ var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match', 'ngFil
           })
           .when('/moderator', {
             controller: 'ModeratorController',
-            templateUrl: '<%= asset_path("dynamic/moderator_page.html") %> '
+            templateUrl: '<%= asset_path("dynamic/moderator_page.html") %> ',
+            resolve: requireAuthentication()
           });
     });
