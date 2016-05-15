@@ -1,0 +1,108 @@
+<div class="container container-bg z-depth-1">
+  <div class="container-bg-wrapper">
+
+    <!-- Player Hero -->
+    <section>
+      <div class="row">
+        <div class="col l12">
+          <div class="player-hero">
+            <div class="col l6">
+              <img ng-if="user.image.image.url != null" ng-src="{{user.image.image.url}}" type="file"/>
+              <img ng-if="user.image.image.url == null" src="http://placehold.it/128x128?text=No+Picture">
+              <span class="player-name">{{player.data.attributes.login}}</span>
+            </div>
+            <!-- Rating -->
+            <div class="col l6">
+              <span class="player-rating right">{{player.data.attributes.rating}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tags -->
+
+    <div class="row">
+      <div class="col l12">
+        <span ng-if="player.data.attributes.is_active" class="chip blue lighten-2 white-text">
+          Active
+        </span>
+        <span ng-if="!player.data.attributes.is_active" class="chip red white-text">
+          Inactive
+        </span>
+        <span ng-repeat="tag in tags">
+          <div class="chip {{tag.style}}">
+            {{tag.name}}
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!--  -->
+    <section>
+      <div class="row">
+        <!-- Description -->
+        <div class="col l8">
+          <h5>Description</h5>
+          <p>{{user.description}}</p>
+          <a ng-if="user.player_id == session_user.player_id || session_user.usertype < 2" modal class="btn-floating waves-effect waves-light red modal-trigger" href="#editmodal"><i class="material-icons">mode_edit</i></a>
+          <div id="editmodal" class="modal modal-fixed-footer">
+            <form ng-submit="updateProfile()">
+              <div class="modal-content">
+                <span style="font-size: 1.5em">Edit your info</span>
+                <br/>
+                <label>Description</label>
+                <input type="text" name="description" ng-model="description">
+                <label>Image</label>
+                <input type="file" ngf-select ng-model="image" />
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class=" modal-action modal-close waves-effect waves-green btn-flat">Save</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Faction Statistics -->
+        <div class="col l4">
+          <h5>Faction Statistics</h5>
+          <canvas id="factionChart" width="200" height="200"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section>
+      <div class="row">
+        <!-- Match History-->
+        <div class="col l8">
+          <h5>Match History</h5>
+          <table class="striped">
+            <tr>
+              <th>Game ID</th>
+              <th>Player 1</th>
+              <th>Player 2</th>
+              <th>Map Name</th>
+            </tr>
+            <tr ng-repeat="game in games.data">
+              <td><a ng-href="/#/game/{{game.attributes.id}}">{{game.attributes.id}}</a> <a ng-if="game.attributes.players[0].score_time != null" ng-href="http://content.faforever.com/faf/vault/replay_vault/replay.php?id={{game.attributes.id}}"><i class="tiny material-icons">play_circle_outline</i></a></td>
+              <td><a ng-href="/#/player/{{game.attributes.players[0].player_id}}">{{game.attributes.players[0].login}}</a></td>
+              <td><a ng-href="/#/player/{{game.attributes.players[1].player_id}}">{{game.attributes.players[1].login}}</a></td>
+              <td>{{game.attributes.map_name}}</td>
+            </tr>
+          </table>
+          <span>
+            <a ng-click="matchHistoryPrevious()" class="waves-effect waves-light btn left">Previous</a>
+            <a ng-click="matchHistoryNext()" class="waves-effect waves-light btn right">Next</a>
+          </span>
+        </div>
+        <!-- Rating Evolution -->
+        <div class="col l4">
+          <h5>Rating Evolution</h5>
+          <canvas id="ratingEvolutionChart" width="400" height="400"></canvas>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
