@@ -13,7 +13,7 @@ The goal of this project is to create a platform where [FAForever](http://fafore
 [Class diagram](https://github.com/iilumme/FAFStats/blob/master/ClassDiagram.png)
 
 ## Issues
-Login via FAF oAuth does not currently work, as a workaround you can log in as ANY user for testing purposes.
+FAF oAuth does not currently work, as a workaround you can log in as ANY user for testing purposes.
 
 To test admin functionality use played id: 133636
 
