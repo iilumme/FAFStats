@@ -30,8 +30,6 @@ ratings:
   - "**.js"
   - "**.jsx"
   - "**.module"
-  - "**.php"
-  - "**.py"
 exclude_paths:
 - config/
 - db/
