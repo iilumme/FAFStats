@@ -44,14 +44,14 @@ FAFStats.controller('GameIndexController', function ($scope, FAFApi, StatsApi) {
             }
 
             $scope.games.data[i].greyStars = [];
-            for (var j = 0; j < 5 - game.average_of_star_ratings; j++) {
-              $scope.games.data[i].greyStars.push(j);
+            for (var k = 0; k < 5 - game.average_of_star_ratings; k++) {
+              $scope.games.data[i].greyStars.push(k);
             }
 
           } else {
             $scope.games.data[i].greyStars = [];
-            for (var j = 0; j < 5; j++) {
-              $scope.games.data[i].greyStars.push(j);
+            for (var l = 0; l < 5; l++) {
+              $scope.games.data[i].greyStars.push(l);
             }
           }
         });

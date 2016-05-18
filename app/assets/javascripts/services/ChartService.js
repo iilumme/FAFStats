@@ -80,7 +80,7 @@ FAFStats.service('ChartService', function(StatsApi) {
 
     ratings.forEach(function(rating) {
       for(i = 0; i < 7; i++) {
-        if (rating.month == months[i] + 1) {
+        if (rating.month === months[i] + 1) {
           rats[6-i] = rating.value;
           break;
         }

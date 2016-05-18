@@ -84,13 +84,13 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
           $scope.yellowStars.push(i);
         }
         $scope.greyStars = [];
-        for (var i = 0; i < 5 - game.average_of_star_ratings; i++) {
-          $scope.greyStars.push(i);
+        for (var j = 0; j < 5 - game.average_of_star_ratings; j++) {
+          $scope.greyStars.push(j);
         }
       } else {
         $scope.greyStars = [];
-        for (var i = 0; i < 5; i++) {
-          $scope.greyStars.push(i);
+        for (var k = 0; k < 5; k++) {
+          $scope.greyStars.push(k);
         }
       }
       StatsApi.getStarsOfCurrentUser($scope.gameid).success(function(stars){

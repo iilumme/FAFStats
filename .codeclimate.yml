@@ -40,6 +40,5 @@ exclude_paths:
 - db/
 - spec/
 - vendor/
-exclude_paths:
 - "**.css"
 - "public/assets/**/*"

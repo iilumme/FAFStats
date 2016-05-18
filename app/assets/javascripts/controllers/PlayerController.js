@@ -64,7 +64,7 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
 
   $scope.matchHistoryPrevious = function() {
     if(currentMatchHistoryPage === 1) {
-      alert("Already on the first page");
+      Materialize.toast('Already on the first page', 4000);
     } else {
       currentMatchHistoryPage--;
       renderGames(currentMatchHistoryPage);
