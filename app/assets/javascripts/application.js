@@ -32,4 +32,5 @@
 //= require services/FAFApi.js
 //= require services/StatsApi.js
 //= require services/ChartService.js
+//= require services/ToastService.js
 //= require_tree.

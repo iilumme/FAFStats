@@ -1,4 +1,4 @@
-FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope, FAFApi, StatsApi) {
+FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope, FAFApi, StatsApi, ToastService) {
 
   /* Variables */
   $scope.gameid = $routeParams.id;
@@ -58,22 +58,23 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
 
   $scope.sendComment = function() {
     StatsApi.postComment($scope.newComment).success(function() {
-      Materialize.toast('Your comment has been submitted!', 4000);
+      //Materialize.toast('Your comment has been submitted!', 4000);
+      ToastService.getMessage('newComment');
       getComments();
       $("#commentform").val("");
     }).error(function() {
-      Materialize.toast('An error happened, please try again!', 4000);
+      ToastService.errorMessage();
     });
   };
 
   $scope.deleteComment = function(id) {
     StatsApi.deleteComment(id).success(function() {
-      Materialize.toast('Your comment has been deleted!', 4000);
+      ToastService.getMessage('deleteComment');
       getComments();
     }).error(function() {
-      Materialize.toast('An error happened, please try again!', 4000);
+      ToastService.errorMessage();
     });
-  }
+  };
 
   var getStars = function() {
     StatsApi.getGame($scope.gameid).success(function(game){
@@ -121,10 +122,10 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
   $scope.giveStars = function(amount) {
     var star_rating = {stars: amount, game_id: $scope.gameid}
     StatsApi.postStars(star_rating).success(function() {
-      Materialize.toast('Your star rating has been submitted!', 4000);
+      ToastService.getMessage('newStarRating');
       renderGame();
     }).error(function(){
-      Materialize.toast('An error happened, please try again!', 4000);
+      ToastService.errorMessage();
     });
   };
 

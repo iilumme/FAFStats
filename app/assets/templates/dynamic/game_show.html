@@ -43,7 +43,7 @@
           <div class="row">
             <a ng-href="http://content.faforever.com/faf/vault/replay_vault/replay.php?id={{gameid}}" class="waves-effect waves-light btn white-text">Download Replay</a>
           </div>
-          <div class="row" ng-hide="!user">
+          <div class="row" ng-hide="!session_user">
             <h5>Rate this replay</h5>
             <span class="stars">
               <a href="" id="star1" ng-click="giveStars(1)"><i class="small material-icons">star</i></a
@@ -69,7 +69,7 @@
           <br>
 
           <!-- New comment -->
-          <div class="section" ng-if="user">
+          <div class="section" ng-if="session_user">
             <div class="row">
               <form ng-submit="sendComment()">
                 <div class="input-field col s12">
@@ -99,7 +99,7 @@
                 <h5>{{commenters[$index].data.attributes.login}}</h5>
                 <p>{{comment.content}}
                   <span class="right">
-                    <a ng-click="deleteComment(comment.id)" ng-if="user.usertype < 2" class="waves-effect waves-light btn red">delete</a>
+                    <a ng-click="deleteComment(comment.id)" ng-if="session_user.usertype < 2" class="waves-effect waves-light btn red">delete</a>
                   </span>
                 </p>
               </div>

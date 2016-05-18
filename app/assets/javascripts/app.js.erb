@@ -1,5 +1,5 @@
 var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match', 'ngFileUpload','ui.materialize'])
-    .run(function($rootScope, StatsApi, FAFApi, $location, $route) {
+    .run(function($rootScope, StatsApi, FAFApi, $location, $route, ToastService) {
 
       /* RootScope Variables */
       $rootScope.players = [];
@@ -47,7 +47,7 @@ var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match', 'ngFil
         StatsApi.logout().success(function() {
           $location.path('/');
           window.location.reload();
-          Materialize.toast('Logged out', 4000);
+          ToastService.getMessage('logout');
         });
       };
 

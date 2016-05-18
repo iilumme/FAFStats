@@ -1,4 +1,4 @@
-FAFStats.controller('ModeratorController', function($rootScope, $scope, StatsApi){
+FAFStats.controller('ModeratorController', function($rootScope, $scope, StatsApi, ToastService){
 
   // Gets all tags from StatsApi
   var getAllTags = function() {
@@ -16,7 +16,7 @@ FAFStats.controller('ModeratorController', function($rootScope, $scope, StatsApi
       Materialize.toast('New tag created!', 4000);
       getAllTags();
     }).error(function(){
-      Materialize.toast('An error happened, please try again!', 4000);
+      ToastService.errorMessage();
     });
   };
 
@@ -26,13 +26,13 @@ FAFStats.controller('ModeratorController', function($rootScope, $scope, StatsApi
       var tagged = {tag_id: $scope.tagged_tags[i], player_id: $scope.tagged_player_id};
       StatsApi.postTagged(tagged)
         .then(function successCallback(response){
-          Materialize.toast('Tagging was successful!', 4000);
+          ToastService.getMessage('taggingSuccessful');
         },
           function errorCallback(response){
             if (response.status === 400) {
-              Materialize.toast('Player already has this tag!', 4000);
+              ToastService.getMessage('hasTagAlready');
             } else {
-              Materialize.toast('An error happened, please try again!', 4000);
+              ToastService.errorMessage();
             }
         });
     }

@@ -1,4 +1,4 @@
-FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, StatsApi, $rootScope, Upload, ChartService) {
+FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, StatsApi, $rootScope, Upload, ChartService, ToastService) {
 
   var currentMatchHistoryPage = 1;
 
@@ -64,7 +64,7 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
 
   $scope.matchHistoryPrevious = function() {
     if(currentMatchHistoryPage === 1) {
-      Materialize.toast('Already on the first page', 4000);
+      ToastService.getMessage('firstPageAlready');
     } else {
       currentMatchHistoryPage--;
       renderGames(currentMatchHistoryPage);

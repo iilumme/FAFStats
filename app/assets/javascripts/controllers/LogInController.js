@@ -1,4 +1,4 @@
-FAFStats.controller('LogInController', function($scope, StatsApi, FAFApi, $location) {
+FAFStats.controller('LogInController', function($scope, StatsApi, FAFApi, $location, ToastService) {
 
   $scope.invalidID = false;
   $scope.error = false;
@@ -11,9 +11,9 @@ FAFStats.controller('LogInController', function($scope, StatsApi, FAFApi, $locat
 
       StatsApi.register(user).success(function() {
         $location.path('login');
-        Materialize.toast('Registering was successful', 4000);
+        ToastService.getMessage('loginSuccessful');
       }).error(function() {
-        Materialize.toast('An error happened, please try again!', 4000);
+        ToastService.errorMessage();
         $scope.error = true;
       });
 
@@ -27,7 +27,7 @@ FAFStats.controller('LogInController', function($scope, StatsApi, FAFApi, $locat
     StatsApi.login(user).success(function(user) {
       $location.path('player/'+ user.player_id);
       window.location.reload();
-      Materialize.toast('Welcome', 4000);
+      ToastService.getMessage('welcome');
     }).error(function() {
       $scope.invalidLogin = true;
     });
