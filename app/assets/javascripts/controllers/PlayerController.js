@@ -6,10 +6,6 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
 
   /* Variables */
   var playerID = $routeParams.id;
-  $scope.session_playerid = null;
-  if ($rootScope.user !== null) {
-    $scope.session_user = $rootScope.user;
-  }
 
   // Finds the player with their stats and adds all the information to $scope
   var renderPlayer = function() {
@@ -55,7 +51,7 @@ FAFStats.controller('PlayerController', function ($scope, $routeParams, FAFApi, 
       method: 'POST',
       file: image,
       fileFormDataName: 'user[image]',
-      fields: { 'id': $rootScope.user.id, 'user[description]': $scope.description, 'user[image]': image }
+      fields: { 'id': $scope.user.id, 'user[description]': $scope.description, 'user[image]': image }
     });
     renderUser();
     renderPlayer();

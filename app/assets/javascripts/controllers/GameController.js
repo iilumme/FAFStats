@@ -8,7 +8,7 @@ FAFStats.controller('GameController', function ($scope, $routeParams, $rootScope
   $scope.stars = {};
   $scope.current_user_stars = 0;
 
-  if ($rootScope.user !== null) {
+  if ($rootScope.session_user !== null) {
     $scope.newComment = {
       content: "",
       game_id: $scope.gameid

@@ -3,15 +3,15 @@ var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match', 'ngFil
 
       /* RootScope Variables */
       $rootScope.players = [];
-      $rootScope.user = null;
+      $rootScope.session_user = null;
 
       /* User */
 
       StatsApi.getUserInSession().success(function(user){
         if (user !== ""){
-          $rootScope.user = user;
+          $rootScope.session_user = user;
         } else {
-          $rootScope.user = null;
+          $rootScope.session_user = null;
         }
       });
 
@@ -69,7 +69,7 @@ var FAFStats = angular.module('FAFStats', ['ngRoute', 'validation.match', 'ngFil
             var deferred = $q.defer();
             deferred.resolve();
             /* If player is a moderator/admin */
-            if ($rootScope.user && $rootScope.user.usertype < 2) { // fire $routeChangeSuccess
+            if ($rootScope.session_user && $rootScope.session_user.usertype < 2) { // fire $routeChangeSuccess
               return deferred.promise;
             } else { // fire $routeChangeError
               $location.path('/');
