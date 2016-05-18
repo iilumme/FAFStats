@@ -12,8 +12,6 @@ engines:
       languages:
       - ruby
       - javascript
-      - python
-      - php
   eslint:
     enabled: true
   fixme:
@@ -22,13 +20,12 @@ engines:
     enabled: true
 ratings:
   paths:
-  - Gemfile.lock
   - "**.erb"
   - "**.haml"
   - "**.rb"
   - "**.rhtml"
   - "**.slim"
-  - "**.css"
+  - "**.scss"
   - "**.inc"
   - "**.js"
   - "**.jsx"
